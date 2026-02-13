@@ -92,17 +92,17 @@ export default function CapabilitiesPage() {
                 key={service.slug}
                 id={service.slug}
                 aria-labelledby={`${service.slug}-heading`}
-                className="rag-section entity-card rounded-2xl p-8 md:p-12 bg-white"
+                className="rag-section rounded-[2rem] border border-zinc-100 bg-white p-6 md:p-12 transition-all hover:shadow-2xl hover:shadow-zinc-200/50"
               >
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                   <div className="lg:col-span-2">
                     <h2
                       id={`${service.slug}-heading`}
-                      className="text-2xl font-semibold text-zinc-900"
+                      className="text-3xl font-semibold text-zinc-900"
                     >
                       {service.title}
                     </h2>
-                    <p className="mt-4 text-zinc-500 leading-relaxed">
+                    <p className="mt-6 text-lg text-zinc-600 leading-relaxed">
                       {service.description}
                     </p>
                   </div>

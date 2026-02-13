@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "./_components/Header/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -82,47 +83,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={`${inter.className} min-h-screen flex flex-col`}>
-        <header className="fixed top-0 z-50 w-full bg-white/95 py-4 backdrop-blur-sm">
-          <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-12">
-            <div className="flex items-center gap-2">
-              <span className="text-3xl font-bold uppercase tracking-tighter text-zinc-900">
-                EXAGIC<span className="text-brand">AI</span>
-              </span>
-            </div>
-
-            <div className="hidden md:flex items-center gap-10 text-[15px] font-medium text-zinc-800">
-              <a href="/" className="hover:text-brand transition-all">
-                Home
-              </a>
-              <a
-                href="/capabilities"
-                className="hover:text-brand transition-all"
-              >
-                AI SEO
-              </a>
-              <a href="/industries" className="hover:text-brand transition-all">
-                SRO
-              </a>
-              <a href="/lab" className="hover:text-brand transition-all">
-                Resources
-              </a>
-              <a
-                href="#contact"
-                className="ml-4 rounded-md bg-brand px-6 py-3 text-lg font-bold text-white transition-all hover:bg-brand-dark hover:shadow-lg active:scale-95"
-              >
-                Schedule a Call
-              </a>
-            </div>
-
-            <div className="md:hidden">
-              <button className="p-2">
-                <div className="w-6 h-0.5 bg-black mb-1"></div>
-                <div className="w-6 h-0.5 bg-black mb-1"></div>
-                <div className="w-6 h-0.5 bg-black"></div>
-              </button>
-            </div>
-          </nav>
-        </header>
+        <Header />
 
         <main className="flex-grow">{children}</main>
 

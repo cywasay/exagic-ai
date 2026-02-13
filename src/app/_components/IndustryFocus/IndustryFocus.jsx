@@ -45,8 +45,8 @@ export default function IndustryFocus() {
           </div>
 
           <div className="relative">
-            <div className="rounded-2xl border border-zinc-200 bg-white p-8 shadow-sm">
-              <div className="mb-6 text-xs font-semibold uppercase tracking-widest text-zinc-400">
+            <div className="rounded-3xl border border-zinc-100 bg-white p-6 md:p-10 shadow-sm transition-all hover:shadow-xl hover:shadow-zinc-200/50">
+              <div className="mb-8 text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
                 Entity Associations
               </div>
               <div className="space-y-4">
@@ -58,18 +58,30 @@ export default function IndustryFocus() {
                 ].map((entity) => (
                   <div
                     key={entity}
-                    className="flex items-center gap-3 rounded-lg bg-zinc-50 px-4 py-3 text-sm"
+                    className="flex items-center gap-4 rounded-xl border border-zinc-50 bg-zinc-50/50 px-5 py-4 text-sm transition-colors hover:bg-white hover:border-brand/20"
                   >
-                    <div className="h-2 w-2 rounded-full bg-brand"></div>
-                    <span className="font-medium text-zinc-700">{entity}</span>
+                    <div className="h-2 w-2 rounded-full bg-brand shadow-[0_0_10px_rgba(255,115,0,0.5)]"></div>
+                    <span className="font-semibold text-zinc-800">
+                      {entity}
+                    </span>
                   </div>
                 ))}
               </div>
-              <div className="mt-6 pt-6 border-t border-zinc-100">
-                <div className="text-xs text-zinc-400">
-                  Connected to{" "}
-                  <span className="font-semibold text-brand">
-                    12+ high-authority local nodes
+              <div className="mt-8 pt-8 border-t border-zinc-100">
+                <div className="text-xs text-zinc-500 flex items-center gap-2">
+                  <div className="flex -space-x-2">
+                    {[1, 2, 3].map((i) => (
+                      <div
+                        key={i}
+                        className="h-6 w-6 rounded-full border-2 border-white bg-zinc-200"
+                      />
+                    ))}
+                  </div>
+                  <span>
+                    Connected to{" "}
+                    <span className="font-bold text-brand">
+                      12+ high-authority local nodes
+                    </span>
                   </span>
                 </div>
               </div>

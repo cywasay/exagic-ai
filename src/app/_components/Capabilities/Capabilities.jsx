@@ -3,7 +3,7 @@ export default function Capabilities() {
     {
       title: "AI SEO",
       description:
-        "World-class AI SEO services ranging from visibility analysis to practical model steering strategies for the SF Bay Area industrial belt."
+        "World-class AI SEO services ranging from visibility analysis to practical model steering strategies for the SF Bay Area industrial belt.",
     },
     {
       title: "Answer Engine Optimization (AEO)",
@@ -57,21 +57,24 @@ export default function Capabilities() {
 
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 gap-6">
           {capabilities.map((cap) => (
-            <article key={cap.title} className="capability-card">
-              <h3 className="text-lg font-semibold text-zinc-900">
+            <article
+              key={cap.title}
+              className="rounded-2xl border border-zinc-100 bg-white p-6 md:p-8 transition-all hover:border-brand/20 hover:shadow-lg"
+            >
+              <h3 className="text-xl font-semibold text-zinc-900">
                 {cap.title}
               </h3>
-              <p className="mt-3 text-sm text-zinc-500 leading-relaxed">
+              <p className="mt-4 text-sm text-zinc-500 leading-relaxed">
                 {cap.description}
               </p>
-              <div className="mt-6">
+              <div className="mt-8">
                 <a
                   href="/capabilities"
-                  className="text-sm font-medium text-brand hover:text-brand-dark transition-colors inline-flex items-center gap-1"
+                  className="text-sm font-semibold text-brand hover:text-brand-dark transition-colors inline-flex items-center gap-1"
                 >
                   Learn more
                   <svg
-                    className="h-3.5 w-3.5"
+                    className="h-4 w-4"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
