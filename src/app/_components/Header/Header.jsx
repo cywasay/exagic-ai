@@ -63,10 +63,8 @@ export default function Header() {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 z-40 bg-white transition-all duration-500 ease-in-out md:hidden ${
-          isOpen
-            ? "opacity-100 pointer-events-auto"
-            : "opacity-0 pointer-events-none"
+        className={`fixed inset-0 z-40 h-screen w-screen bg-white transition-all duration-300 ease-in-out md:hidden ${
+          isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
         }`}
       >
         <div className="flex flex-col h-full px-8 pt-32 pb-12">
