@@ -12,7 +12,7 @@ export default function Logic() {
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20">
           <article className="rounded-2xl border border-zinc-100 bg-white p-6 md:p-10 shadow-sm transition-all hover:shadow-md">
-            <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-900 text-white text-xl font-bold">
+            <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand text-xl font-bold">
               01
             </div>
             <h3 className="text-2xl font-semibold text-zinc-900">Structure</h3>
@@ -23,7 +23,7 @@ export default function Logic() {
           </article>
 
           <article className="rounded-2xl border border-zinc-100 bg-white p-6 md:p-10 shadow-sm transition-all hover:shadow-md">
-            <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-zinc-900 text-white text-xl font-bold">
+            <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-brand/10 text-brand text-xl font-bold">
               02
             </div>
             <h3 className="text-2xl font-semibold text-zinc-900">Innovation</h3>
