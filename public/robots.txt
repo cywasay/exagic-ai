@@ -1,0 +1,30 @@
+# ═══════════════════════════════════════════════
+# EXAGIC AI – AI-Agent Gateway
+# Priority: Invite AI crawlers to high-value paths
+# ═══════════════════════════════════════════════
+
+# Allow GPTBot (ChatGPT Crawler)
+User-agent: GPTBot
+Allow: /
+Allow: /capabilities/
+Allow: /industries/
+Allow: /lab/
+
+# Allow Google-Extended (Gemini Crawler)
+User-agent: Google-Extended
+Allow: /
+
+# Allow PerplexityBot
+User-agent: PerplexityBot
+Allow: /
+
+# Allow ClaudeBot
+User-agent: ClaudeBot
+Allow: /
+
+# Allow general crawlers
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.exagic.ai/sitemap.xml
