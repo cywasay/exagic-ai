@@ -20,7 +20,7 @@ export default function IndustryFocus() {
               legacy data and modern AI retrieval, we ensure brands maintain a
               permanent seat in the global knowledge graph.
             </p>
-            <div className="mt-8">
+            <nav className="mt-8" aria-label="Industry pages">
               <a
                 href="/industries"
                 className="inline-flex items-center gap-2 text-sm font-bold text-brand hover:text-brand-dark transition-colors"
@@ -31,6 +31,7 @@ export default function IndustryFocus() {
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
+                  aria-hidden="true"
                 >
                   <path
                     strokeLinecap="round"
@@ -40,35 +41,41 @@ export default function IndustryFocus() {
                   />
                 </svg>
               </a>
-            </div>
+            </nav>
           </div>
 
-          <div className="relative">
+          <aside aria-label="Entity associations">
             <div className="rounded-2xl border border-zinc-200 bg-white p-8 md:p-10 shadow-sm transition-all hover:shadow-md">
               <div className="mb-8 text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
                 Entity Associations
               </div>
-              <div className="space-y-4">
+              <ul className="space-y-4" role="list">
                 {[
                   "SF Industrial Corridor",
                   "East Bay Manufacturing Belt",
                   "Silicon Valley Supply Chain",
                   "Fremont Logistics Hub",
                 ].map((entity) => (
-                  <div
+                  <li
                     key={entity}
                     className="flex items-center gap-4 rounded-xl border border-zinc-100 bg-zinc-50/30 px-5 py-4 text-sm transition-colors hover:bg-white hover:border-brand/20"
                   >
-                    <div className="h-2 w-2 rounded-full bg-brand shadow-[0_0_8px_rgba(255,115,0,0.3)]"></div>
-                    <span className="font-semibold text-zinc-800">
+                    <div
+                      className="h-2 w-2 rounded-full bg-brand shadow-[0_0_8px_rgba(255,115,0,0.3)]"
+                      aria-hidden="true"
+                    ></div>
+                    <span
+                      className="font-semibold text-zinc-800"
+                      itemProp="areaServed"
+                    >
                       {entity}
                     </span>
-                  </div>
+                  </li>
                 ))}
-              </div>
+              </ul>
               <div className="mt-8 pt-8 border-t border-zinc-100">
                 <div className="text-xs text-zinc-500 flex items-center gap-2">
-                  <div className="flex -space-x-2">
+                  <div className="flex -space-x-2" aria-hidden="true">
                     {[1, 2, 3].map((i) => (
                       <div
                         key={i}
@@ -85,7 +92,7 @@ export default function IndustryFocus() {
                 </div>
               </div>
             </div>
-          </div>
+          </aside>
         </div>
       </div>
     </section>

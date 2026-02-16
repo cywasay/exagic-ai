@@ -7,8 +7,15 @@
 User-agent: GPTBot
 Allow: /
 Allow: /capabilities/
+Allow: /capabilities/aeo/
+Allow: /capabilities/sro/
 Allow: /industries/
+Allow: /industries/manufacturing/
+Allow: /industries/logistics/
 Allow: /lab/
+Allow: /lab/model-updates/
+Allow: /lab/case-studies/
+Disallow: /_next/
 
 # Allow Google-Extended (Gemini Crawler)
 User-agent: Google-Extended
@@ -22,9 +29,15 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
+# Allow CCBot (Common Crawl – used by many AI training sets)
+User-agent: CCBot
+Allow: /
+
 # Allow general crawlers
 User-agent: *
 Allow: /
+Disallow: /_next/static/
+Disallow: /api/
 
 # Sitemap
 Sitemap: https://www.exagic.ai/sitemap.xml

@@ -1,10 +1,32 @@
 export const metadata = {
-  title: "Industries | EXAGIC AI",
+  title: "Industries",
   description:
     "Strategic AI SEO optimization for industrial manufacturers, logistics companies, and supply chain operators in the SF Bay Area.",
+  alternates: {
+    canonical: "https://www.exagic.ai/industries",
+  },
 };
 
 export default function IndustriesPage() {
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.exagic.ai",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Industries",
+        item: "https://www.exagic.ai/industries",
+      },
+    ],
+  };
+
   const industries = [
     {
       slug: "manufacturing",
@@ -20,6 +42,7 @@ export default function IndustriesPage() {
       ],
       stat: "73%",
       statLabel: "of industrial buyers now use AI agents for sourcing",
+      href: "/industries/manufacturing",
     },
     {
       slug: "logistics",
@@ -35,17 +58,34 @@ export default function IndustriesPage() {
       ],
       stat: "4.2x",
       statLabel: "increase in AI-driven supply chain queries since 2024",
+      href: "/industries/logistics",
     },
   ];
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+
       <section
         id="industries-hero"
         aria-labelledby="ind-heading"
         className="rag-section bg-white"
       >
         <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
+          <nav aria-label="Breadcrumb" className="mb-8">
+            <ol className="flex items-center gap-2 text-sm text-zinc-400">
+              <li>
+                <a href="/" className="hover:text-brand transition-colors">
+                  Home
+                </a>
+              </li>
+              <li aria-hidden="true">/</li>
+              <li className="text-zinc-900 font-medium">Industries</li>
+            </ol>
+          </nav>
           <div className="max-w-3xl">
             <h1
               id="ind-heading"
@@ -71,16 +111,27 @@ export default function IndustriesPage() {
                 id={ind.slug}
                 aria-labelledby={`${ind.slug}-heading`}
                 className="rag-section rounded-2xl border border-zinc-200 bg-white p-8 md:p-12"
+                itemScope
+                itemType="https://schema.org/Service"
               >
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
                   <div className="lg:col-span-2">
                     <h2
                       id={`${ind.slug}-heading`}
                       className="text-2xl font-semibold text-zinc-900"
+                      itemProp="name"
                     >
-                      {ind.title}
+                      <a
+                        href={ind.href}
+                        className="hover:text-brand transition-colors"
+                      >
+                        {ind.title}
+                      </a>
                     </h2>
-                    <p className="mt-4 text-zinc-500 leading-relaxed">
+                    <p
+                      className="mt-4 text-zinc-500 leading-relaxed"
+                      itemProp="description"
+                    >
                       {ind.description}
                     </p>
 

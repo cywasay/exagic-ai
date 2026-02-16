@@ -1,6 +1,12 @@
 export default function ContactCTA() {
   return (
-    <section id="contact" aria-labelledby="cta-heading" className="rag-section">
+    <section
+      id="contact"
+      aria-labelledby="cta-heading"
+      className="rag-section"
+      itemScope
+      itemType="https://schema.org/ContactPoint"
+    >
       <div className="cta-gradient py-24 md:py-32">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <h2
@@ -17,6 +23,7 @@ export default function ContactCTA() {
             <a
               href="mailto:hello@exagic.ai"
               className="inline-flex items-center justify-center rounded-md bg-white px-8 py-4 text-lg font-bold text-brand shadow-xl transition-all hover:bg-zinc-50 hover:shadow-2xl active:scale-95"
+              itemProp="email"
             >
               Request Video Call
               <svg
@@ -24,6 +31,7 @@ export default function ContactCTA() {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
+                aria-hidden="true"
               >
                 <path
                   strokeLinecap="round"

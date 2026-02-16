@@ -4,6 +4,8 @@ export default function Hero() {
       id="hero"
       aria-labelledby="hero-heading"
       className="rag-section relative flex min-h-[85vh] items-center bg-white pt-24"
+      itemScope
+      itemType="https://schema.org/WPHeader"
     >
       <div className="mx-auto w-full max-w-7xl px-6 lg:px-12">
         <div className="max-w-4xl pt-12">
@@ -11,14 +13,16 @@ export default function Hero() {
             id="hero-heading"
             className="text-3xl sm:text-4xl font-semibold text-zinc-900"
           >
-            San Francisco AI SEO agency specialising in brand visibility
-            optimisation for industrial manufacturers and global suppliers.
+            San Francisco <span itemProp="knowsAbout">AI SEO</span> agency
+            specialising in brand visibility optimisation for industrial
+            manufacturers and global suppliers.
           </h1>
 
           <p className="mt-8 max-w-3xl text-lg leading-relaxed text-zinc-700">
             Our AI SEO process is driven by advanced machine learning
-            techniques, mechanistic interpretability, and practical model
-            steering methods.
+            techniques,{" "}
+            <span itemProp="knowsAbout">mechanistic interpretability</span>, and
+            practical <span itemProp="knowsAbout">model steering</span> methods.
           </p>
 
           <div className="mt-10 flex flex-col items-start gap-5">

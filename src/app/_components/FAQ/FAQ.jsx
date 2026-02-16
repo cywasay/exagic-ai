@@ -54,41 +54,60 @@ export default function FAQ() {
           FAQs
         </h2>
 
-        <div className="mt-16 space-y-0 w-full">
+        <dl className="mt-16 space-y-0 w-full">
           {faqs.map((faq, index) => (
-            <details
+            <div
               key={faq.question}
               className="faq-item group"
-              open={openIndex === index}
+              itemScope
+              itemProp="mainEntity"
+              itemType="https://schema.org/Question"
             >
-              <summary
-                className="flex cursor-pointer items-center justify-between py-6 text-left font-medium text-zinc-900 hover:text-brand transition-colors"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setOpenIndex(openIndex === index ? null : index);
-                }}
-              >
-                <span>{faq.question}</span>
-                <svg
-                  className={`ml-4 h-5 w-5 shrink-0 text-zinc-400 transition-transform ${openIndex === index ? "rotate-45" : ""}`}
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+              <dt>
+                <button
+                  type="button"
+                  className="flex w-full cursor-pointer items-center justify-between py-6 text-left font-medium text-zinc-900 hover:text-brand transition-colors"
+                  onClick={() =>
+                    setOpenIndex(openIndex === index ? null : index)
+                  }
+                  aria-expanded={openIndex === index}
+                  aria-controls={`faq-answer-${index}`}
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 4v16m8-8H4"
-                  />
-                </svg>
-              </summary>
-              <div className="pb-6 text-sm text-zinc-500 leading-relaxed">
-                {faq.answer}
-              </div>
-            </details>
+                  <span itemProp="name">{faq.question}</span>
+                  <svg
+                    className={`ml-4 h-5 w-5 shrink-0 text-zinc-400 transition-transform ${openIndex === index ? "rotate-45" : ""}`}
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </button>
+              </dt>
+              <dd
+                id={`faq-answer-${index}`}
+                className={`overflow-hidden transition-all duration-300 ${openIndex === index ? "pb-6" : "max-h-0"}`}
+                itemScope
+                itemProp="acceptedAnswer"
+                itemType="https://schema.org/Answer"
+                hidden={openIndex !== index}
+              >
+                <div
+                  className="text-sm text-zinc-500 leading-relaxed"
+                  itemProp="text"
+                >
+                  {faq.answer}
+                </div>
+              </dd>
+            </div>
           ))}
-        </div>
+        </dl>
       </div>
     </section>
   );
