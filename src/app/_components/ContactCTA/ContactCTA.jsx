@@ -1,22 +1,26 @@
 export default function ContactCTA() {
   return (
     <section id="contact" aria-labelledby="cta-heading" className="rag-section">
-      <div className="cta-gradient">
-        <div className="mx-auto max-w-4xl px-6 py-24 md:py-32 text-center">
-          <h2 id="cta-heading" className="text-4xl font-semibold text-white">
-            Schedule a Call
+      <div className="cta-gradient py-24 md:py-32">
+        <div className="mx-auto max-w-4xl px-6 text-center">
+          <h2
+            id="cta-heading"
+            className="text-3xl sm:text-4xl font-semibold text-white"
+          >
+            Ready to scale your visibility?
           </h2>
-          <p className="mt-6 text-lg text-white/80 max-w-xl mx-auto">
-            Discuss your AI visibility strategy with a specialist.
+          <p className="mt-6 text-lg text-white/90 max-w-xl mx-auto">
+            Discuss your AI visibility strategy with our senior strategy team
+            and secure your brand's future.
           </p>
           <div className="mt-10">
             <a
               href="mailto:hello@exagic.ai"
-              className="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-lg font-bold text-brand transition-all hover:bg-zinc-50 hover:shadow-2xl active:scale-95"
+              className="inline-flex items-center justify-center rounded-md bg-white px-8 py-4 text-lg font-bold text-brand shadow-xl transition-all hover:bg-zinc-50 hover:shadow-2xl active:scale-95"
             >
               Request Video Call
               <svg
-                className="ml-2 h-4 w-4"
+                className="ml-2 h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

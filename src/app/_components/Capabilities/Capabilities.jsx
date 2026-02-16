@@ -40,37 +40,37 @@ export default function Capabilities() {
     <section
       id="capabilities"
       aria-labelledby="capabilities-heading"
-      className="rag-section bg-white"
+      className="rag-section bg-white py-24"
     >
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
-      <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <h2
           id="capabilities-heading"
-          className="text-4xl font-semibold text-zinc-900"
+          className="max-w-4xl text-3xl sm:text-4xl font-semibold text-zinc-900"
         >
-          We are an industry leader in machine learning driven digital
-          marketing.
+          We are an industry leader in machine learning driven search retrieval
+          optimization.
         </h2>
 
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 gap-8">
           {capabilities.map((cap) => (
             <article
               key={cap.title}
-              className="rounded-2xl border border-zinc-100 bg-white p-6 md:p-8 transition-all hover:border-brand/20 hover:shadow-lg"
+              className="rounded-xl border border-zinc-200 bg-white p-8 transition-all hover:border-brand/40 hover:shadow-lg"
             >
               <h3 className="text-xl font-semibold text-zinc-900">
                 {cap.title}
               </h3>
-              <p className="mt-4 text-sm text-zinc-500 leading-relaxed">
+              <p className="mt-4 text-zinc-700 leading-relaxed">
                 {cap.description}
               </p>
               <div className="mt-8">
                 <a
                   href="/capabilities"
-                  className="text-sm font-semibold text-brand hover:text-brand-dark transition-colors inline-flex items-center gap-1"
+                  className="inline-flex items-center gap-1 text-sm font-bold text-brand hover:text-brand-dark transition-colors"
                 >
                   Learn more
                   <svg

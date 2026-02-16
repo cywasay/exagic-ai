@@ -6,19 +6,19 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 z-50 w-full bg-white/95 py-4 backdrop-blur-md">
+    <header className="fixed top-0 z-50 w-full bg-white/95 py-3 backdrop-blur-md">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-12">
         <div className="flex items-center gap-2">
           <a
             href="/"
-            className="text-2xl sm:text-3xl font-bold uppercase tracking-tighter text-zinc-900"
+            className="text-lg sm:text-xl font-bold uppercase tracking-tight text-zinc-900"
           >
             EXAGIC<span className="text-brand">AI</span>
           </a>
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-10 text-[15px] font-medium text-zinc-800">
+        <div className="hidden md:flex items-center gap-8 text-[14px] font-medium text-zinc-800">
           <a href="/" className="hover:text-brand transition-all">
             Home
           </a>
@@ -33,7 +33,7 @@ export default function Header() {
           </a>
           <a
             href="#contact"
-            className="ml-4 rounded-md bg-brand px-6 py-3 text-lg font-bold text-white transition-all hover:bg-brand-dark hover:shadow-lg active:scale-95"
+            className="ml-4 rounded-md bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-brand-dark hover:shadow-md active:scale-95"
           >
             Schedule a Call
           </a>
@@ -68,7 +68,7 @@ export default function Header() {
         }`}
       >
         <div className="flex flex-col h-full px-8 pt-32 pb-12">
-          <div className="flex flex-col gap-8 text-4xl font-semibold tracking-tight text-zinc-900">
+          <div className="flex flex-col gap-6 text-2xl font-medium tracking-tight text-zinc-900">
             <a
               href="/"
               onClick={() => setIsOpen(false)}
@@ -103,7 +103,7 @@ export default function Header() {
             <a
               href="#contact"
               onClick={() => setIsOpen(false)}
-              className="inline-block w-full rounded-md bg-brand px-8 py-5 text-center text-2xl font-bold text-white shadow-xl active:scale-95 transition-all"
+              className="inline-block w-full rounded-md bg-brand px-5 py-3.5 text-center text-base font-semibold text-white shadow-md active:scale-95 transition-all"
             >
               Schedule a Call
             </a>

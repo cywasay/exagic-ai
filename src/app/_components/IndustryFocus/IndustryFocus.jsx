@@ -3,30 +3,29 @@ export default function IndustryFocus() {
     <section
       id="industries"
       aria-labelledby="industries-heading"
-      className="rag-section border-t border-zinc-100 bg-zinc-50"
+      className="rag-section border-t border-zinc-100 bg-zinc-50 py-24"
     >
-      <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2
               id="industries-heading"
-              className="text-4xl font-semibold text-zinc-900"
+              className="text-3xl sm:text-4xl font-semibold text-zinc-900 leading-tight"
             >
               Strategic Industrial Optimization
             </h2>
-            <p className="mt-6 text-zinc-500 leading-relaxed">
-              We deliver sharp, well-prioritised SEO strategies for
-              manufacturers in the East Bay and Silicon Valley. By bridging the
-              gap between legacy data and modern AI retrieval, we ensure brands
-              like GATCO Inc. maintain a permanent seat in the global knowledge
-              graph.
+            <p className="mt-6 text-lg text-zinc-700 leading-relaxed">
+              We deliver sharp, prioritised SEO strategies for manufacturers in
+              the East Bay and Silicon Valley. By bridging the gap between
+              legacy data and modern AI retrieval, we ensure brands maintain a
+              permanent seat in the global knowledge graph.
             </p>
             <div className="mt-8">
               <a
                 href="/industries"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-brand hover:text-brand-dark transition-colors"
+                className="inline-flex items-center gap-2 text-sm font-bold text-brand hover:text-brand-dark transition-colors"
               >
-                Explore Industries
+                Explore Specialized Industries
                 <svg
                   className="h-4 w-4"
                   fill="none"
@@ -45,7 +44,7 @@ export default function IndustryFocus() {
           </div>
 
           <div className="relative">
-            <div className="rounded-3xl border border-zinc-100 bg-white p-6 md:p-10 shadow-sm transition-all hover:shadow-xl hover:shadow-zinc-200/50">
+            <div className="rounded-2xl border border-zinc-200 bg-white p-8 md:p-10 shadow-sm transition-all hover:shadow-md">
               <div className="mb-8 text-xs font-bold uppercase tracking-[0.2em] text-zinc-400">
                 Entity Associations
               </div>
@@ -58,9 +57,9 @@ export default function IndustryFocus() {
                 ].map((entity) => (
                   <div
                     key={entity}
-                    className="flex items-center gap-4 rounded-xl border border-zinc-50 bg-zinc-50/50 px-5 py-4 text-sm transition-colors hover:bg-white hover:border-brand/20"
+                    className="flex items-center gap-4 rounded-xl border border-zinc-100 bg-zinc-50/30 px-5 py-4 text-sm transition-colors hover:bg-white hover:border-brand/20"
                   >
-                    <div className="h-2 w-2 rounded-full bg-brand shadow-[0_0_10px_rgba(255,115,0,0.5)]"></div>
+                    <div className="h-2 w-2 rounded-full bg-brand shadow-[0_0_8px_rgba(255,115,0,0.3)]"></div>
                     <span className="font-semibold text-zinc-800">
                       {entity}
                     </span>
@@ -80,7 +79,7 @@ export default function IndustryFocus() {
                   <span>
                     Connected to{" "}
                     <span className="font-bold text-brand">
-                      12+ high-authority local nodes
+                      12+ high-authority nodes
                     </span>
                   </span>
                 </div>

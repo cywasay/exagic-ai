@@ -1,4 +1,10 @@
+"use client";
+
+import { useState } from "react";
+
 export default function FAQ() {
+  const [openIndex, setOpenIndex] = useState(null);
+
   const faqs = [
     {
       question: "What separates EXAGIC AI from traditional SEO companies?",
@@ -40,7 +46,7 @@ export default function FAQ() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <div className="mx-auto max-w-3xl px-6 py-24 md:py-32">
+      <div className="mx-auto max-w-3xl px-6 py-12 md:py-16 min-h-[450px]">
         <h2
           id="faq-heading"
           className="text-4xl font-semibold text-zinc-900 text-center"
@@ -48,13 +54,23 @@ export default function FAQ() {
           FAQs
         </h2>
 
-        <div className="mt-16 space-y-0">
-          {faqs.map((faq) => (
-            <details key={faq.question} className="faq-item group">
-              <summary className="flex cursor-pointer items-center justify-between py-6 text-left font-medium text-zinc-900 hover:text-brand transition-colors">
+        <div className="mt-16 space-y-0 w-full">
+          {faqs.map((faq, index) => (
+            <details
+              key={faq.question}
+              className="faq-item group"
+              open={openIndex === index}
+            >
+              <summary
+                className="flex cursor-pointer items-center justify-between py-6 text-left font-medium text-zinc-900 hover:text-brand transition-colors"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setOpenIndex(openIndex === index ? null : index);
+                }}
+              >
                 <span>{faq.question}</span>
                 <svg
-                  className="ml-4 h-5 w-5 shrink-0 text-zinc-400 transition-transform group-open:rotate-45"
+                  className={`ml-4 h-5 w-5 shrink-0 text-zinc-400 transition-transform ${openIndex === index ? "rotate-45" : ""}`}
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"

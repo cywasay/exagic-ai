@@ -29,28 +29,28 @@ export default function ProjectTypes() {
     <section
       id="projects"
       aria-labelledby="projects-heading"
-      className="rag-section bg-white"
+      className="rag-section bg-white py-24"
     >
-      <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <h2
           id="projects-heading"
-          className="text-4xl font-semibold text-zinc-900"
+          className="text-3xl sm:text-4xl font-semibold text-zinc-900"
         >
           Focused Campaigns
         </h2>
 
-        <div className="mt-16 space-y-4">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <article
               key={project.title}
-              className="project-card flex flex-col sm:flex-row sm:items-center gap-4"
+              className="flex items-start gap-4 rounded-xl border border-zinc-100 bg-zinc-50/30 p-6 transition-all hover:bg-white hover:border-brand/20 hover:shadow-sm"
             >
               <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand/10 text-xs font-bold text-brand">
                 {String(index + 1).padStart(2, "0")}
               </div>
               <div>
                 <h3 className="font-semibold text-zinc-900">{project.title}</h3>
-                <p className="mt-1 text-sm text-zinc-500">
+                <p className="mt-1 text-sm text-zinc-700">
                   {project.description}
                 </p>
               </div>

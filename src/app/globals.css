@@ -1,12 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --color-brand: #FF7300;
-  --color-brand-light: #FF9E5C;
-  --color-brand-dark: #CC5500;
-  --color-surface: #FFFFFF;
-  --color-surface-dim: #F9FAFB;
+  --font-sans:
+    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --color-brand: #ff7300;
+  --color-brand-light: #ff9e5c;
+  --color-brand-dark: #cc5500;
+  --color-surface: #ffffff;
+  --color-surface-dim: #f9fafb;
 }
 
 body {
@@ -15,6 +16,33 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* ═══════════════════════════════════════════════
+   Custom Scrollbar
+   ═══════════════════════════════════════════════ */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-dark);
+}
+
+/* Firefox support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-brand) #f1f1f1;
 }
 
 /* ═══════════════════════════════════════════════
@@ -31,7 +59,7 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #FF7300 0%, #FF8A00 100%);
+  background: linear-gradient(135deg, #ff7300 0%, #ff8a00 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -47,7 +75,7 @@ body {
 }
 
 .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -77,8 +105,12 @@ body {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideInLeft {
@@ -93,7 +125,8 @@ body {
 }
 
 @keyframes pulse-glow {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 0 0 rgba(255, 107, 0, 0.3);
   }
   50% {
@@ -118,12 +151,24 @@ body {
 }
 
 /* Staggered animation delays */
-.delay-100 { animation-delay: 100ms; }
-.delay-200 { animation-delay: 200ms; }
-.delay-300 { animation-delay: 300ms; }
-.delay-400 { animation-delay: 400ms; }
-.delay-500 { animation-delay: 500ms; }
-.delay-600 { animation-delay: 600ms; }
+.delay-100 {
+  animation-delay: 100ms;
+}
+.delay-200 {
+  animation-delay: 200ms;
+}
+.delay-300 {
+  animation-delay: 300ms;
+}
+.delay-400 {
+  animation-delay: 400ms;
+}
+.delay-500 {
+  animation-delay: 500ms;
+}
+.delay-600 {
+  animation-delay: 600ms;
+}
 
 /* ═══════════════════════════════════════════════
    Service/Capability Cards
@@ -140,13 +185,13 @@ body {
 }
 
 .capability-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(90deg, #FF7300, #FF9E5C);
+  background: linear-gradient(90deg, #ff7300, #ff9e5c);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.35s ease;
@@ -180,7 +225,7 @@ body {
    ═══════════════════════════════════════════════ */
 
 .cta-gradient {
-  background: linear-gradient(135deg, #FF7300 0%, #FF8A00 40%, #FFA44D 100%);
+  background: linear-gradient(135deg, #ff7300 0%, #ff8a00 40%, #ffa44d 100%);
 }
 
 /* ═══════════════════════════════════════════════
