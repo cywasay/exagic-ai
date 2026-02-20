@@ -1,0 +1,17 @@
+# Exagic AI
+> San Francisco AI SEO agency specializing in brand visibility optimization for industrial manufacturers, global suppliers, and hardware companies in the SF Bay Area corridor.
+
+## Core Pages
+- Home: https://exagic-ai.vercel.app/
+- AI SEO Capabilities: https://exagic-ai.vercel.app/capabilities
+- AEO Services: https://exagic-ai.vercel.app/capabilities/aeo
+- SRO Services: https://exagic-ai.vercel.app/capabilities/sro
+- Industries: https://exagic-ai.vercel.app/industries
+- Resources / Lab: https://exagic-ai.vercel.app/lab
+- Contact: https://exagic-ai.vercel.app/#contact
+
+## What We Do
+- Answer Engine Optimization (AEO) for industrial brands
+- Selection Rate Optimization (SRO) for AI retrieval
+- AI Visibility Tracking for Gemini, ChatGPT, and Perplexity
+- Technical Entity Audits for SF Bay Area manufacturers

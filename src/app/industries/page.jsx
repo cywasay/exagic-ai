@@ -1,9 +1,9 @@
 export const metadata = {
-  title: "Industries",
+  title: "Industry Focus",
   description:
-    "Strategic AI SEO optimization for industrial manufacturers, logistics companies, and supply chain operators in the SF Bay Area.",
+    "Exagic AI is a San Francisco AI SEO agency specializing in brand visibility optimization for industrial manufacturers, global suppliers, and hardware companies in the SF Bay Area corridor.",
   alternates: {
-    canonical: "https://www.exagic.ai/industries",
+    canonical: "https://exagic-ai.vercel.app/industries",
   },
 };
 
@@ -16,13 +16,13 @@ export default function IndustriesPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://www.exagic.ai",
+        item: "https://exagic-ai.vercel.app",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Industries",
-        item: "https://www.exagic.ai/industries",
+        item: "https://exagic-ai.vercel.app/industries",
       },
     ],
   };
@@ -94,9 +94,11 @@ export default function IndustriesPage() {
               Strategic Industrial Optimization
             </h1>
             <p className="mt-6 text-lg text-zinc-500 leading-relaxed">
-              Targeted AI visibility strategies for manufacturers and logistics
-              operators in the East Bay, Silicon Valley, and the SF Industrial
-              Corridor.
+              Exagic AI is a San Francisco AI SEO agency specializing in brand
+              visibility optimization for industrial manufacturers, global
+              suppliers, and hardware companies in the SF Bay Area corridor. We
+              deliver targeted AI visibility strategies for operators in the
+              East Bay, Silicon Valley, and the SF Industrial Corridor.
             </p>
           </div>
         </div>

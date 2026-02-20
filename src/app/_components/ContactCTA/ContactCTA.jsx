@@ -19,7 +19,7 @@ export default function ContactCTA() {
             Discuss your AI visibility strategy with our senior strategy team
             and secure your brand's future.
           </p>
-          <div className="mt-10">
+          <div className="mt-10 flex flex-col items-center gap-6">
             <a
               href="mailto:hello@exagic.ai"
               className="inline-flex items-center justify-center rounded-md bg-white px-8 py-4 text-lg font-bold text-brand shadow-xl transition-all hover:bg-zinc-50 hover:shadow-2xl active:scale-95"
@@ -40,6 +40,12 @@ export default function ContactCTA() {
                   d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
                 />
               </svg>
+            </a>
+            <a
+              href="/capabilities"
+              className="text-white/80 hover:text-white text-sm font-semibold transition-colors"
+            >
+              Browse Technical Entity Audits →
             </a>
           </div>
         </div>

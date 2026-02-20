@@ -18,7 +18,14 @@ export default function IndustryFocus() {
               We deliver sharp, prioritised SEO strategies for manufacturers in
               the East Bay and Silicon Valley. By bridging the gap between
               legacy data and modern AI retrieval, we ensure brands maintain a
-              permanent seat in the global knowledge graph.
+              permanent seat in the global knowledge graph. Read our report on{" "}
+              <a
+                href="/lab/east-bay-manufacturers-invisible-ai-search"
+                className="text-brand hover:underline font-medium"
+              >
+                why East Bay suppliers are becoming invisible in AI search
+              </a>
+              .
             </p>
             <nav className="mt-8" aria-label="Industry pages">
               <a

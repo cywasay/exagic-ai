@@ -9,13 +9,32 @@ import ContactCTA from "./_components/ContactCTA/ContactCTA";
 export const metadata = {
   title: "EXAGIC AI | AI SEO & SRO Agency San Francisco",
   description:
-    "San Francisco AI SEO agency specializing in brand visibility optimization for industrial manufacturers and global suppliers. AI-driven Answer Engine Optimization (AEO) and Search Retrieval Optimization (SRO).",
+    "Exagic AI is a San Francisco AI SEO agency specializing in brand visibility optimization for industrial manufacturers, global suppliers, and hardware companies in the SF Bay Area corridor.",
   alternates: {
-    canonical: "https://www.exagic.ai",
+    canonical: "https://exagic-ai.vercel.app",
   },
 };
 
 export default function HomePage() {
+  /* ═══════════════════════════════════════════════
+     PRIMARY ENTITY – Organization
+     ═══════════════════════════════════════════════ */
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Exagic AI",
+    url: "https://exagic-ai.vercel.app",
+    description:
+      "San Francisco AI SEO agency specializing in brand visibility optimization for industrial manufacturers and global suppliers in the SF Bay Area corridor.",
+    areaServed: "San Francisco Bay Area",
+    serviceType: [
+      "AI SEO",
+      "Answer Engine Optimization",
+      "Selection Rate Optimization",
+      "AI Visibility Tracking",
+    ],
+  };
+
   /* ═══════════════════════════════════════════════
      BREADCRUMB – Helps AI models understand site hierarchy
      ═══════════════════════════════════════════════ */
@@ -27,13 +46,17 @@ export default function HomePage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://www.exagic.ai",
+        item: "https://exagic-ai.vercel.app",
       },
     ],
   };
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}

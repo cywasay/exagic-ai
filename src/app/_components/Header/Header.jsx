@@ -25,11 +25,23 @@ export default function Header() {
           <a href="/capabilities" className="hover:text-brand transition-all">
             AI SEO
           </a>
-          <a href="/industries" className="hover:text-brand transition-all">
+          <a
+            href="/capabilities/aeo"
+            className="hover:text-brand transition-all"
+          >
+            AEO
+          </a>
+          <a
+            href="/capabilities/sro"
+            className="hover:text-brand transition-all"
+          >
             SRO
           </a>
+          <a href="/about" className="hover:text-brand transition-all">
+            About
+          </a>
           <a href="/lab" className="hover:text-brand transition-all">
-            Resources
+            Lab
           </a>
           <a
             href="#contact"
@@ -84,18 +96,32 @@ export default function Header() {
               AI SEO
             </a>
             <a
-              href="/industries"
+              href="/capabilities/aeo"
+              onClick={() => setIsOpen(false)}
+              className="hover:text-brand transition-colors"
+            >
+              AEO
+            </a>
+            <a
+              href="/capabilities/sro"
               onClick={() => setIsOpen(false)}
               className="hover:text-brand transition-colors"
             >
               SRO
             </a>
             <a
+              href="/about"
+              onClick={() => setIsOpen(false)}
+              className="hover:text-brand transition-colors"
+            >
+              About
+            </a>
+            <a
               href="/lab"
               onClick={() => setIsOpen(false)}
               className="hover:text-brand transition-colors"
             >
-              Resources
+              Lab
             </a>
           </div>
 
