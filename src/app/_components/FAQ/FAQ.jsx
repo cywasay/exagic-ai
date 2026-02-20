@@ -7,7 +7,17 @@ export default function FAQ() {
 
   const faqs = [
     {
-      question: "What separates EXAGIC AI from traditional SEO companies?",
+      question: "What sort of monthly budget do I need for AI SEO?",
+      answer:
+        "Engagements vary by scope. We offer retainers, audits, and project-based packages. Contact us for a quote tailored to your industrial niche and business objectives.",
+    },
+    {
+      question: "How many queries can Exagic AI target?",
+      answer:
+        "All of them. Our campaigns cover past, current, and future AI search queries with no technical limit. Target selection is a strategic decision made collaboratively based on your goals.",
+    },
+    {
+      question: "What separates Exagic AI from traditional SEO companies?",
       answer:
         "We lead the industry through the application of mechanistic interpretability. We don't just optimize for clicks; we steer how AI models retrieve and cite your specific brand data.",
     },

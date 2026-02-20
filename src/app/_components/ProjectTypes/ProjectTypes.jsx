@@ -2,33 +2,45 @@ export default function ProjectTypes() {
   const projects = [
     {
       title: "AI SEO Retainer",
-      description: "Ongoing model steering and visibility maintenance.",
+      description: "Ongoing model steering and visibility maintenance",
     },
     {
       title: "Technical Entity Audit",
-      description: "Full-day audit to ensure a solid foundation for AI growth.",
+      description: "Full-day audit to ensure a solid AI foundation",
     },
     {
       title: "Technical Data Structuring",
-      description:
-        "Converting PDF catalogs and specs into AI-readable JSON-LD.",
+      description: "Converting specs and catalogs into AI-readable JSON-LD",
     },
     {
       title: "Market Research",
-      description:
-        "Analyzing how LLMs categorize your brand vs. competitors in the SF corridor.",
+      description: "Analyzing how LLMs categorize your brand vs. competitors",
     },
     {
       title: "Rank & Citation Recovery",
       description:
-        "Risk assessment and manual data clean-up to fix AI hallucinations or drops.",
+        "Risk assessment and manual data clean-up to fix AI hallucinations",
+    },
+    {
+      title: "Content Strategy",
+      description: "Surfacing content gaps and optimizing for AI extraction",
+    },
+    {
+      title: "AI Visibility Tracking",
+      description:
+        "Monthly tracking of how ChatGPT, Gemini, and Perplexity perceive your brand",
+    },
+    {
+      title: "Team Training",
+      description:
+        "Workshops for in-house teams on AI SEO and AEO fundamentals",
     },
   ];
 
   const offerSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "EXAGIC AI Campaign Types",
+    name: "Exagic AI Campaign Types",
     itemListElement: projects.map((project, index) => ({
       "@type": "ListItem",
       position: index + 1,
@@ -37,7 +49,7 @@ export default function ProjectTypes() {
         name: project.title,
         description: project.description,
         provider: {
-          "@id": "https://www.exagic.ai/#organization",
+          "@id": "https://exagic-ai.vercel.app/#organization",
         },
       },
     })),

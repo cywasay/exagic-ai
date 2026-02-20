@@ -1,7 +1,10 @@
+import Link from "next/link";
+import ContactCTA from "../../_components/ContactCTA/ContactCTA";
+
 export const metadata = {
-  title: "Answer Engine Optimization (AEO)",
+  title: "Answer Engine Optimization (AEO) for Industrial Brands | Exagic AI",
   description:
-    "Answer Engine Optimization services for industrial brands. Exagic AI ensures your products and services are the default recommendation in ChatGPT, Gemini, and Perplexity.",
+    "Answer Engine Optimization services for industrial brands. Exagic AI ensures your products and services are the default recommendation in ChatGPT, Gemini, and Perplexity when industrial buyers search.",
   alternates: {
     canonical: "https://exagic-ai.vercel.app/capabilities/aeo",
   },
@@ -11,6 +14,7 @@ export default function AEOPage() {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
+    name: "Answer Engine Optimization (AEO)",
     serviceType: "AEO",
     provider: {
       "@type": "Organization",
@@ -19,7 +23,7 @@ export default function AEOPage() {
     },
     areaServed: "San Francisco Bay Area",
     description:
-      "Answer Engine Optimization services for industrial brands. Exagic AI ensures your products and services are the default recommendation in ChatGPT, Gemini, and Perplexity.",
+      "Answer Engine Optimization services for SF Bay Area industrial manufacturers, hardware suppliers, and B2B companies — ensuring brand citation in ChatGPT, Gemini, and Perplexity.",
   };
 
   const breadcrumbJsonLd = {
@@ -30,29 +34,79 @@ export default function AEOPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://exagic-ai.vercel.app",
+        item: "https://exagic-ai.vercel.app/",
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: "AI Capabilities",
+        name: "AI SEO",
         item: "https://exagic-ai.vercel.app/capabilities",
       },
       {
         "@type": "ListItem",
         position: 3,
-        name: "Answer Engine Optimization (AEO)",
+        name: "Answer Engine Optimization",
         item: "https://exagic-ai.vercel.app/capabilities/aeo",
       },
     ],
   };
 
-  const features = [
-    "AI Chat Citation Audits",
-    "Prompt-Response Mapping",
-    "Entity Reinforcement Strategies",
-    "Answer Engine Monitoring",
+  const faqItems = [
+    {
+      question: "What is Answer Engine Optimization (AEO)?",
+      answer:
+        "AEO is the practice of structuring your brand's content and data so that AI platforms — including ChatGPT, Google Gemini, and Perplexity — can extract, trust, and cite it as a direct answer to buyer queries. It focuses on citation in AI-generated answers rather than ranking in traditional search results.",
+    },
+    {
+      question: "How is AEO different from traditional SEO?",
+      answer:
+        "Traditional SEO optimizes for ranking position in a list of search results. AEO optimizes for citation inside AI-generated answers, where there may be no list of links at all. Both share the same technical foundation — crawlable content, structured data, authoritative signals — but AEO adds a layer of AI-specific content structuring and entity optimization on top.",
+    },
+    {
+      question: "Why do industrial manufacturers need AEO specifically?",
+      answer:
+        "Industrial procurement has shifted. Enterprise buyers increasingly query AI tools — ChatGPT, Gemini, Perplexity — before they use traditional search engines to identify and shortlist suppliers. Industrial brands whose content is not structured for AI citation are absent from AI-generated procurement answers, regardless of their actual capabilities or traditional search performance.",
+    },
+    {
+      question:
+        "How long does AEO take to produce results for industrial brands?",
+      answer:
+        "Initial improvements in AI citation frequency can appear within 4–8 weeks of content and schema implementation. Sustained citation growth across a competitive query set typically develops over 3–6 months. The timeline depends on the starting state of your content structure, domain authority, and competitive citation landscape.",
+    },
+    {
+      question: "Which AI platforms does Exagic AI optimize for?",
+      answer:
+        "We optimize for Google Gemini and AI Overviews, ChatGPT and GPT-based models, and Perplexity AI — the three platforms most commonly used by industrial buyers and procurement teams for supplier discovery and product research.",
+    },
+    {
+      question: "How does Exagic AI measure AEO success?",
+      answer:
+        "We track citation frequency across defined query sets, brand mention accuracy in AI-generated answers, entity association strength over time, and competitive citation share — measured monthly across all major AI platforms. These AI-native metrics replace traditional rank tracking as the primary performance indicators.",
+    },
+    {
+      question: "Does AEO require rebuilding our entire website?",
+      answer:
+        "No. AEO optimizations are applied at the content and schema level — restructuring existing pages, improving opening paragraphs, adding structured data, and expanding question coverage. A complete website rebuild is rarely necessary. We begin with your highest-priority pages and expand from there based on citation tracking results.",
+    },
+    {
+      question: "What is the difference between AEO and SRO?",
+      answer:
+        "AEO focuses on getting your content into the set of sources AI systems retrieve when answering relevant queries. SRO (Selection Rate Optimization) focuses on ensuring your content is selected from that retrieved set as the primary citation. AEO gets you retrieved. SRO gets you chosen. Both are part of Exagic AI's full-service offering.",
+    },
   ];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
 
   return (
     <>
@@ -64,160 +118,519 @@ export default function AEOPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
 
-      <section
-        id="aeo-hero"
-        aria-labelledby="aeo-heading"
-        className="rag-section bg-white"
-      >
-        <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
-          <nav aria-label="Breadcrumb" className="mb-8">
-            <ol className="flex items-center gap-2 text-sm text-zinc-400">
-              <li>
-                <a href="/" className="hover:text-brand transition-colors">
-                  Home
-                </a>
-              </li>
-              <li aria-hidden="true">/</li>
-              <li>
-                <a
-                  href="/capabilities"
-                  className="hover:text-brand transition-colors"
-                >
-                  Capabilities
-                </a>
-              </li>
-              <li aria-hidden="true">/</li>
-              <li className="text-zinc-900 font-medium">AEO</li>
-            </ol>
-          </nav>
+      {/* SECTION 1 — HERO */}
+      <section className="bg-white pt-24 pb-16 md:pt-32 md:pb-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-12">
           <div className="max-w-4xl">
-            <h1
-              id="aeo-heading"
-              className="text-4xl font-semibold text-zinc-900 md:text-6xl tracking-tight"
-            >
-              Answer Engine Optimization for Industrial Brands
+            <h1 className="text-5xl md:text-7xl font-semibold text-zinc-900 tracking-tight">
+              Answer Engine Optimization (AEO)
             </h1>
-            <p className="mt-8 text-xl text-zinc-500 leading-relaxed">
-              Exagic AI is a San Francisco AI SEO agency specializing in brand
-              visibility optimization for industrial manufacturers, global
-              suppliers, and hardware companies in the SF Bay Area corridor.
-              Our AEO strategies ensure your brand is cited as a trusted source
-              by AI models like ChatGPT, Gemini, and Perplexity.
+            <p className="mt-8 text-2xl font-bold text-zinc-900 leading-tight">
+              AEO is the practice of optimizing your brand's visibility for AI
+              chat assistants, AI agents, and answer engines — ensuring your
+              industrial products and services are the default recommendation
+              when buyers search.
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white pb-24 md:pb-32">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="prose prose-zinc prose-lg max-w-4xl mx-auto">
-            <h2 className="text-3xl font-semibold text-zinc-900">What is Answer Engine Optimization (AEO)?</h2>
-            <p className="text-zinc-600 leading-relaxed">
-              Answer Engine Optimization (AEO) is the next evolution of search visibility. Unlike traditional SEO, which focuses on earning a high ranking in a list of links, AEO focuses on providing the direct answer that an AI model retrieves when a user asks a question. In the B2B and industrial space, this means being the supplier that ChatGPT or Gemini names when an engineer asks for a specific component recommendation or a technical comparison.
+            <p className="mt-6 text-xl text-zinc-600 leading-relaxed">
+              When a procurement manager queries ChatGPT, Perplexity, or Google
+              Gemini for supplier recommendations, component specifications, or
+              service comparisons, AEO determines whether your brand appears in
+              the answer — or your competitor's does. Exagic AI specializes in
+              AEO for industrial manufacturers and suppliers across the SF Bay
+              Area corridor.
             </p>
-            <p className="text-zinc-600 leading-relaxed">
-              AEO is about more than just content; it's about <strong>Extractability</strong> and <strong>Verifiability</strong>. AI models are probabilistic engines that look for high-confidence signals. We optimize your brand's digital presence so that these models identify your business as the most authoritative and relevant response to a technical query.
-            </p>
-            <p className="text-zinc-600 leading-relaxed">
-              By focusing on AEO, we ensure that your brand doesn't just appear in the training data, but is actively surfaced during the <strong>retrieval phase</strong> of an AI's operation. This is critical as more users move from browsing search results to receiving synthesized answers from AI agents.
-            </p>
-
-            <h2 className="text-3xl font-semibold text-zinc-900 mt-16">Why AEO matters for SF Bay Area manufacturers</h2>
-            <p className="text-zinc-600 leading-relaxed">
-              The SF Bay Area is home to the most advanced hardware and manufacturing companies in the world. From Fremont's automotive suppliers to the chemical manufacturers in the East Bay, the competition for visibility is fierce. Industrial buyers in these sectors are increasingly relying on AI tools to perform initial market research and vendor shortlisting.
-            </p>
-            <p className="text-zinc-600 leading-relaxed">
-              If your brand isn't optimized for Answer Engines, you are effectively opting out of the first 80% of the modern buyer's journey. AEO ensures that when an AI tool synthesizes an answer about "top-rated manufacturers of aerospace-grade alloys in California," your brand's specifications and reliability signals are front and center. This regional visibility is essential for maintaining a competitive edge in the SF industrial corridor.
-            </p>
-
-            <h2 className="text-3xl font-semibold text-zinc-900 mt-16">How Exagic AI approaches AEO</h2>
-            <p className="text-zinc-600 leading-relaxed">
-              Our approach to AEO is technical and data-driven. We don't just write "good content"; we engineer data signals that AI models are trained to prioritize.
-            </p>
-            <ul className="text-zinc-600 space-y-4 list-disc pl-6">
-              <li><strong>Direct-Answer Content Engineering:</strong> We restructure your technical documentation into formats that AI models can extract instantly, improving the likelihood of being featured in a citation.</li>
-              <li><strong>Entity Reinforcement:</strong> We use advanced schema and semantic linking to tie your brand to high-authority industry entities, increasing your "trust score" within the model's knowledge graph.</li>
-              <li><strong>Hallucination Correction & Steering:</strong> If AI models are currently hallucinating incorrect or outdated information about your products, we implement data corrections to steer them back to accuracy.</li>
-            </ul>
-
-            <h2 className="text-3xl font-semibold text-zinc-900 mt-16">What results can you expect?</h2>
-            <p className="text-zinc-600 leading-relaxed">
-              With a focused AEO strategy, industrial brands see a significant increase in <strong>Citation Dominance</strong>. This means when an AI agent is asked a question related to your niche, your brand is the one it cites as the primary source. This leads to higher trust, better-qualified B2B leads, and a stronger brand presence in the probabilistic world of AI search. For companies in Fremont, San Leandro, and Silicon Valley, AEO is the key to remaining relevant as search behavior shifts toward answer-first retrieval.
-            </p>
-
-            <h2 className="text-3xl font-semibold text-zinc-900 mt-16 pb-8 border-b border-zinc-100">Frequently Asked Questions about AEO</h2>
-            <div className="space-y-12 mt-12">
-              <div>
-                <h3 className="text-xl font-bold text-zinc-900">What is the difference between AEO and SRO?</h3>
-                <p className="text-zinc-600 mt-4">AEO focus on being the provider of the answer, while <a href="/capabilities/sro" className="text-brand hover:underline">Selection Rate Optimization (SRO)</a> focuses on increasing the statistical probability of being selected as the primary citation among multiple sources.</p>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-zinc-900">Does AEO replace traditional SEO?</h3>
-                <p className="text-zinc-600 mt-4">No. AEO complements traditional SEO by capturing the growing segment of users who interact with AI chat assistants and agents instead of search engines.</p>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-zinc-900">How do you measure AEO success?</h3>
-                <p className="text-zinc-600 mt-4">We measure success through citation share, brand prominence in model responses, and the accuracy of AI-generated summaries of your products.</p>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-zinc-900">How long does AEO take?</h3>
-                <p className="text-zinc-600 mt-4">Initial visibility improvements can often be seen within 60–90 days as AI crawlers re-index your structured data signals.</p>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-zinc-900">Is AEO suitable for technical B2B products?</h3>
-                <p className="text-zinc-600 mt-4">Yes, it is highly effective for technical specifications and industrial supply chains where buyers need precise, trusted information.</p>
-              </div>
+            <div className="mt-10">
+              <Link
+                href="#contact"
+                className="inline-flex items-center justify-center rounded-md bg-brand px-8 py-4 text-lg font-bold text-white shadow-xl transition-all hover:bg-brand-dark active:scale-95"
+              >
+                Schedule a Free Consultation
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-zinc-50 border-t border-zinc-100">
-        <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-2xl font-semibold text-zinc-900">Key Features</h2>
-              <ul className="mt-8 space-y-4" role="list">
-                {features.map((f) => (
-                  <li
-                    key={f}
-                    className="flex items-center gap-3 text-sm text-zinc-600"
-                  >
-                    <div
-                      className="h-1.5 w-1.5 rounded-full bg-brand shrink-0"
-                      aria-hidden="true"
-                    ></div>
-                    {f}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="flex flex-col justify-center">
-              <p className="text-lg text-zinc-600">
-                Ready to dominate the Answer Engines? Let's discuss your
-                technical audit today.
+      {/* SECTION 2 — WHAT IS AEO? */}
+      <section className="bg-zinc-50 py-24 border-y border-zinc-100">
+        <div className="mx-auto max-w-7xl px-6 lg:px-12">
+          <div className="max-w-4xl">
+            <h2 className="text-4xl font-semibold text-zinc-900">
+              What Is Answer Engine Optimization?
+            </h2>
+            <p className="mt-6 text-xl font-medium text-zinc-900 leading-relaxed">
+              Answer Engine Optimization (AEO) is the practice of structuring
+              your brand's content and data so that AI platforms — ChatGPT,
+              Google Gemini, Perplexity, and AI procurement agents — can easily
+              extract, trust, and cite it as a direct answer to buyer queries.
+              The goal is not a search ranking. The goal is being the answer.
+            </p>
+            <div className="mt-10 space-y-8 text-lg text-zinc-600 leading-relaxed">
+              <p>
+                Traditional search optimization targeted rankings in a list of
+                blue links. AEO targets something fundamentally different — the
+                single synthesized response AI systems generate when a user asks
+                a question directly. When an industrial buyer asks an AI
+                assistant "who are the leading precision machining suppliers in
+                Fremont?" or "what should I look for in a hydraulics components
+                vendor?", the AI does not return a list of ten links. It
+                generates one answer, drawing from a small set of retrieved and
+                selected sources. AEO determines whether your brand is in that
+                source set.
               </p>
-              <div className="mt-8">
-                <a
-                  href="/#contact"
-                  className="rounded-md bg-brand px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-brand-dark transition-colors"
-                >
-                  Get Started
-                </a>
-              </div>
+              <p>
+                AEO is not a replacement for traditional SEO — it is an
+                extension of it. A technically sound website with strong
+                fundamentals is still the foundation. But once those
+                fundamentals are in place, AEO shifts the focus from ranking
+                pages to packaging information in a way AI systems can trust,
+                extract, and reuse. The content structure, entity precision,
+                schema markup, and external authority signals that drive AEO
+                performance are distinct from the ranking signals traditional
+                SEO prioritizes.
+              </p>
+              <p>
+                For industrial manufacturers and SF Bay Area suppliers, the
+                urgency of AEO is driven by a specific behavioral shift.
+                Procurement teams — particularly in enterprise and mid-market
+                companies — are increasingly using AI tools as their first point
+                of contact in the supplier discovery process. They query AI
+                before they query Google. If your brand is not optimized for AI
+                citation at the point of that initial query, you are absent from
+                the consideration set before the buyer even begins a traditional
+                search.
+              </p>
             </div>
-          </div>
-          <div className="mt-16 border-t border-zinc-200 pt-8">
-            <a
-              href="/capabilities"
-              className="inline-flex items-center gap-2 text-sm font-bold text-brand hover:text-brand-dark transition-colors"
-            >
-              ← Back to all Capabilities
-            </a>
           </div>
         </div>
       </section>
+
+      {/* SECTION 3 — HOW AEO DIFFERS FROM SEO AND SRO */}
+      <section className="bg-white py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-12">
+          <div className="max-w-4xl">
+            <h2 className="text-4xl font-semibold text-zinc-900">
+              How Is AEO Different from SEO and SRO?
+            </h2>
+            <p className="mt-6 text-xl font-medium text-zinc-900 leading-relaxed">
+              SEO optimizes for ranking position in search results. AEO
+              optimizes for citation in AI-generated answers. SRO optimizes the
+              selection decision once your content is retrieved. All three are
+              related but operate at different stages of AI search behavior —
+              and all three are part of Exagic AI's full-service approach.
+            </p>
+            <div className="mt-12 overflow-hidden rounded-2xl border border-zinc-200 shadow-sm bg-white">
+              <table className="w-full text-left border-collapse">
+                <thead className="bg-zinc-50">
+                  <tr>
+                    <th className="px-6 py-4 font-semibold text-zinc-900 border-b border-zinc-200">
+                      Feature
+                    </th>
+                    <th className="px-6 py-4 font-semibold text-zinc-900 border-b border-zinc-200">
+                      SEO
+                    </th>
+                    <th className="px-6 py-4 font-semibold text-zinc-900 border-b border-zinc-200">
+                      AEO
+                    </th>
+                    <th className="px-6 py-4 font-semibold text-zinc-900 border-b border-zinc-200">
+                      SRO
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-zinc-200">
+                  <tr>
+                    <td className="px-6 py-4 font-bold text-zinc-900 bg-zinc-50/50">
+                      Goal
+                    </td>
+                    <td className="px-6 py-4 text-zinc-600">
+                      Rank in search results
+                    </td>
+                    <td className="px-6 py-4 text-zinc-600">
+                      Be cited in AI answers
+                    </td>
+                    <td className="px-6 py-4 text-zinc-600">
+                      Be selected over other retrieved sources
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 font-bold text-zinc-900 bg-zinc-50/50">
+                      Metric
+                    </td>
+                    <td className="px-6 py-4 text-zinc-600">
+                      Rankings, clicks, impressions
+                    </td>
+                    <td className="px-6 py-4 text-zinc-600">
+                      Citation frequency, brand mentions
+                    </td>
+                    <td className="px-6 py-4 text-zinc-600">
+                      Selection rate, citation confidence
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 font-bold text-zinc-900 bg-zinc-50/50">
+                      Primary lever
+                    </td>
+                    <td className="px-6 py-4 text-zinc-600">
+                      Keywords, backlinks, technical health
+                    </td>
+                    <td className="px-6 py-4 text-zinc-600">
+                      Content structure, entity precision, schema
+                    </td>
+                    <td className="px-6 py-4 text-zinc-600">
+                      Snippet quality, token-level optimization
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 font-bold text-zinc-900 bg-zinc-50/50">
+                      Where it applies
+                    </td>
+                    <td className="px-6 py-4 text-zinc-600">
+                      Google search results
+                    </td>
+                    <td className="px-6 py-4 text-zinc-600">
+                      AI-generated answer synthesis
+                    </td>
+                    <td className="px-6 py-4 text-zinc-600">
+                      AI retrieval and selection layer
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="px-6 py-4 font-bold text-zinc-900 bg-zinc-50/50">
+                      Timeline
+                    </td>
+                    <td className="px-6 py-4 text-zinc-600">Months to years</td>
+                    <td className="px-6 py-4 text-zinc-600">Weeks to months</td>
+                    <td className="px-6 py-4 text-zinc-600">
+                      30–90 days for measurable improvement
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-10 text-lg text-zinc-600 leading-relaxed">
+              In practice, the three disciplines work together. Strong SEO
+              fundamentals make content crawlable and authoritative. AEO makes
+              that content structured and entity-precise enough for AI to
+              extract and trust. SRO then ensures that once your content is
+              retrieved, it is the source the model selects. Exagic AI applies
+              all three layers to industrial brands operating in the SF Bay Area
+              corridor.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 4 — THE EXAGIC AI AEO PROCESS */}
+      <section className="bg-zinc-50 py-24 border-y border-zinc-100">
+        <div className="mx-auto max-w-7xl px-6 lg:px-12">
+          <div className="max-w-4xl">
+            <h2 className="text-4xl font-semibold text-zinc-900">
+              How Does Exagic AI Implement AEO for Industrial Brands?
+            </h2>
+            <p className="mt-6 text-xl font-medium text-zinc-900 leading-relaxed">
+              Exagic AI's AEO process begins with a content and entity audit,
+              progresses through structured optimization of all key pages, and
+              concludes with ongoing citation tracking across major AI
+              platforms. Every step is tailored to the specific products,
+              technical language, and procurement context of industrial
+              manufacturers.
+            </p>
+
+            <div className="mt-16 space-y-12">
+              <div>
+                <h3 className="text-2xl font-bold text-zinc-900">
+                  Step 1 — AI Visibility Audit
+                </h3>
+                <p className="mt-4 text-lg text-zinc-600 leading-relaxed">
+                  Before any optimization begins, we establish a baseline. We
+                  query ChatGPT, Gemini, and Perplexity with questions relevant
+                  to your industrial niche — the queries your target buyers are
+                  most likely to ask. We document which brands are cited, how
+                  your brand is described (if it appears at all), what sources
+                  are being retrieved, and where the most significant visibility
+                  gaps exist. This audit produces a prioritized action plan
+                  grounded in real AI behavior, not assumptions.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-zinc-900">
+                  Step 2 — Content Structure Optimization
+                </h3>
+                <p className="mt-4 text-lg text-zinc-600 leading-relaxed">
+                  The most common reason industrial brands are not cited in AI
+                  answers is content structure. AI systems look for direct,
+                  standalone answers to specific questions. Pages that open with
+                  marketing copy, lack clear question-style headings, or bury
+                  key information in long undifferentiated paragraphs are
+                  consistently skipped in favor of more extractable sources. We
+                  restructure your highest-priority pages — service pages,
+                  product pages, category pages — to open with complete,
+                  entity-rich answers that AI systems can extract immediately.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-zinc-900">
+                  Step 3 — Entity and Schema Implementation
+                </h3>
+                <p className="mt-4 text-lg text-zinc-600 leading-relaxed">
+                  Language models understand the world through entities —
+                  specific, named concepts with defined relationships. We ensure
+                  every key page on your site clearly defines your brand entity,
+                  product entities, service entities, and geographic entities
+                  (SF Bay Area, Fremont, East Bay, Silicon Valley supply chain)
+                  in both visible content and structured data. FAQPage schema,
+                  Service schema, Organization schema, and BreadcrumbList schema
+                  are implemented and validated across all priority pages.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-zinc-900">
+                  Step 4 — Question Coverage Expansion
+                </h3>
+                <p className="mt-4 text-lg text-zinc-600 leading-relaxed">
+                  AI answer engines are built to respond to questions. If your
+                  content does not answer the questions industrial buyers are
+                  actually asking, it will not be cited when those questions are
+                  posed. We identify the full landscape of questions relevant to
+                  your niche — using query fanout techniques to map not just
+                  obvious queries but the complete range of related and
+                  follow-up questions procurement teams ask — and ensure your
+                  content provides direct, authoritative answers to each.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-zinc-900">
+                  Step 5 — Citation Tracking and Iteration
+                </h3>
+                <p className="mt-4 text-lg text-zinc-600 leading-relaxed">
+                  AEO is not a one-time implementation. AI platforms update
+                  their retrieval behavior, retrain their models, and shift
+                  their source preferences over time. We track citation
+                  frequency, brand mention accuracy, and competitive citation
+                  share on a monthly basis across ChatGPT, Gemini, and
+                  Perplexity. Findings from each tracking cycle feed directly
+                  into the next optimization iteration — ensuring your AEO
+                  performance improves continuously rather than plateauing after
+                  initial implementation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 5 — WHY INDUSTRIAL BRANDS ARE UNDERREPRESENTED IN AI ANSWERS */}
+      <section className="bg-white py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-12">
+          <div className="max-w-4xl">
+            <h2 className="text-4xl font-semibold text-zinc-900">
+              Why Are SF Bay Area Industrial Brands Underrepresented in AI
+              Search?
+            </h2>
+            <p className="mt-6 text-xl font-medium text-zinc-900 leading-relaxed">
+              Most industrial manufacturers and suppliers have websites built
+              for human readers and traditional search engines — not for AI
+              extraction. The content structure, entity language, and schema
+              signals that AI systems require are almost entirely absent from
+              typical industrial web content, making these brands invisible in
+              AI-generated procurement answers despite being genuinely qualified
+              suppliers.
+            </p>
+            <div className="mt-10 space-y-8 text-lg text-zinc-600 leading-relaxed">
+              <p>
+                Industrial websites are typically designed around product
+                catalogs, specification sheets, and company history pages. This
+                content is valuable to human visitors but structurally
+                inaccessible to AI systems. Dense specification tables without
+                contextual explanation, product names without entity context,
+                and company descriptions written in marketing language rather
+                than precise technical terms are all patterns that cause AI
+                retrieval systems to skip over otherwise qualified suppliers.
+              </p>
+              <p>
+                The SF Bay Area industrial corridor is particularly underserved
+                in this regard. Thousands of manufacturers and suppliers in
+                Fremont, San Leandro, San Jose, and the broader East Bay operate
+                with web presences built five to ten years ago — before
+                AI-generated search became a primary procurement discovery
+                channel. Their competitors in the same niche face the same
+                structural problems, which means the first industrial brands in
+                this corridor to implement AEO properly will capture a
+                disproportionate share of AI procurement visibility.
+              </p>
+              <p>
+                Exagic AI was built specifically to serve this gap. We
+                understand the technical language of industrial manufacturing —
+                the component categories, tolerance specifications,
+                certification standards, and supply chain terminology that
+                procurement teams use when querying AI systems. Our AEO process
+                converts that existing technical knowledge into AI-citable
+                content structures, without changing the substance of what your
+                brand actually offers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 6 — AEO FOR SPECIFIC INDUSTRIAL CONTEXTS */}
+      <section className="bg-zinc-50 py-24 border-y border-zinc-100">
+        <div className="mx-auto max-w-7xl px-6 lg:px-12">
+          <div className="max-w-4xl">
+            <h2 className="text-4xl font-semibold text-zinc-900">
+              How Does AEO Apply to Different Industrial Sectors?
+            </h2>
+            <p className="mt-6 text-xl font-medium text-zinc-900 leading-relaxed">
+              AEO strategy varies by industrial sector because the questions
+              buyers ask, the entities AI systems track, and the content
+              structures that perform best all differ across manufacturing,
+              logistics, hardware supply, and technical services. Exagic AI
+              tailors AEO implementation to the specific procurement language
+              and buyer behavior of each client's industrial niche.
+            </p>
+
+            <div className="mt-16 space-y-12">
+              <div>
+                <h3 className="text-2xl font-bold text-zinc-900">
+                  Precision Manufacturing and CNC Machining
+                </h3>
+                <p className="mt-4 text-lg text-zinc-600 leading-relaxed">
+                  Buyers sourcing precision manufactured components query AI
+                  with highly specific technical criteria — material
+                  specifications, tolerance ranges, certification requirements
+                  (AS9100, ISO 9001, ITAR), and lead time parameters. AEO for
+                  precision manufacturers focuses on making these technical
+                  specifications entity-precise and directly extractable —
+                  ensuring that when a buyer queries for a qualified supplier
+                  meeting specific criteria, your capabilities appear as the
+                  cited answer.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-zinc-900">
+                  Electronics and Hardware Supply Chain
+                </h3>
+                <p className="mt-4 text-lg text-zinc-600 leading-relaxed">
+                  Silicon Valley hardware companies and electronics suppliers
+                  face procurement queries that combine technical specifications
+                  with supply chain reliability signals. Buyers ask AI about
+                  component availability, lead times, minimum order quantities,
+                  and supplier qualification. AEO for electronics suppliers
+                  ensures that your stock profile, lead time data, and
+                  qualification certifications are structured for AI extraction
+                  — not buried in PDFs or static catalog pages.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-zinc-900">
+                  Industrial Logistics and Freight
+                </h3>
+                <p className="mt-4 text-lg text-zinc-600 leading-relaxed">
+                  Logistics providers in the SF Bay Area corridor — serving the
+                  Port of Oakland, Silicon Valley, and the East Bay
+                  manufacturing belt — face procurement queries focused on
+                  service areas, load types, carrier certifications, and transit
+                  times. AEO for logistics focuses on geographic entity
+                  precision (specific corridors, hubs, and service areas) and
+                  service-specific structured data that AI systems can match to
+                  buyer queries about regional freight logistics.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-zinc-900">
+                  B2B Technical Services
+                </h3>
+                <p className="mt-4 text-lg text-zinc-600 leading-relaxed">
+                  Engineering firms, testing labs, and technical consultancies
+                  serving industrial clients prioritize credentials and domain
+                  expertise. Procurement queries focus on certifications,
+                  methodologies, and specialist credentials. AEO for technical
+                  services focuses on expert entity signals — ensuring AI models
+                  reliably associate your firm with high-authority industrial
+                  standards and specific regional service capabilities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 7 — FAQ SECTION */}
+      <section className="bg-white py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-12">
+          <div className="max-w-4xl">
+            <h2 className="text-4xl font-semibold text-zinc-900">
+              Answer Engine Optimization (AEO) FAQs
+            </h2>
+            <div className="mt-12 space-y-12">
+              {faqItems.map((item, idx) => (
+                <div key={idx}>
+                  <h3 className="text-2xl font-bold text-zinc-900">
+                    {item.question}
+                  </h3>
+                  <p className="mt-4 text-lg text-zinc-600 leading-relaxed">
+                    {item.answer}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 8 — CLOSING CTA */}
+      <section className="bg-zinc-50 py-24 border-t border-zinc-100">
+        <div className="mx-auto max-w-7xl px-6 lg:px-12 text-center">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-4xl font-semibold text-zinc-900">
+              Start Building AI Citation Visibility for Your Industrial Brand
+            </h2>
+            <p className="mt-8 text-xl text-zinc-600 leading-relaxed">
+              Exagic AI works with SF Bay Area industrial manufacturers,
+              hardware suppliers, logistics providers, and B2B technical
+              services companies to build the content structure, entity
+              authority, and schema infrastructure that AI procurement tools
+              need to cite your brand consistently and accurately.
+            </p>
+            <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6">
+              <Link
+                href="#contact"
+                className="w-full sm:w-auto inline-flex items-center justify-center rounded-md bg-brand px-10 py-5 text-xl font-bold text-white shadow-xl transition-all hover:bg-brand-dark active:scale-95"
+              >
+                Schedule a Free Consultation
+              </Link>
+              <div className="flex flex-col items-start gap-4">
+                <Link
+                  href="/capabilities/sro"
+                  className="text-lg font-bold text-zinc-900 hover:text-brand transition-colors"
+                >
+                  Learn About SRO Services →
+                </Link>
+                <Link
+                  href="/capabilities"
+                  className="text-lg font-bold text-zinc-900 hover:text-brand transition-colors"
+                >
+                  See All AI SEO Capabilities →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <ContactCTA />
     </>
   );
 }

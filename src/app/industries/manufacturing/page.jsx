@@ -3,7 +3,7 @@ export const metadata = {
   description:
     "AI SEO optimization for industrial manufacturers in the East Bay and San Leandro. We ensure your product catalogs become structured entities in the Knowledge Graph.",
   alternates: {
-    canonical: "https://www.exagic.ai/industries/manufacturing",
+    canonical: "https://exagic-ai.vercel.app/industries/manufacturing",
   },
 };
 
@@ -16,25 +16,25 @@ export default function ManufacturingPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://www.exagic.ai",
+        item: "https://exagic-ai.vercel.app/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Industries",
-        item: "https://www.exagic.ai/industries",
+        item: "https://exagic-ai.vercel.app/industries",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Industrial Manufacturing",
-        item: "https://www.exagic.ai/industries/manufacturing",
+        item: "https://exagic-ai.vercel.app/industries/manufacturing",
       },
     ],
   };
 
   const entities = [
-    "GATCO Inc.",
+    "Aerospace Components",
     "Precision Tooling",
     "Industrial Hardware",
     "CNC Components",

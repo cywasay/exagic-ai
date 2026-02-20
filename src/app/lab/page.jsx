@@ -1,5 +1,7 @@
+import Link from "next/link";
+
 export const metadata = {
-  title: "Lab / Resources",
+  title: "AI SEO Research & Insights for Industrial Brands | Exagic AI Lab",
   description:
     "Insights, research, and technical guides on AI SEO, AEO, and SRO for industrial manufacturers from the Exagic AI team in San Francisco.",
   alternates: {
@@ -8,41 +10,6 @@ export const metadata = {
 };
 
 export default function LabPage() {
-  const articles = [
-    {
-      title:
-        "How AI Search is Changing How Industrial Buyers Find Suppliers in the SF Bay Area",
-      summary:
-        "Explore the shift from traditional search to AI-driven procurement and what it means for Bay Area manufacturers.",
-      href: "/lab/ai-search-industrial-suppliers-sf-bay-area",
-      tag: "Industry Shift",
-    },
-    {
-      title:
-        "What is Selection Rate Optimization (SRO) and Why Industrial Brands Need It",
-      summary:
-        "Deep dive into SRO and how it helps technical manufacturers dominate AI retrieval citations.",
-      href: "/lab/what-is-sro-selection-rate-optimization",
-      tag: "Technical Guide",
-    },
-    {
-      title:
-        "Why East Bay Manufacturers Are Invisible in AI Search — And How to Fix It",
-      summary:
-        "Analyzing the visibility gap for East Bay suppliers and practical steps to regain AI presence.",
-      href: "/lab/east-bay-manufacturers-invisible-ai-search",
-      tag: "Local Strategy",
-    },
-    {
-      title:
-        "AEO vs SEO: What the Difference Means for SF Bay Area Industrial Companies",
-      summary:
-        "Understanding the tactical differences between Answer Engine Optimization and traditional SEO.",
-      href: "/lab/aeo-vs-seo-industrial-brands",
-      tag: "Strategy",
-    },
-  ];
-
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -51,7 +18,7 @@ export default function LabPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://exagic-ai.vercel.app",
+        item: "https://exagic-ai.vercel.app/",
       },
       {
         "@type": "ListItem",
@@ -62,72 +29,113 @@ export default function LabPage() {
     ],
   };
 
+  const articles = [
+    {
+      title:
+        "How AI Search Is Changing How Industrial Buyers Find Suppliers in the SF Bay Area",
+      description:
+        "Why procurement teams are querying ChatGPT and Perplexity before Google — and what SF Bay Area suppliers must do to appear in those answers.",
+      href: "/lab/ai-search-industrial-suppliers-sf-bay-area",
+      date: "February 2026",
+    },
+    {
+      title:
+        "What Is Selection Rate Optimization (SRO) and Why Industrial Brands Need It",
+      description:
+        "A practical guide to SRO — the AI-native discipline that determines whether your content gets cited or ignored once AI retrieves it.",
+      href: "/lab/what-is-sro-selection-rate-optimization",
+      date: "February 2026",
+    },
+    {
+      title:
+        "Why East Bay Manufacturers Are Invisible in AI Search — And How to Fix It",
+      description:
+        "Most East Bay manufacturers have qualified capabilities but structurally broken content. Here is exactly what is causing the invisibility and how to fix it.",
+      href: "/lab/east-bay-manufacturers-invisible-ai-search",
+      date: "February 2026",
+    },
+    {
+      title:
+        "AEO vs SEO: What the Difference Means for SF Bay Area Industrial Companies",
+      description:
+        "A clear breakdown of how Answer Engine Optimization differs from traditional SEO — and why industrial brands need both working together.",
+      href: "/lab/aeo-vs-seo-industrial-brands",
+      date: "February 2026",
+    },
+  ];
+
+  const itemListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: articles.map((article, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      url: `https://exagic-ai.vercel.app${article.href}`,
+      name: article.title,
+    })),
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+      />
 
-      <section
-        id="lab-hero"
-        aria-labelledby="lab-heading"
-        className="rag-section bg-white"
-      >
-        <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
-          <nav aria-label="Breadcrumb" className="mb-8">
-            <ol className="flex items-center gap-2 text-sm text-zinc-400">
-              <li>
-                <a href="/" className="hover:text-brand transition-colors">
-                  Home
-                </a>
-              </li>
-              <li aria-hidden="true">/</li>
-              <li className="text-zinc-900 font-medium">Lab</li>
-            </ol>
-          </nav>
+      <section className="bg-white pt-24 pb-16 md:pt-32 md:pb-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-12">
           <div className="max-w-4xl">
-            <h1
-              id="lab-heading"
-              className="text-4xl font-semibold text-zinc-900 md:text-6xl tracking-tight"
-            >
-              Insights & Intelligence
+            <h1 className="text-5xl md:text-7xl font-semibold text-zinc-900 tracking-tight">
+              Exagic AI Lab
             </h1>
-            <p className="mt-8 text-xl text-zinc-500 leading-relaxed">
-              Exagic AI is a San Francisco AI SEO agency specializing in brand
-              visibility optimization for industrial manufacturers, global
-              suppliers, and hardware companies in the SF Bay Area corridor. Our
-              Lab is where we share our research on model steering, entity
-              reinforcement, and the future of AI retrieval.
+            <p className="mt-8 text-2xl font-bold text-zinc-900 leading-tight">
+              Research, technical guides, and strategic insights on AI SEO, AEO,
+              and Selection Rate Optimization for industrial manufacturers and
+              suppliers in the SF Bay Area.
+            </p>
+            <p className="mt-6 text-xl text-zinc-600 leading-relaxed">
+              The Exagic AI Lab is where we publish original thinking on how
+              industrial brands can become visible, cited, and trusted inside
+              AI-generated answers. Every piece is grounded in real AI retrieval
+              behavior — not speculation — and written specifically for
+              manufacturers, logistics providers, hardware companies, and B2B
+              technical services firms operating in the SF Bay Area corridor.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="bg-zinc-50 border-t border-zinc-100 pb-24 md:pb-32">
-        <div className="mx-auto max-w-7xl px-6 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <section className="bg-zinc-50 py-24 border-t border-zinc-100 pb-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {articles.map((article) => (
               <article
                 key={article.href}
-                className="group relative flex flex-col rounded-3xl border border-zinc-200 bg-white p-8 hover:shadow-xl transition-all"
+                className="group relative flex flex-col rounded-3xl border border-zinc-200 bg-white p-10 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="rounded-full bg-brand/10 px-3 py-1 text-xs font-semibold text-brand lowercase">
-                    {article.tag}
-                  </span>
+                <div className="text-sm font-bold text-zinc-400 mb-4">
+                  {article.date}
                 </div>
-                <h2 className="text-2xl font-semibold text-zinc-900 group-hover:text-brand transition-colors">
-                  <a href={article.href}>
-                    <span className="absolute inset-0" />
-                    {article.title}
-                  </a>
+                <h2 className="text-3xl font-bold text-zinc-900 leading-tight group-hover:text-brand transition-colors">
+                  <Link href={article.href}>{article.title}</Link>
                 </h2>
-                <p className="mt-4 text-zinc-500 leading-relaxed flex-grow">
-                  {article.summary}
+                <p className="mt-6 text-lg text-zinc-600 leading-relaxed flex-grow">
+                  {article.description}
                 </p>
-                <div className="mt-8 flex items-center text-sm font-bold text-brand">
-                  Read Article →
+                <div className="mt-10 flex items-center text-lg font-bold text-brand">
+                  <Link
+                    href={article.href}
+                    className="inline-flex items-center gap-2"
+                  >
+                    Read Article{" "}
+                    <span className="transition-transform group-hover:translate-x-1">
+                      →
+                    </span>
+                  </Link>
                 </div>
               </article>
             ))}

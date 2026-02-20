@@ -7,8 +7,8 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   metadataBase: new URL("https://exagic-ai.vercel.app"),
   title: {
-    default: "EXAGIC AI | AI SEO & SRO Agency San Francisco",
-    template: "%s | EXAGIC AI",
+    default: "Exagic AI | AI SEO & SRO Agency San Francisco",
+    template: "%s | Exagic AI",
   },
   description:
     "Exagic AI is a San Francisco AI SEO agency specializing in brand visibility optimization for industrial manufacturers, global suppliers, and hardware companies in the SF Bay Area corridor.",
@@ -24,14 +24,14 @@ export const metadata = {
     "mechanistic interpretability",
     "model steering",
   ],
-  authors: [{ name: "EXAGIC AI", url: "https://exagic-ai.vercel.app" }],
-  creator: "EXAGIC AI",
-  publisher: "EXAGIC AI",
+  authors: [{ name: "Exagic AI", url: "https://exagic-ai.vercel.app" }],
+  creator: "Exagic AI",
+  publisher: "Exagic AI",
   alternates: {
     canonical: "https://exagic-ai.vercel.app",
   },
   openGraph: {
-    title: "EXAGIC AI | AI SEO & SRO Agency San Francisco",
+    title: "Exagic AI | AI SEO & SRO Agency San Francisco",
     description:
       "Exagic AI is a San Francisco AI SEO agency specializing in brand visibility optimization for industrial manufacturers, global suppliers, and hardware companies in the SF Bay Area corridor.",
     url: "https://exagic-ai.vercel.app",
@@ -41,7 +41,7 @@ export const metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "EXAGIC AI – AI SEO & SRO Agency San Francisco",
+        alt: "Exagic AI – AI SEO & SRO Agency San Francisco",
       },
     ],
     locale: "en_US",
@@ -49,7 +49,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EXAGIC AI | AI SEO & SRO Agency San Francisco",
+    title: "Exagic AI | AI SEO & SRO Agency San Francisco",
     description:
       "Exagic AI is a San Francisco AI SEO agency specializing in brand visibility optimization for industrial manufacturers, global suppliers, and hardware companies in the SF Bay Area corridor.",
     images: ["/og-image.png"],
@@ -87,7 +87,7 @@ export default function RootLayout({ children }) {
             <div className="grid grid-cols-1 md:grid-cols-5 gap-12">
               <div className="col-span-1 md:col-span-2">
                 <span className="text-xl font-bold tracking-tighter">
-                  EXAGIC <span className="text-brand">AI</span>
+                  Exagic <span className="text-brand">AI</span>
                 </span>
                 <p className="mt-4 max-w-sm text-zinc-500 text-sm leading-relaxed">
                   Leading the industry through mechanistic interpretability and
@@ -128,14 +128,6 @@ export default function RootLayout({ children }) {
                 <ul className="space-y-2 text-sm text-zinc-500">
                   <li>
                     <a
-                      href="/about"
-                      className="hover:text-brand transition-colors"
-                    >
-                      About
-                    </a>
-                  </li>
-                  <li>
-                    <a
                       href="/lab"
                       className="hover:text-brand transition-colors"
                     >
@@ -144,7 +136,7 @@ export default function RootLayout({ children }) {
                   </li>
                   <li>
                     <a
-                      href="/#industries"
+                      href="/industries"
                       className="hover:text-brand transition-colors"
                     >
                       Industries
@@ -170,7 +162,7 @@ export default function RootLayout({ children }) {
               </div>
             </div>
             <div className="mt-16 pt-8 border-t border-zinc-200 flex flex-col md:flex-row justify-between text-xs text-zinc-400 gap-4">
-              <p>&copy; 2026 EXAGIC AI. All rights reserved.</p>
+              <p>&copy; 2026 Exagic AI. All rights reserved.</p>
               <div className="flex gap-6">
                 <a href="/privacy" className="hover:text-zinc-600">
                   Privacy Policy

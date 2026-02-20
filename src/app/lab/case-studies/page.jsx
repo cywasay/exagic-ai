@@ -3,7 +3,7 @@ export const metadata = {
   description:
     "Demonstrating measurable impact across the SF industrial corridor. Real-world results in AI citation share and visibility for manufacturers and logistics providers.",
   alternates: {
-    canonical: "https://www.exagic.ai/lab/case-studies",
+    canonical: "https://exagic-ai.vercel.app/lab/case-studies",
   },
 };
 
@@ -16,19 +16,19 @@ export default function CaseStudiesPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://www.exagic.ai",
+        item: "https://exagic-ai.vercel.app/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Lab",
-        item: "https://www.exagic.ai/lab",
+        item: "https://exagic-ai.vercel.app/lab",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Case Studies",
-        item: "https://www.exagic.ai/lab/case-studies",
+        item: "https://exagic-ai.vercel.app/lab/case-studies",
       },
     ],
   };

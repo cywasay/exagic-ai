@@ -244,3 +244,22 @@ body {
   border-color: rgba(255, 107, 0, 0.2);
   background: rgba(255, 107, 0, 0.02);
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50%));
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+}
+
+.pause-scroll:hover {
+  animation-play-state: paused;
+}

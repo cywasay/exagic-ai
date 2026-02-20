@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ContactCTA() {
   return (
     <section
@@ -11,13 +13,13 @@ export default function ContactCTA() {
         <div className="mx-auto max-w-4xl px-6 text-center">
           <h2
             id="cta-heading"
-            className="text-3xl sm:text-4xl font-semibold text-white"
+            className="text-4xl sm:text-5xl font-semibold text-white tracking-tight"
           >
-            Ready to scale your visibility?
+            Ready to Scale Your AI Visibility?
           </h2>
-          <p className="mt-6 text-lg text-white/90 max-w-xl mx-auto">
-            Discuss your AI visibility strategy with our senior strategy team
-            and secure your brand's future.
+          <p className="mt-8 text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
+            Discuss your AI visibility strategy with our senior team and secure
+            your brand's position in industrial AI search.
           </p>
           <div className="mt-10 flex flex-col items-center gap-6">
             <a
@@ -41,12 +43,12 @@ export default function ContactCTA() {
                 />
               </svg>
             </a>
-            <a
+            <Link
               href="/capabilities"
               className="text-white/80 hover:text-white text-sm font-semibold transition-colors"
             >
               Browse Technical Entity Audits →
-            </a>
+            </Link>
           </div>
         </div>
       </div>

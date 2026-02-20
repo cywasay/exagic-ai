@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Capabilities() {
   const capabilities = [
     {
@@ -33,7 +35,7 @@ export default function Capabilities() {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "EXAGIC AI Services",
+    name: "Exagic AI Services",
     itemListElement: capabilities.map((cap, index) => ({
       "@type": "ListItem",
       position: index + 1,
@@ -42,7 +44,7 @@ export default function Capabilities() {
         name: cap.title,
         description: cap.description,
         provider: {
-          "@id": "https://www.exagic.ai/#organization",
+          "@id": "https://exagic-ai.vercel.app/#organization",
         },
       },
     })),
@@ -88,7 +90,7 @@ export default function Capabilities() {
                 {cap.description}
               </p>
               <div className="mt-8">
-                <a
+                <Link
                   href={cap.href}
                   className="inline-flex items-center gap-1 text-sm font-bold text-brand hover:text-brand-dark transition-colors"
                 >
@@ -106,7 +108,7 @@ export default function Capabilities() {
                       d="M9 5l7 7-7 7"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </article>
           ))}

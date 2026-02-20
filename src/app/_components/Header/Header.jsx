@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Header() {
@@ -9,46 +10,49 @@ export default function Header() {
     <header className="fixed top-0 z-50 w-full bg-white/95 py-3 backdrop-blur-md">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-12">
         <div className="flex items-center gap-2">
-          <a
+          <Link
             href="/"
             className="text-lg sm:text-xl font-bold uppercase tracking-tight text-zinc-900"
           >
-            EXAGIC<span className="text-brand">AI</span>
-          </a>
+            Exagic <span className="text-brand">AI</span>
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8 text-[14px] font-medium text-zinc-800">
-          <a href="/" className="hover:text-brand transition-all">
+          <Link href="/" className="hover:text-brand transition-all">
             Home
-          </a>
-          <a href="/capabilities" className="hover:text-brand transition-all">
+          </Link>
+          <Link
+            href="/capabilities"
+            className="hover:text-brand transition-all"
+          >
             AI SEO
-          </a>
-          <a
+          </Link>
+          <Link
             href="/capabilities/aeo"
             className="hover:text-brand transition-all"
           >
             AEO
-          </a>
-          <a
+          </Link>
+          <Link
             href="/capabilities/sro"
             className="hover:text-brand transition-all"
           >
             SRO
-          </a>
-          <a href="/about" className="hover:text-brand transition-all">
-            About
-          </a>
-          <a href="/lab" className="hover:text-brand transition-all">
+          </Link>
+          <Link href="/industries" className="hover:text-brand transition-all">
+            Industries
+          </Link>
+          <Link href="/lab" className="hover:text-brand transition-all">
             Lab
-          </a>
-          <a
+          </Link>
+          <Link
             href="#contact"
             className="ml-4 rounded-md bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-brand-dark hover:shadow-md active:scale-95"
           >
             Schedule a Call
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -81,58 +85,58 @@ export default function Header() {
       >
         <div className="flex flex-col h-full px-8 pt-32 pb-12">
           <div className="flex flex-col gap-6 text-2xl font-medium tracking-tight text-zinc-900">
-            <a
+            <Link
               href="/"
               onClick={() => setIsOpen(false)}
               className="hover:text-brand transition-colors"
             >
               Home
-            </a>
-            <a
+            </Link>
+            <Link
               href="/capabilities"
               onClick={() => setIsOpen(false)}
               className="hover:text-brand transition-colors"
             >
               AI SEO
-            </a>
-            <a
+            </Link>
+            <Link
               href="/capabilities/aeo"
               onClick={() => setIsOpen(false)}
               className="hover:text-brand transition-colors"
             >
               AEO
-            </a>
-            <a
+            </Link>
+            <Link
               href="/capabilities/sro"
               onClick={() => setIsOpen(false)}
               className="hover:text-brand transition-colors"
             >
               SRO
-            </a>
-            <a
-              href="/about"
+            </Link>
+            <Link
+              href="/industries"
               onClick={() => setIsOpen(false)}
               className="hover:text-brand transition-colors"
             >
-              About
-            </a>
-            <a
+              Industries
+            </Link>
+            <Link
               href="/lab"
               onClick={() => setIsOpen(false)}
               className="hover:text-brand transition-colors"
             >
               Lab
-            </a>
+            </Link>
           </div>
 
           <div className="mt-auto">
-            <a
+            <Link
               href="#contact"
               onClick={() => setIsOpen(false)}
               className="inline-block w-full rounded-md bg-brand px-5 py-3.5 text-center text-base font-semibold text-white shadow-md active:scale-95 transition-all"
             >
               Schedule a Call
-            </a>
+            </Link>
             <p className="mt-6 text-sm text-zinc-500 text-center">
               Specialized AI SEO for the SF Industrial Corridor.
             </p>

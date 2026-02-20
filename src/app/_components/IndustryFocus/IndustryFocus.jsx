@@ -15,7 +15,7 @@ export default function IndustryFocus() {
               Strategic Industrial Optimization
             </h2>
             <p className="mt-6 text-lg text-zinc-700 leading-relaxed">
-              We deliver sharp, prioritised SEO strategies for manufacturers in
+              We deliver sharp, prioritized SEO strategies for manufacturers in
               the East Bay and Silicon Valley. By bridging the gap between
               legacy data and modern AI retrieval, we ensure brands maintain a
               permanent seat in the global knowledge graph. Read our report on{" "}
