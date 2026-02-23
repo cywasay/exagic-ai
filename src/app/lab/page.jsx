@@ -62,6 +62,42 @@ export default function LabPage() {
       href: "/lab/aeo-vs-seo-industrial-brands",
       date: "February 2026",
     },
+    {
+      title:
+        "AI Search and the Port of Oakland: How Freight Suppliers Get Found",
+      description:
+        "How freight forwarders, 3PL operators, and logistics providers at the Port of Oakland can become the supplier AI procurement tools cite.",
+      href: "/lab/ai-search-port-of-oakland-freight-suppliers",
+      date: "February 10, 2026",
+    },
+    {
+      title: "AI Procurement in the Richmond-Benicia Industrial Corridor",
+      description:
+        "How refinery vendors and chemical plant suppliers serving Chevron Richmond and Valero Benicia can build AI citation authority in energy sector procurement searches.",
+      href: "/lab/ai-search-richmond-refinery-chemical-suppliers",
+      date: "February 10, 2026",
+    },
+    {
+      title: "AI Search for Fremont and San Jose Manufacturers",
+      description:
+        "How Tesla supply chain vendors, semiconductor suppliers, and San Jose aerospace manufacturers can become AI-citable in the SF Bay Area's manufacturing core.",
+      href: "/lab/ai-search-fremont-san-jose-manufacturing-suppliers",
+      date: "February 10, 2026",
+    },
+    {
+      title: "AI Procurement in South San Francisco's Biotech Cluster",
+      description:
+        "How life sciences suppliers serving the South SF biotech corridor — including Genentech and pharmaceutical manufacturers — can build AI visibility.",
+      href: "/lab/ai-search-south-san-francisco-biotech-suppliers",
+      date: "February 10, 2026",
+    },
+    {
+      title: "AI Search for Vallejo Defense and Maritime Suppliers",
+      description:
+        "How Vallejo's post-Mare Island defense and maritime industrial base can build AI citation authority in defense and ship repair procurement searches.",
+      href: "/lab/ai-search-vallejo-defense-maritime-suppliers",
+      date: "February 10, 2026",
+    },
   ];
 
   const itemListJsonLd = {

@@ -9,28 +9,30 @@ export default function Team() {
   ];
 
   return (
-    <section id="team" className="rag-section bg-zinc-50 py-24">
+    <section id="team" className="rag-section bg-white py-20 md:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
-        <div className="text-center">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-zinc-900">
+        <div className="text-center max-w-3xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-zinc-900 tracking-tight">
             Meet Our Core Strategy Team
           </h2>
-          <p className="mt-6 text-lg text-zinc-600 max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-zinc-600 leading-relaxed">
             An all-senior team with experience across industrial manufacturing,
             AI search, and technical SEO.
           </p>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
           {team.map((member, index) => (
-            <div key={index} className="text-center group">
-              <div className="aspect-square w-full bg-zinc-200 rounded-2xl mb-6 relative overflow-hidden grayscale hover:grayscale-0 transition-all border border-zinc-300">
-                <div className="absolute inset-0 flex items-center justify-center bg-zinc-900/10 group-hover:bg-brand/5"></div>
+            <div key={index} className="text-center">
+              <div className="aspect-square w-full bg-zinc-50 rounded-[1.5rem] mb-6 relative overflow-hidden border border-zinc-100 flex items-center justify-center">
+                <span className="text-5xl font-black text-zinc-200">
+                  {member.name.charAt(0)}
+                </span>
               </div>
-              <h3 className="text-xl font-semibold text-zinc-900">
+              <h3 className="text-xl font-bold text-zinc-900 tracking-tight">
                 {member.name}
               </h3>
-              <p className="mt-2 text-sm text-zinc-500 font-medium tracking-tight uppercase tracking-widest">
+              <p className="mt-2 text-xs text-brand font-bold uppercase tracking-[0.2em]">
                 {member.title}
               </p>
             </div>
@@ -40,11 +42,13 @@ export default function Team() {
         <div className="mt-16 text-center">
           <Link
             href="#contact"
-            className="inline-flex items-center gap-2 text-sm font-bold text-brand hover:text-brand-dark transition-colors"
+            className="inline-flex items-center gap-2 text-base font-bold text-zinc-900 group"
           >
-            Schedule a Consultation
+            <span className="border-b-2 border-brand/30 hover:border-brand transition-colors pb-1">
+              Schedule a Consultation
+            </span>
             <svg
-              className="h-4 w-4"
+              className="h-5 w-5 text-brand transform group-hover:translate-x-1.5 transition-transform"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -52,7 +56,7 @@ export default function Team() {
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeWidth={2}
+                strokeWidth={2.5}
                 d="M17 8l4 4m0 0l-4 4m4-4H3"
               />
             </svg>

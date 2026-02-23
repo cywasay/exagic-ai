@@ -54,7 +54,7 @@ export default function Capabilities() {
     <section
       id="capabilities"
       aria-labelledby="capabilities-heading"
-      className="rag-section bg-white py-24"
+      className="rag-section bg-zinc-50 py-20 md:py-24 border-y border-zinc-100"
     >
       <script
         type="application/ld+json"
@@ -63,40 +63,40 @@ export default function Capabilities() {
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <h2
           id="capabilities-heading"
-          className="max-w-4xl text-3xl sm:text-4xl font-semibold text-zinc-900"
+          className="max-w-4xl text-3xl sm:text-4xl font-bold text-zinc-900 tracking-tight leading-tight"
         >
           We are an industry leader in machine learning driven search retrieval
           optimization.
         </h2>
 
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-10">
           {capabilities.map((cap) => (
             <article
               key={cap.title}
-              className="rounded-xl border border-zinc-200 bg-white p-8 transition-all hover:border-brand/40 hover:shadow-lg"
+              className="rounded-3xl border border-zinc-200 bg-white p-8 relative overflow-hidden shadow-sm"
               itemScope
               itemType="https://schema.org/Service"
             >
               <h3
-                className="text-xl font-semibold text-zinc-900"
+                className="text-xl font-bold text-zinc-900 tracking-tight"
                 itemProp="name"
               >
                 <span itemProp="knowsAbout">{cap.title}</span>
               </h3>
               <p
-                className="mt-4 text-zinc-700 leading-relaxed"
+                className="mt-3 text-zinc-600 text-base leading-relaxed relative z-10"
                 itemProp="description"
               >
                 {cap.description}
               </p>
-              <div className="mt-8">
+              <div className="mt-8 relative z-10">
                 <Link
                   href={cap.href}
-                  className="inline-flex items-center gap-1 text-sm font-bold text-brand hover:text-brand-dark transition-colors"
+                  className="inline-flex items-center gap-2 text-base font-bold text-brand hover:text-brand-dark transition-colors"
                 >
                   Learn more
                   <svg
-                    className="h-4 w-4"
+                    className="h-5 w-5"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -104,7 +104,7 @@ export default function Capabilities() {
                     <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      strokeWidth={2}
+                      strokeWidth={2.5}
                       d="M9 5l7 7-7 7"
                     />
                   </svg>

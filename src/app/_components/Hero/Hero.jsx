@@ -10,41 +10,41 @@ export default function Hero() {
       itemType="https://schema.org/WPHeader"
     >
       <div className="mx-auto w-full max-w-7xl px-6 lg:px-12">
-        <div className="max-w-4xl pt-12">
+        <div className="max-w-3xl pt-8">
           <h1
             id="hero-heading"
-            className="text-4xl sm:text-5xl md:text-6xl font-semibold text-zinc-900 tracking-tight"
+            className="text-3xl sm:text-4xl md:text-5xl font-semibold text-zinc-900 tracking-tight"
           >
-            San Francisco AI SEO Agency Specializing in Brand Visibility
-            Optimization for Industrial Manufacturers and Global Suppliers.
+            San Francisco AI SEO Agency for Industrial Manufacturers and Global
+            Suppliers.
           </h1>
 
-          <p className="mt-8 max-w-3xl text-xl leading-relaxed text-zinc-700">
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-zinc-700">
             Our AI SEO process is driven by advanced machine learning
             techniques,{" "}
             <span itemProp="knowsAbout">mechanistic interpretability</span>, and
             practical <span itemProp="knowsAbout">model steering</span> methods.
           </p>
 
-          <p className="mt-4 text-zinc-500 font-medium">
+          <p className="mt-4 text-sm sm:text-base text-zinc-500 font-medium">
             Book a consultation with our senior strategy team to discuss your
             project. The consultation is free and highly constructive.
           </p>
 
-          <div className="mt-10 flex flex-wrap items-center gap-6">
+          <div className="mt-8 flex flex-wrap items-center gap-6">
             <Link
               href="#contact"
-              className="rounded-md bg-brand px-8 py-4 text-lg font-bold text-white shadow-xl transition-all hover:bg-brand-dark active:scale-95"
+              className="rounded-md bg-brand px-6 py-3 text-base font-bold text-white shadow-xl transition-colors hover:bg-brand-dark"
             >
               Schedule a Call
             </Link>
             <Link
               href="/capabilities"
-              className="text-zinc-900 font-bold hover:text-brand transition-colors flex items-center gap-2 group"
+              className="text-zinc-900 text-sm sm:text-base font-bold hover:text-brand transition-colors flex items-center gap-2"
             >
               See Our Capabilities
               <svg
-                className="h-4 w-4 transform group-hover:translate-x-1 transition-transform"
+                className="h-4 w-4"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

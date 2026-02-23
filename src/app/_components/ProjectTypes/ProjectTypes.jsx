@@ -59,7 +59,7 @@ export default function ProjectTypes() {
     <section
       id="projects"
       aria-labelledby="projects-heading"
-      className="rag-section bg-white py-24"
+      className="rag-section bg-white py-20 md:py-24"
     >
       <script
         type="application/ld+json"
@@ -68,31 +68,37 @@ export default function ProjectTypes() {
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <h2
           id="projects-heading"
-          className="text-3xl sm:text-4xl font-semibold text-zinc-900"
+          className="text-3xl sm:text-4xl font-bold text-zinc-900 tracking-tight text-center md:text-left"
         >
           Focused Campaigns
         </h2>
 
-        <ul className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6" role="list">
+        <ul
+          className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8"
+          role="list"
+        >
           {projects.map((project, index) => (
             <li key={project.title}>
               <article
-                className="flex items-start gap-4 rounded-xl border border-zinc-100 bg-zinc-50/30 p-6 transition-all hover:bg-white hover:border-brand/20 hover:shadow-sm h-full"
+                className="flex flex-col sm:flex-row items-start gap-6 rounded-3xl border border-zinc-200 bg-white p-6 relative overflow-hidden shadow-sm"
                 itemScope
                 itemType="https://schema.org/Service"
               >
                 <div
-                  className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand/10 text-xs font-bold text-brand"
+                  className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-zinc-100/80 text-sm font-black font-mono text-zinc-400"
                   aria-hidden="true"
                 >
                   {String(index + 1).padStart(2, "0")}
                 </div>
                 <div>
-                  <h3 className="font-semibold text-zinc-900" itemProp="name">
+                  <h3
+                    className="text-lg font-bold text-zinc-900 tracking-tight"
+                    itemProp="name"
+                  >
                     {project.title}
                   </h3>
                   <p
-                    className="mt-1 text-sm text-zinc-700"
+                    className="mt-2 text-sm text-zinc-600 leading-relaxed"
                     itemProp="description"
                   >
                     {project.description}
