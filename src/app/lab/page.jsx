@@ -31,6 +31,36 @@ export default function LabPage() {
 
   const articles = [
     {
+      title: "The Q&A Engine Playbook: Industrial FAQs for AI Visibility",
+      description:
+        "Why comprehensive FAQ strategy is critical for AI SEO, AEO, and getting Bay Area industrial brands cited by AI sourcing agents.",
+      href: "/lab/qa-engine-playbook-industrial-faq",
+      date: "February 23, 2026",
+    },
+    {
+      title: "Structuring Technical Data: How AI Reads Industrial Catalogs",
+      description:
+        "How to use Schema.org, JSON-LD, and clear data architecture to ensure AI sourcing tools read your industrial catalogs.",
+      href: "/lab/how-to-structure-technical-data-for-ai-sourcing",
+      date: "February 23, 2026",
+    },
+    {
+      title:
+        "AI SEO for Silicon Valley Hardware Startups: Bypassing Legacy Monopolies",
+      description:
+        "How hardware startups in Silicon Valley and San Jose can use AI SEO and entity structures to bypass legacy manufacturers and build rapid B2B visibility.",
+      href: "/lab/ai-seo-silicon-valley-hardware-startups",
+      date: "February 23, 2026",
+    },
+    {
+      title:
+        "Precision Machining in San Leandro: Surviving the Shift to AI Sourcing",
+      description:
+        "How machine shops and precision fabricators in San Leandro and the East Bay can get cited by AI procurement and Answer Engines.",
+      href: "/lab/precision-machining-san-leandro-ai-sourcing",
+      date: "February 23, 2026",
+    },
+    {
       title:
         "How AI Search Is Changing How Industrial Buyers Find Suppliers in the SF Bay Area",
       description:
