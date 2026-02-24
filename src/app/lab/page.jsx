@@ -350,37 +350,50 @@ export default function LabPage() {
             {filteredArticles.map((article) => (
               <article
                 key={article.href}
-                className="group relative flex flex-col rounded-[2.5rem] border border-zinc-200 bg-white p-8 md:p-10 hover:shadow-[0_40px_80px_-15px_rgba(0,0,0,0.1)] hover:-translate-y-2 transition-all duration-500"
+                className="group relative flex flex-col rounded-2xl border border-zinc-200 bg-white hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-1 transition-all duration-300 overflow-hidden"
               >
-                <div className="flex items-center justify-between mb-8">
-                  <span
-                    className={`px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider border ${getCategoryColor(article.category)}`}
-                  >
-                    {article.category}
-                  </span>
-                  <span className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">
-                    {article.date}
-                  </span>
-                </div>
+                {/* Decorative top border for visual interest */}
+                <div className="h-1 w-full bg-zinc-100 group-hover:bg-brand transition-colors duration-300"></div>
 
-                <h2 className="text-2xl font-bold text-zinc-900 leading-tight transition-colors mb-6">
-                  <Link href={article.href}>{article.title}</Link>
-                </h2>
-
-                <p className="text-zinc-600 leading-relaxed mb-10 flex-grow line-clamp-3">
-                  {article.description}
-                </p>
-
-                <div className="pt-8 border-t border-zinc-50">
-                  <Link
-                    href={article.href}
-                    className="inline-flex items-center gap-2 text-sm font-bold text-brand group/link"
-                  >
-                    Read Detailed Research
-                    <span className="transition-transform group-hover/link:translate-x-1">
-                      →
+                <div className="flex flex-col flex-grow p-6 md:p-8">
+                  <div className="flex items-center gap-4 mb-5">
+                    <span
+                      className={`px-3 py-1 rounded-md text-xs font-semibold ${getCategoryColor(article.category)}`}
+                    >
+                      {article.category}
                     </span>
-                  </Link>
+                    <span className="text-xs font-medium text-zinc-500">
+                      {article.date}
+                    </span>
+                  </div>
+
+                  <h2 className="text-[1.35rem] font-bold text-zinc-900 leading-snug mb-4 group-hover:text-brand transition-colors duration-300">
+                    <Link href={article.href} className="focus:outline-none">
+                      {/* Make whole card clickable via absolute inset */}
+                      <span className="absolute inset-0" aria-hidden="true" />
+                      {article.title}
+                    </Link>
+                  </h2>
+
+                  <p className="text-zinc-600 leading-relaxed mb-8 flex-grow line-clamp-3 text-sm md:text-base">
+                    {article.description}
+                  </p>
+
+                  <div className="pt-6 border-t border-zinc-100 flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-full bg-zinc-100 flex items-center justify-center">
+                        <span className="text-xs font-bold text-zinc-600">
+                          EA
+                        </span>
+                      </div>
+                      <span className="text-sm font-medium text-zinc-700">
+                        Exagic AI Lab
+                      </span>
+                    </div>
+                    <span className="text-sm font-semibold text-brand transition-transform group-hover:translate-x-1 duration-300">
+                      Read →
+                    </span>
+                  </div>
                 </div>
               </article>
             ))}
