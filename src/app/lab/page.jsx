@@ -353,7 +353,7 @@ export default function LabPage() {
                 className="group relative flex flex-col rounded-2xl border border-zinc-200 bg-white hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] hover:-translate-y-1 transition-all duration-300 overflow-hidden"
               >
                 {/* Decorative top border for visual interest */}
-                <div className="h-1 w-full bg-zinc-100 group-hover:bg-brand transition-colors duration-300"></div>
+                <div className="h-1 w-full bg-zinc-100 transition-colors duration-300"></div>
 
                 <div className="flex flex-col flex-grow p-6 md:p-8">
                   <div className="flex items-center gap-4 mb-5">
@@ -367,7 +367,7 @@ export default function LabPage() {
                     </span>
                   </div>
 
-                  <h2 className="text-[1.35rem] font-bold text-zinc-900 leading-snug mb-4 group-hover:text-brand transition-colors duration-300">
+                  <h2 className="text-[1.35rem] font-bold text-zinc-900 leading-snug mb-4 transition-colors duration-300">
                     <Link href={article.href} className="focus:outline-none">
                       {/* Make whole card clickable via absolute inset */}
                       <span className="absolute inset-0" aria-hidden="true" />
@@ -390,7 +390,7 @@ export default function LabPage() {
                         Exagic AI Lab
                       </span>
                     </div>
-                    <span className="text-sm font-semibold text-brand transition-transform group-hover:translate-x-1 duration-300">
+                    <span className="text-sm font-semibold text-zinc-900 transition-transform group-hover:translate-x-1 duration-300">
                       Read →
                     </span>
                   </div>
