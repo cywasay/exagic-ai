@@ -16,25 +16,25 @@ export default function ContactInfo() {
   return (
     <div className="space-y-12">
       <div>
-        <h1 className="text-5xl md:text-7xl font-bold text-zinc-900 tracking-tight leading-[1.1]">
+        <h1 className="text-4xl md:text-5xl font-bold text-zinc-900 tracking-tight leading-tight">
           Contact <span className="text-brand">Exagic</span>
         </h1>
-        <p className="mt-8 text-xl text-zinc-600 leading-relaxed">
+        <p className="mt-4 text-lg text-zinc-600 leading-relaxed">
           Ready to bridge the gap between your hardware and the AI that
           recommends it? Our technical team is ready to analyze your visibility.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 gap-8">
+      <div className="grid grid-cols-1 gap-6">
         {contactDetails.map((item) => (
           <div key={item.label} className="flex flex-col">
-            <span className="text-sm font-bold text-brand uppercase tracking-widest mb-1">
+            <span className="text-xs font-bold text-brand uppercase tracking-widest mb-1">
               {item.label}
             </span>
-            <span className="text-2xl font-bold text-zinc-900 leading-tight">
+            <span className="text-xl font-bold text-zinc-900 leading-tight">
               {item.value}
             </span>
-            <span className="text-sm text-zinc-500 font-medium">
+            <span className="text-xs text-zinc-500 font-medium">
               {item.sub}
             </span>
           </div>
