@@ -32,7 +32,7 @@ export default function CitationStackChart() {
   ];
 
   return (
-    <div className="bg-zinc-50 p-6 md:p-8 rounded-[2rem] border border-zinc-200 overflow-hidden relative">
+    <div className="bg-zinc-50 p-6 md:p-8 rounded-[2rem] border border-zinc-200 relative">
       <div className="flex flex-col mb-10">
         <h4 className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest mb-1">
           Technical Architecture
@@ -61,8 +61,8 @@ export default function CitationStackChart() {
               </span>
             </div>
 
-            {/* Tooltip detail */}
-            <div className="absolute left-[102%] top-1/2 -translate-y-1/2 w-48 hidden lg:block pointer-events-none opacity-0 group-hover:opacity-100 transition-all translate-x-2 group-hover:translate-x-0">
+            {/* Tooltip detail - Popping out to the LEFT to avoid edge cutoff */}
+            <div className="absolute right-[105%] top-1/2 -translate-y-1/2 w-48 hidden lg:block pointer-events-none opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0">
               <div className="bg-zinc-900 p-3 rounded-xl shadow-xl border border-zinc-800">
                 <p className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest leading-relaxed">
                   {layer.text}
