@@ -24,9 +24,9 @@ export default function ShiftingSearchLandscapeChart() {
         </p>
       </div>
 
-      <div className="relative h-64 w-full flex items-end gap-4 md:gap-8 pt-10 px-2 lg:px-4">
+      <div className="relative h-72 w-full flex items-end gap-3 md:gap-6 pt-10 pl-12 pr-4">
         {/* Y-axis labels */}
-        <div className="absolute left-0 top-0 bottom-0 flex flex-col justify-between text-[10px] font-bold text-zinc-300 pointer-events-none">
+        <div className="absolute left-0 top-10 bottom-0 flex flex-col justify-between text-[10px] font-bold text-zinc-300 pointer-events-none pb-6">
           <span>100%</span>
           <span>75%</span>
           <span>50%</span>
@@ -37,17 +37,17 @@ export default function ShiftingSearchLandscapeChart() {
         {data.map((item, i) => (
           <div
             key={item.year}
-            className="flex-grow flex flex-col justify-end gap-1 group relative"
+            className="flex-grow flex flex-col justify-end gap-1 group relative h-full"
           >
-            <div className="flex gap-1 md:gap-2 h-full items-end">
+            <div className="flex gap-1 md:gap-1.5 h-full items-end pb-6 border-b border-zinc-50 relative">
               {/* Legacy Search Bar */}
               <motion.div
                 initial={{ height: 0 }}
                 whileInView={{ height: `${item.legacy}%` }}
                 transition={{ duration: 1, delay: i * 0.1, ease: "easeOut" }}
-                className="w-full bg-zinc-100 rounded-t-sm group-hover:bg-zinc-200 transition-colors relative"
+                className="w-full bg-zinc-100 rounded-t-[2px] group-hover:bg-zinc-200 transition-colors relative"
               >
-                {item.legacy > 10 && (
+                {item.legacy > 5 && (
                   <span className="absolute -top-6 left-1/2 -translate-x-1/2 text-[10px] font-bold text-zinc-400 opacity-0 group-hover:opacity-100 transition-opacity">
                     {item.legacy}%
                   </span>
@@ -62,9 +62,9 @@ export default function ShiftingSearchLandscapeChart() {
                   delay: i * 0.1 + 0.3,
                   ease: "easeOut",
                 }}
-                className="w-full bg-brand rounded-t-sm group-hover:bg-brand-dark transition-colors relative"
+                className="w-full bg-brand rounded-t-[2px] group-hover:bg-brand-dark transition-colors relative"
               >
-                <span className="absolute -top-6 left-1/2 -translate-x-1/2 text-[10px] font-bold text-brand opacity-0 group-hover:opacity-100 transition-opacity">
+                <span className="absolute -top-6 left-1/2 -translate-x-1/2 text-[10px] font-bold text-brand opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
                   {item.ai}%
                 </span>
               </motion.div>

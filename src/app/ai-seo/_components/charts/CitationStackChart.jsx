@@ -42,7 +42,7 @@ export default function CitationStackChart() {
         </h3>
       </div>
 
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-3">
         {layers.map((layer, i) => (
           <motion.div
             key={layer.label}
@@ -52,18 +52,22 @@ export default function CitationStackChart() {
             className="group relative"
           >
             <div
-              className={`h-12 md:h-14 ${layer.color} rounded-xl border border-white/20 shadow-sm flex items-center px-4 md:px-6 transition-transform group-hover:-translate-y-1`}
+              className={`h-12 ${layer.color} rounded-xl border border-white/20 shadow-sm flex items-center px-4 md:px-6 transition-all group-hover:-translate-y-1 group-hover:shadow-md cursor-help`}
             >
               <span
-                className={`text-xs md:text-sm font-bold ${i === layers.length - 1 ? "text-zinc-500" : "text-white"} uppercase tracking-widest`}
+                className={`text-[10px] md:text-xs font-bold ${i === layers.length - 1 ? "text-zinc-500" : "text-white"} uppercase tracking-[0.2em]`}
               >
                 {layer.label}
               </span>
             </div>
-            <div className="absolute left-full ml-4 top-1/2 -translate-y-1/2 w-48 hidden lg:block pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity">
-              <p className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest leading-tight">
-                {layer.text}
-              </p>
+
+            {/* Tooltip detail */}
+            <div className="absolute left-[102%] top-1/2 -translate-y-1/2 w-48 hidden lg:block pointer-events-none opacity-0 group-hover:opacity-100 transition-all translate-x-2 group-hover:translate-x-0">
+              <div className="bg-zinc-900 p-3 rounded-xl shadow-xl border border-zinc-800">
+                <p className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest leading-relaxed">
+                  {layer.text}
+                </p>
+              </div>
             </div>
           </motion.div>
         ))}

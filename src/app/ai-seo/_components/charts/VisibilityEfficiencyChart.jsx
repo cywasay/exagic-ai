@@ -22,20 +22,20 @@ export default function VisibilityEfficiencyChart() {
         </p>
       </div>
 
-      <div className="space-y-10 relative z-10">
+      <div className="space-y-8 relative z-10">
         {steps.map((step, i) => (
-          <div key={step.label} className="space-y-2">
-            <div className="flex justify-between items-end">
-              <span className="text-xs font-bold text-zinc-400 uppercase tracking-widest">
+          <div key={step.label} className="space-y-2.5">
+            <div className="flex justify-between items-end gap-4">
+              <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest">
                 {step.label}
               </span>
               <span
-                className={`text-lg font-bold ${i === 1 ? "text-brand" : "text-zinc-500"}`}
+                className={`text-base font-bold ${i === 1 ? "text-brand" : "text-zinc-500"}`}
               >
                 {i === 1 ? "8.4x Lower CAC" : "Industry Standard"}
               </span>
             </div>
-            <div className="h-4 w-full bg-zinc-900 rounded-full overflow-hidden border border-zinc-800">
+            <div className="h-3 w-full bg-zinc-900 rounded-full overflow-hidden border border-zinc-800">
               <motion.div
                 initial={{ width: 0 }}
                 whileInView={{ width: `${(step.efficiency / 1.58) * 100}%` }}

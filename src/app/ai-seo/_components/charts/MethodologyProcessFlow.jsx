@@ -24,26 +24,29 @@ export default function MethodologyProcessFlow() {
       </div>
 
       <div className="relative">
-        {/* Connecting line for desktop */}
-        <div className="hidden lg:block absolute left-8 top-0 bottom-0 w-px bg-zinc-100" />
+        {/* Connecting line for desktop - adjusted to center of 64px icon (left-8) */}
+        <div className="hidden lg:block absolute left-8 top-8 bottom-8 w-px bg-zinc-100" />
 
-        <div className="space-y-8 relative z-10">
+        <div className="space-y-10 relative z-10">
           {phases.map((phase, i) => (
             <motion.div
               key={phase.num}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="flex items-start gap-6 group"
+              className="flex items-center gap-6 group"
             >
-              <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-zinc-50 border border-zinc-100 flex items-center justify-center text-xl font-black text-zinc-200 group-hover:bg-brand group-hover:text-white group-hover:border-brand transition-all duration-300">
+              <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-zinc-50 border border-zinc-100 flex items-center justify-center text-xl font-black text-zinc-200 group-hover:bg-brand group-hover:text-white group-hover:border-brand transition-all duration-300 relative z-10">
                 {phase.num}
               </div>
-              <div className="pt-2">
-                <h4 className="text-sm font-bold text-zinc-900 uppercase tracking-widest group-hover:text-brand transition-colors">
-                  {phase.title}
+              <div>
+                <h4 className="text-sm font-bold text-zinc-900 uppercase tracking-widest group-hover:text-brand transition-colors mb-0.5">
+                  Phase {phase.num}
                 </h4>
-                <p className="text-sm text-zinc-500 font-medium">
+                <h5 className="text-base font-bold text-zinc-800 leading-tight">
+                  {phase.title}
+                </h5>
+                <p className="text-sm text-zinc-500 font-medium mt-1">
                   {phase.desc}
                 </p>
               </div>
