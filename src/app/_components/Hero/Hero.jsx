@@ -39,7 +39,7 @@ export default function Hero() {
               Schedule a Call
             </Link>
             <Link
-              href="/capabilities"
+              href="/ai-seo"
               className="text-zinc-900 text-sm sm:text-base font-bold hover:text-brand transition-colors flex items-center gap-2"
             >
               See Our Capabilities

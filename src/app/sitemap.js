@@ -33,9 +33,9 @@ export default function sitemap() {
 
   const routes = [
     { url: "", priority: 1.0, changeFrequency: "weekly" },
-    { url: "/capabilities", priority: 0.9, changeFrequency: "monthly" },
-    { url: "/capabilities/aeo", priority: 0.8, changeFrequency: "monthly" },
-    { url: "/capabilities/sro", priority: 0.8, changeFrequency: "monthly" },
+    { url: "/ai-seo", priority: 0.9, changeFrequency: "monthly" },
+    { url: "/aeo", priority: 0.8, changeFrequency: "monthly" },
+    { url: "/sro", priority: 0.8, changeFrequency: "monthly" },
     { url: "/industries", priority: 0.9, changeFrequency: "monthly" },
     {
       url: "/industries/manufacturing",

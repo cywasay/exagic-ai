@@ -99,7 +99,7 @@ export default function RootLayout({ children }) {
                 <ul className="space-y-2 text-sm text-zinc-500">
                   <li>
                     <a
-                      href="/capabilities"
+                      href="/ai-seo"
                       className="hover:text-brand transition-colors"
                     >
                       AI SEO
@@ -107,7 +107,7 @@ export default function RootLayout({ children }) {
                   </li>
                   <li>
                     <a
-                      href="/capabilities/aeo"
+                      href="/aeo"
                       className="hover:text-brand transition-colors"
                     >
                       AEO Strategies
@@ -115,7 +115,7 @@ export default function RootLayout({ children }) {
                   </li>
                   <li>
                     <a
-                      href="/capabilities/sro"
+                      href="/sro"
                       className="hover:text-brand transition-colors"
                     >
                       SRO Implementation

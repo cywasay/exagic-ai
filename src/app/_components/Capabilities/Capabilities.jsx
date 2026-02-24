@@ -7,28 +7,28 @@ export default function Capabilities() {
       slug: "ai-seo",
       description:
         "World-class AI SEO services ranging from visibility analysis to practical model steering strategies for the SF Bay Area industrial belt.",
-      href: "/capabilities",
+      href: "/ai-seo",
     },
     {
       title: "Answer Engine Optimization (AEO)",
       slug: "aeo",
       description:
         "Visibility optimization for AI chat assistants, AI agents, and Answer Engines. We ensure your products are the default recommendation.",
-      href: "/capabilities/aeo",
+      href: "/aeo",
     },
     {
       title: "SRO (Selection Rate Optimization)",
       slug: "sro",
       description:
         "Advanced techniques to influence the probability of your brand being selected as the primary citation by an LLM during retrieval.",
-      href: "/capabilities/sro",
+      href: "/sro",
     },
     {
       title: "AI Visibility Tracking",
       slug: "tracking",
       description:
         "Robust tracking for brands looking to understand how Gemini, ChatGPT, and Perplexity perceive their technical hardware and services.",
-      href: "/capabilities",
+      href: "/ai-seo",
     },
   ];
 

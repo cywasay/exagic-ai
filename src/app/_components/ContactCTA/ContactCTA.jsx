@@ -49,7 +49,7 @@ export default function ContactCTA() {
                 </svg>
               </a>
               <Link
-                href="/capabilities"
+                href="/ai-seo"
                 className="text-white/60 hover:text-white font-bold transition-colors uppercase tracking-[0.2em] text-sm border-b border-transparent hover:border-white/30 pb-1"
               >
                 Browse Technical Entity Audits
