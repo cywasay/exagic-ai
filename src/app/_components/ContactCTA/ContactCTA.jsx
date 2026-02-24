@@ -27,10 +27,9 @@ export default function ContactCTA() {
               secure your brand's position in industrial AI search.
             </p>
             <div className="mt-10 flex flex-col items-center gap-8">
-              <a
-                href="mailto:hello@exagic.ai"
+              <Link
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-full bg-white px-8 py-4 text-base font-bold text-brand shadow-sm transition-colors hover:bg-zinc-50"
-                itemProp="email"
               >
                 <span>Request Video Call</span>
                 <svg
@@ -47,7 +46,7 @@ export default function ContactCTA() {
                     d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
                   />
                 </svg>
-              </a>
+              </Link>
               <Link
                 href="/ai-seo"
                 className="text-white/60 hover:text-white font-bold transition-colors uppercase tracking-[0.2em] text-sm border-b border-transparent hover:border-white/30 pb-1"

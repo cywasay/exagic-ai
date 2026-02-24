@@ -39,7 +39,7 @@ export default function Header() {
             Lab
           </Link>
           <Link
-            href="#contact"
+            href="/contact"
             className="ml-4 rounded-md bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-brand-dark hover:shadow-md active:scale-95"
           >
             Schedule a Call
@@ -122,7 +122,7 @@ export default function Header() {
 
           <div className="mt-auto">
             <Link
-              href="#contact"
+              href="/contact"
               onClick={() => setIsOpen(false)}
               className="inline-block w-full rounded-md bg-brand px-5 py-3.5 text-center text-base font-semibold text-white shadow-md active:scale-95 transition-all"
             >
