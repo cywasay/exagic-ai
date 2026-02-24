@@ -9,7 +9,7 @@ export default function VisibilityEfficiencyChart() {
   ];
 
   return (
-    <div className="bg-zinc-950 p-6 md:p-8 rounded-2xl border border-zinc-800 shadow-2xl overflow-hidden relative group">
+    <div className="bg-zinc-950 p-6 md:p-8 rounded-2xl border border-zinc-800 shadow-sm overflow-hidden relative group">
       <div className="flex flex-col mb-8 relative z-10">
         <h4 className="text-sm font-bold text-brand-dark uppercase tracking-widest mb-1">
           Performance Alpha

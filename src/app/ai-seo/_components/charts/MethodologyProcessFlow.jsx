@@ -13,7 +13,7 @@ export default function MethodologyProcessFlow() {
   ];
 
   return (
-    <div className="bg-white p-8 rounded-[2.5rem] border border-zinc-200 shadow-xl shadow-zinc-100/50">
+    <div className="bg-white p-8 rounded-[2.5rem] border border-zinc-200 shadow-sm">
       <div className="flex flex-col mb-10">
         <h4 className="text-xs font-bold text-zinc-400 uppercase tracking-widest mb-1">
           Operational Framework

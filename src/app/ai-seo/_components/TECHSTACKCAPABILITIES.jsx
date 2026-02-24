@@ -72,7 +72,7 @@ export default function TECHSTACKCAPABILITIES() {
 
             <div className="lg:col-span-5 lg:sticky lg:top-32">
               <CitationStackChart />
-              <div className="mt-8 p-6 bg-zinc-950 rounded-[2rem] border border-zinc-800 shadow-2xl">
+              <div className="mt-8 p-6 bg-zinc-950 rounded-[2rem] border border-zinc-800 shadow-sm">
                 <h4 className="text-[10px] font-bold text-brand uppercase tracking-widest mb-2">
                   Deep Tech Highlight
                 </h4>
