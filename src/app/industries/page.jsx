@@ -1,4 +1,16 @@
 import Link from "next/link";
+import IndustriesHero from "./_components/IndustriesHero";
+import INTROPARAGRAPH from "./_components/INTROPARAGRAPH";
+import INDUSTRY1PRECISIONMANUFACTURING from "./_components/INDUSTRY1PRECISIONMANUFACTURING";
+import INDUSTRY2LOGISTICSANDSUPPLYCHAIN from "./_components/INDUSTRY2LOGISTICSANDSUPPLYCHAIN";
+import INDUSTRY3ELECTRONICSANDHARDWARE from "./_components/INDUSTRY3ELECTRONICSANDHARDWARE";
+import INDUSTRY4B2BTECHNICALSERVICES from "./_components/INDUSTRY4B2BTECHNICALSERVICES";
+import INDUSTRY5ENGINEERINGANDCONSTRUCTION from "./_components/INDUSTRY5ENGINEERINGANDCONSTRUCTION";
+import INDUSTRY6CLEANTECHANDENERGY from "./_components/INDUSTRY6CLEANTECHANDENERGY";
+import REGIONALENTITYSECTION from "./_components/REGIONALENTITYSECTION";
+import IndustriesFAQ from "./_components/IndustriesFAQ";
+import IndustriesClosingCTA from "./_components/IndustriesClosingCTA";
+import ContactCTA from "../_components/ContactCTA/ContactCTA";
 
 export const metadata = {
   title: "AI SEO for SF Bay Area Industrial Sectors | Exagic AI",
@@ -8,9 +20,6 @@ export const metadata = {
     canonical: "https://exagic-ai.vercel.app/industries",
   },
 };
-
-import IndustriesContent from "../_components/IndustriesContent/IndustriesContent";
-
 export default function IndustriesPage() {
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -30,7 +39,6 @@ export default function IndustriesPage() {
       },
     ],
   };
-
   const itemListJsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -74,7 +82,6 @@ export default function IndustriesPage() {
       },
     ],
   };
-
   const faqItems = [
     {
       question: "Which industries does Exagic AI serve?",
@@ -104,7 +111,6 @@ export default function IndustriesPage() {
         "Initial improvements in citation frequency can appear within 4–8 weeks of content and schema implementation. Sustained visibility growth across a competitive industrial query set typically develops over 3–6 months, with ongoing monthly tracking and iteration cycles maintaining and improving performance over time.",
     },
   ];
-
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -117,7 +123,6 @@ export default function IndustriesPage() {
       },
     })),
   };
-
   return (
     <>
       <script
@@ -132,8 +137,18 @@ export default function IndustriesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
-
-      <IndustriesContent faqItems={faqItems} />
+      <IndustriesHero />
+      <INTROPARAGRAPH />
+      <INDUSTRY1PRECISIONMANUFACTURING />
+      <INDUSTRY2LOGISTICSANDSUPPLYCHAIN />
+      <INDUSTRY3ELECTRONICSANDHARDWARE />
+      <INDUSTRY4B2BTECHNICALSERVICES />
+      <INDUSTRY5ENGINEERINGANDCONSTRUCTION />
+      <INDUSTRY6CLEANTECHANDENERGY />
+      <REGIONALENTITYSECTION />
+      <IndustriesFAQ faqItems={faqItems} />
+      <IndustriesClosingCTA />
+      <ContactCTA />
     </>
   );
 }

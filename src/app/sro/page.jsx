@@ -1,4 +1,13 @@
 import Link from "next/link";
+import SROHero from "./_components/SROHero";
+import WHATISSELECTIONRATE from "./_components/WHATISSELECTIONRATE";
+import THEEXAGICAISROPROCESS from "./_components/THEEXAGICAISROPROCESS";
+import WHYCONTENTGETSRETRIEVEDBUTNOTSELECTED from "./_components/WHYCONTENTGETSRETRIEVEDBUTNOTSELECTED";
+import SROFORINDUSTRIALMANUFACTURERSSPECIFICALLY from "./_components/SROFORINDUSTRIALMANUFACTURERSSPECIFICALLY";
+import WHATSROISNOT from "./_components/WHATSROISNOT";
+import SROFAQ from "./_components/SROFAQ";
+import SROClosingCTA from "./_components/SROClosingCTA";
+import ContactCTA from "../_components/ContactCTA/ContactCTA";
 
 export const metadata = {
   title: "Selection Rate Optimization (SRO) for Industrial Brands | Exagic AI",
@@ -8,9 +17,6 @@ export const metadata = {
     canonical: "https://exagic-ai.vercel.app/sro",
   },
 };
-
-import SROContent from "../_components/SROContent/SROContent";
-
 export default function SROPage() {
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -26,7 +32,6 @@ export default function SROPage() {
     description:
       "Advanced techniques to increase the probability of your brand being selected as the primary citation by AI models during retrieval.",
   };
-
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -51,7 +56,6 @@ export default function SROPage() {
       },
     ],
   };
-
   const faqItems = [
     {
       question: "What is Selection Rate Optimization (SRO)?",
@@ -89,7 +93,6 @@ export default function SROPage() {
         "A full SRO engagement includes entity mapping, query fanout and prompt generation, grounding candidate analysis, baseline selection rate measurement, snippet and content optimization, implementation support, and ongoing monthly tracking with iterative refinement cycles.",
     },
   ];
-
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -102,7 +105,6 @@ export default function SROPage() {
       },
     })),
   };
-
   return (
     <>
       <script
@@ -117,8 +119,15 @@ export default function SROPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-
-      <SROContent faqItems={faqItems} />
+      <SROHero />
+      <WHATISSELECTIONRATE />
+      <THEEXAGICAISROPROCESS />
+      <WHYCONTENTGETSRETRIEVEDBUTNOTSELECTED />
+      <SROFORINDUSTRIALMANUFACTURERSSPECIFICALLY />
+      <WHATSROISNOT />
+      <SROFAQ faqItems={faqItems} />
+      <SROClosingCTA />
+      <ContactCTA />
     </>
   );
 }

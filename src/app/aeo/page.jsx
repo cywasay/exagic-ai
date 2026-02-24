@@ -1,4 +1,13 @@
 import Link from "next/link";
+import AEOHero from "./_components/AEOHero";
+import WHATISAEO from "./_components/WHATISAEO";
+import HOWAEODIFFERSFROMSEOANDSRO from "./_components/HOWAEODIFFERSFROMSEOANDSRO";
+import THEEXAGICAIAEOPROCESS from "./_components/THEEXAGICAIAEOPROCESS";
+import WHYINDUSTRIALBRANDSAREUNDERREPRESENTEDINAIANSWERS from "./_components/WHYINDUSTRIALBRANDSAREUNDERREPRESENTEDINAIANSWERS";
+import AEOFORSPECIFICINDUSTRIALCONTEXTS from "./_components/AEOFORSPECIFICINDUSTRIALCONTEXTS";
+import AEOFAQ from "./_components/AEOFAQ";
+import AEOClosingCTA from "./_components/AEOClosingCTA";
+import ContactCTA from "../_components/ContactCTA/ContactCTA";
 
 export const metadata = {
   title: "Answer Engine Optimization (AEO) for Industrial Brands | Exagic AI",
@@ -8,9 +17,6 @@ export const metadata = {
     canonical: "https://exagic-ai.vercel.app/aeo",
   },
 };
-
-import AEOContent from "../_components/AEOContent/AEOContent";
-
 export default function AEOPage() {
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -26,7 +32,6 @@ export default function AEOPage() {
     description:
       "Answer Engine Optimization services for SF Bay Area industrial manufacturers, hardware suppliers, and B2B companies — ensuring brand citation in ChatGPT, Gemini, and Perplexity.",
   };
-
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -51,7 +56,6 @@ export default function AEOPage() {
       },
     ],
   };
-
   const faqItems = [
     {
       question: "What is Answer Engine Optimization (AEO)?",
@@ -95,7 +99,6 @@ export default function AEOPage() {
         "AEO focuses on getting your content into the set of sources AI systems retrieve when answering relevant queries. SRO (Selection Rate Optimization) focuses on ensuring your content is selected from that retrieved set as the primary citation. AEO gets you retrieved. SRO gets you chosen. Both are part of Exagic AI's full-service offering.",
     },
   ];
-
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -108,7 +111,6 @@ export default function AEOPage() {
       },
     })),
   };
-
   return (
     <>
       <script
@@ -123,8 +125,15 @@ export default function AEOPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-
-      <AEOContent faqItems={faqItems} />
+      <AEOHero />
+      <WHATISAEO />
+      <HOWAEODIFFERSFROMSEOANDSRO />
+      <THEEXAGICAIAEOPROCESS />
+      <WHYINDUSTRIALBRANDSAREUNDERREPRESENTEDINAIANSWERS />
+      <AEOFORSPECIFICINDUSTRIALCONTEXTS />
+      <AEOFAQ faqItems={faqItems} />
+      <AEOClosingCTA />
+      <ContactCTA />
     </>
   );
 }

@@ -1,4 +1,15 @@
 import Link from "next/link";
+import AISEOHero from "./_components/AISEOHero";
+import WHATISAISEO from "./_components/WHATISAISEO";
+import WHYTRADITIONALSEOISNOLONGERENOUGH from "./_components/WHYTRADITIONALSEOISNOLONGERENOUGH";
+import THEEXAGICAISEOMETHODOLOGY from "./_components/THEEXAGICAISEOMETHODOLOGY";
+import TECHSTACKCAPABILITIES from "./_components/TECHSTACKCAPABILITIES";
+import WHONEEDSAISEO from "./_components/WHONEEDSAISEO";
+import PLATFORMSPECIFICOPTIMIZATION from "./_components/PLATFORMSPECIFICOPTIMIZATION";
+import GLOSSARY from "./_components/GLOSSARY";
+import AISEOFAQ from "./_components/AISEOFAQ";
+import AISEOClosingCTA from "./_components/AISEOClosingCTA";
+import ContactCTA from "../_components/ContactCTA/ContactCTA";
 
 export const metadata = {
   title: "AI SEO for Industrial Manufacturers | Exagic AI — San Francisco",
@@ -8,9 +19,6 @@ export const metadata = {
     canonical: "https://exagic-ai.vercel.app/ai-seo",
   },
 };
-
-import AISEOContent from "../_components/AISEOContent/AISEOContent";
-
 export default function AISEOPage() {
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -26,7 +34,6 @@ export default function AISEOPage() {
     description:
       "World-class AI SEO services for SF Bay Area industrial manufacturers. From visibility analysis to practical model steering strategies — Exagic AI ensures your brand dominates AI retrieval.",
   };
-
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -45,7 +52,6 @@ export default function AISEOPage() {
       },
     ],
   };
-
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -67,7 +73,6 @@ export default function AISEOPage() {
     datePublished: "2026-02-20",
     dateModified: "2026-02-20",
   };
-
   const faqItems = [
     {
       question: "What is AI SEO and how is it different from traditional SEO?",
@@ -96,7 +101,6 @@ export default function AISEOPage() {
         "Selection Rate is the percentage of times your content is cited when an AI system retrieves it. Low selection rate means AI is finding your content but not using it. Selection Rate Optimization improves content clarity, entity precision, and structural accessibility so that retrieved content is consistently chosen for the final answer.",
     },
   ];
-
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -109,7 +113,6 @@ export default function AISEOPage() {
       },
     })),
   };
-
   return (
     <>
       <script
@@ -128,8 +131,17 @@ export default function AISEOPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-
-      <AISEOContent faqItems={faqItems} />
+      <AISEOHero />
+      <WHATISAISEO />
+      <WHYTRADITIONALSEOISNOLONGERENOUGH />
+      <THEEXAGICAISEOMETHODOLOGY />
+      <TECHSTACKCAPABILITIES />
+      <WHONEEDSAISEO />
+      <PLATFORMSPECIFICOPTIMIZATION />
+      <GLOSSARY />
+      <AISEOFAQ faqItems={faqItems} />
+      <AISEOClosingCTA />
+      <ContactCTA />
     </>
   );
 }
