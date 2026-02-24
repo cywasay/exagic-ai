@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "Model Updates",
   description:
@@ -64,38 +66,25 @@ export default function ModelUpdatesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
-      <section
-        id="model-updates-hero"
-        aria-labelledby="updates-page-heading"
-        className="rag-section bg-white"
-      >
-        <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
-          <nav aria-label="Breadcrumb" className="mb-8">
-            <ol className="flex items-center gap-2 text-sm text-zinc-400">
-              <li>
-                <a href="/" className="hover:text-brand transition-colors">
-                  Home
-                </a>
-              </li>
-              <li aria-hidden="true">/</li>
-              <li>
-                <a href="/lab" className="hover:text-brand transition-colors">
-                  Lab
-                </a>
-              </li>
-              <li aria-hidden="true">/</li>
-              <li className="text-zinc-900 font-medium">Model Updates</li>
-            </ol>
-          </nav>
-          <div className="max-w-3xl">
-            <h1
-              id="updates-page-heading"
-              className="text-4xl font-semibold text-zinc-900"
+      <section className="relative overflow-hidden pt-32 pb-20 md:pt-48 md:pb-32 bg-zinc-50 border-b border-zinc-100">
+        <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center opacity-[0.03]"></div>
+        <div className="mx-auto max-w-7xl px-6 lg:px-12 relative z-10">
+          <div className="max-w-4xl">
+            <Link
+              href="/lab"
+              className="text-zinc-500 font-bold uppercase tracking-widest text-xs mb-8 inline-block hover:text-brand transition-colors"
             >
-              Model Updates
+              ← Back to Lab
+            </Link>
+            <h1 className="text-5xl md:text-8xl font-bold text-zinc-900 tracking-tight leading-[0.9]">
+              Model <span className="text-brand/50">Updates</span>
             </h1>
-            <p className="mt-6 text-lg text-zinc-500 leading-relaxed">
+            <p className="mt-10 text-2xl md:text-3xl font-medium text-zinc-900 leading-tight">
               Tracking how AI model releases impact industrial brand visibility.
+            </p>
+            <p className="mt-8 text-xl text-zinc-500 leading-relaxed max-w-2xl">
+              Analysis of Gemini, GPT-4o, and other LLMs for supply chain and
+              manufacturing queries.
             </p>
           </div>
         </div>
