@@ -83,10 +83,10 @@ export default function LabArticleLayout({
         />
       )}
 
-      <header className="relative overflow-hidden pt-32 pb-20 md:pt-48 md:pb-32 bg-zinc-50 border-b border-zinc-100">
+      <header className="relative overflow-hidden pt-32 pb-16 md:pt-40 md:pb-24 bg-zinc-50 border-b border-zinc-100">
         <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center opacity-[0.03]"></div>
         <div className="mx-auto max-w-7xl px-6 lg:px-12 relative z-10">
-          <div className="max-w-4xl">
+          <div className="max-w-3xl">
             <Link
               href="/lab"
               className="text-zinc-500 font-bold uppercase tracking-widest text-xs mb-8 inline-block hover:text-brand transition-colors"
@@ -111,7 +111,7 @@ export default function LabArticleLayout({
               )}
             </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-zinc-900 leading-[1.1] tracking-tight mb-8">
+            <h1 className="text-xl sm:text-4xl md:text-5xl font-semibold text-zinc-900 leading-[1.1] tracking-tight mb-8">
               {title}
             </h1>
 

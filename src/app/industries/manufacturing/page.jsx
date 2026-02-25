@@ -52,7 +52,7 @@ export default function ManufacturingPage() {
         aria-labelledby="mfg-heading"
         className="rag-section bg-white"
       >
-        <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
+        <div className="mx-auto max-w-7xl px-6 pt-32 pb-16 md:pt-40 md:pb-24">
           <nav aria-label="Breadcrumb" className="mb-8">
             <ol className="flex items-center gap-2 text-sm text-zinc-400">
               <li>
@@ -76,14 +76,14 @@ export default function ManufacturingPage() {
           <div className="max-w-3xl">
             <h1
               id="mfg-heading"
-              className="text-4xl font-semibold text-zinc-900"
+              className="text-xl sm:text-4xl md:text-5xl font-semibold text-zinc-900 tracking-tight leading-tight"
             >
               Industrial Manufacturing
             </h1>
             <p className="mt-2 text-sm font-medium text-brand">
               East Bay & San Leandro
             </p>
-            <p className="mt-6 text-lg text-zinc-500 leading-relaxed">
+            <p className="mt-6 text-lg text-zinc-700 leading-relaxed font-medium">
               We specialize in making industrial manufacturers visible to AI
               sourcing agents. From CNC machining to industrial hardware, we
               ensure your product catalogs become structured entities in the

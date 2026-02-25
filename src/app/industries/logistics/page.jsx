@@ -52,7 +52,7 @@ export default function LogisticsPage() {
         aria-labelledby="log-heading"
         className="rag-section bg-white"
       >
-        <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
+        <div className="mx-auto max-w-7xl px-6 pt-32 pb-16 md:pt-40 md:pb-24">
           <nav aria-label="Breadcrumb" className="mb-8">
             <ol className="flex items-center gap-2 text-sm text-zinc-400">
               <li>
@@ -76,14 +76,14 @@ export default function LogisticsPage() {
           <div className="max-w-3xl">
             <h1
               id="log-heading"
-              className="text-4xl font-semibold text-zinc-900"
+              className="text-xl sm:text-4xl md:text-5xl font-semibold text-zinc-900 tracking-tight leading-tight"
             >
               Logistics & Supply Chain
             </h1>
             <p className="mt-2 text-sm font-medium text-brand">
               Fremont Corridor
             </p>
-            <p className="mt-6 text-lg text-zinc-500 leading-relaxed">
+            <p className="mt-6 text-lg text-zinc-700 leading-relaxed font-medium">
               The Fremont logistics corridor is one of the most critical supply
               chain hubs in the Bay Area. We ensure logistics providers are
               cited by AI models when buyers search for reliable freight,
