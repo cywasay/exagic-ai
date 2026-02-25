@@ -31,20 +31,20 @@ export default function Hero() {
             project. The consultation is free and highly constructive.
           </p>
 
-          <div className="mt-8 flex flex-wrap items-center gap-6">
+          <div className="mt-8 flex items-center gap-4 sm:gap-6">
             <Link
               href="#contact"
-              className="rounded-md bg-brand px-6 py-3 text-base font-bold text-white shadow-xl transition-colors hover:bg-brand-dark"
+              className="rounded-md bg-brand px-4 py-3 sm:px-6 text-sm sm:text-base font-bold text-white shadow-xl transition-colors hover:bg-brand-dark whitespace-nowrap"
             >
               Schedule a Call
             </Link>
             <Link
               href="/ai-seo"
-              className="text-zinc-900 text-sm sm:text-base font-bold hover:text-brand transition-colors flex items-center gap-2"
+              className="text-zinc-900 text-xs sm:text-base font-bold hover:text-brand transition-colors flex items-center gap-1.5 sm:gap-2 whitespace-nowrap"
             >
               See Our Capabilities
               <svg
-                className="h-4 w-4"
+                className="h-3.5 w-3.5 sm:h-4 sm:w-4"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
