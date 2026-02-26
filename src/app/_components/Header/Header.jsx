@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Header() {
@@ -10,11 +11,15 @@ export default function Header() {
     <header className="fixed top-0 z-50 w-full bg-white/95 py-3 backdrop-blur-md">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-12">
         <div className="flex items-center gap-2">
-          <Link
-            href="/"
-            className="text-lg sm:text-xl font-bold uppercase tracking-tight text-zinc-900"
-          >
-            Exagic <span className="text-brand">AI</span>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/exagic-logo.png"
+              alt="Exagic AI"
+              width={120}
+              height={40}
+              className="h-8 w-auto object-contain"
+              priority
+            />
           </Link>
         </div>
 

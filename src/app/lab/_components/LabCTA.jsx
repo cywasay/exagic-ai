@@ -15,7 +15,7 @@ export default function LabCTA() {
               losing market share every day. Let&apos;s fix your data structure.
             </p>
             <Link
-              href="/#contact"
+              href="/contact"
               className="inline-flex items-center justify-center rounded-full bg-brand px-10 py-5 text-lg font-bold text-white shadow-xl transition-all hover:scale-105 active:scale-95"
             >
               Secure Your Citations

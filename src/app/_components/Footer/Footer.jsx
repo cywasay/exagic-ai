@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer
@@ -8,9 +10,13 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12">
           <div className="col-span-1 md:col-span-2">
-            <span className="text-xl font-bold tracking-tighter">
-              Exagic <span className="text-brand">AI</span>
-            </span>
+            <Image
+              src="/exagic-logo.png"
+              alt="Exagic AI"
+              width={150}
+              height={50}
+              className="h-10 w-auto object-contain mb-4 opacity-80 hover:opacity-100 transition-all"
+            />
             <p className="mt-4 max-w-sm text-zinc-500 text-sm leading-relaxed">
               Leading the industry through mechanistic interpretability and
               advanced model steering techniques for the industrial belt.

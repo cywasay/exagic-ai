@@ -1,9 +1,9 @@
 export default function ContactInfo() {
   const contactDetails = [
-    { label: "Phone", value: "+1 (415) 555-0123", sub: "Mon-Fri 9am-6pm PST" },
+    { label: "Phone", value: "+1 (510) 613 5346", sub: "Mon-Fri 9am-6pm PST" },
     {
       label: "Email",
-      value: "strategy@exagic-ai.vercel.app",
+      value: "inquiries@exagic.ai",
       sub: "General Inquiries",
     },
     {
@@ -20,8 +20,8 @@ export default function ContactInfo() {
           Contact <span className="text-brand">Exagic</span>
         </h1>
         <p className="mt-4 text-lg text-zinc-600 leading-relaxed">
-          Ready to bridge the gap between your hardware and the AI that
-          recommends it? Our technical team is ready to analyze your visibility.
+          Ready to unlock your business's AI potential and stay ahead in the AI
+          era? Our technical team is ready to analyze your AI visibility.
         </p>
       </div>
 

@@ -75,8 +75,8 @@ export default function INDUSTRY1PRECISIONMANUFACTURING() {
             <div className="mt-12 p-8 rounded-2xl bg-zinc-50 border border-zinc-100 flex items-center gap-6">
               <div className="text-5xl font-bold text-brand">73%</div>
               <div className="text-lg font-medium text-zinc-900 leading-tight">
-                of industrial buyers now use AI agents for initial supplier
-                sourcing
+                of industrial buyers are expected to use AI agents for initial
+                supplier sourcing by the end of 2030
               </div>
             </div>
 
