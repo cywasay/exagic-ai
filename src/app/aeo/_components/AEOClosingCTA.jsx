@@ -18,7 +18,7 @@ export default function AEOClosingCTA() {
             </p>
             <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6">
               <Link
-                href="#contact"
+                href="/contact"
                 className="w-full sm:w-auto inline-flex items-center justify-center rounded-md bg-brand px-10 py-5 text-xl font-bold text-white shadow-xl transition-all hover:bg-brand-dark active:scale-95"
               >
                 Schedule a Free Consultation

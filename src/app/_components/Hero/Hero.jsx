@@ -33,7 +33,7 @@ export default function Hero() {
 
           <div className="mt-8 flex items-center gap-4 sm:gap-6">
             <Link
-              href="#contact"
+              href="/contact"
               className="rounded-md bg-brand px-4 py-3 sm:px-6 text-sm sm:text-base font-bold text-white shadow-xl transition-colors hover:bg-brand-dark whitespace-nowrap"
             >
               Schedule a Call

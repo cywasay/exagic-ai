@@ -41,7 +41,7 @@ export default function Team() {
 
         <div className="mt-16 text-center">
           <Link
-            href="#contact"
+            href="/contact"
             className="inline-flex items-center gap-2 text-base font-bold text-zinc-900 group"
           >
             <span className="border-b-2 border-brand/30 hover:border-brand transition-colors pb-1">

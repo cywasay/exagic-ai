@@ -23,7 +23,7 @@ export default function IndustriesHero() {
             </p>
             <div className="mt-10">
               <Link
-                href="#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-md bg-brand px-6 py-3 text-base font-bold text-white shadow-xl transition-all hover:bg-brand-dark active:scale-95"
               >
                 Schedule a Consultation
