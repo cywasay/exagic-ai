@@ -22,20 +22,120 @@ export default function HomePage() {
   /* ═══════════════════════════════════════════════
      PRIMARY ENTITY – Organization
      ═══════════════════════════════════════════════ */
-  const organizationJsonLd = {
+  const professionalServiceJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "ProfessionalService",
     name: "Exagic AI",
-    url: "https://exagic-ai.vercel.app",
+    url: "https://www.exagic.ai",
+    logo: "https://www.exagic.ai/exagic-logo.png",
     description:
       "Exagic AI is a San Francisco AI SEO agency specializing in brand visibility optimization for industrial manufacturers, global suppliers, and hardware companies in the SF Bay Area corridor.",
-    areaServed: "San Francisco Bay Area",
-    serviceType: [
-      "AI SEO",
+    slogan: "Specialized AI SEO for the SF Industrial Corridor.",
+    knowsAbout: [
       "Answer Engine Optimization",
       "Selection Rate Optimization",
-      "AI Visibility Tracking",
+      "AI Search Visibility",
+      "Mechanistic Interpretability",
+      "Industrial AI SEO",
+      "Entity SEO",
+      "Retrieval-Augmented Generation Optimization",
+      "AI Procurement Visibility",
+      "Technical Spec Retrieval",
     ],
+    areaServed: [
+      {
+        "@type": "City",
+        name: "Oakland",
+        sameAs: "https://www.wikidata.org/wiki/Q17042",
+      },
+      {
+        "@type": "City",
+        name: "Fremont",
+        sameAs: "https://www.wikidata.org/wiki/Q486517",
+      },
+      {
+        "@type": "City",
+        name: "San Leandro",
+        sameAs: "https://www.wikidata.org/wiki/Q860166",
+      },
+      {
+        "@type": "City",
+        name: "San Jose",
+        sameAs: "https://www.wikidata.org/wiki/Q16553",
+      },
+      {
+        "@type": "City",
+        name: "Richmond",
+        sameAs: "https://www.wikidata.org/wiki/Q49114",
+      },
+      {
+        "@type": "City",
+        name: "Hayward",
+        sameAs: "https://www.wikidata.org/wiki/Q866660",
+      },
+      {
+        "@type": "City",
+        name: "Vallejo",
+        sameAs: "https://www.wikidata.org/wiki/Q108067",
+      },
+      {
+        "@type": "City",
+        name: "South San Francisco",
+        sameAs: "https://www.wikidata.org/wiki/Q878503",
+      },
+      {
+        "@type": "AdministrativeArea",
+        name: "San Francisco Bay Area",
+        sameAs: "https://www.wikidata.org/wiki/Q109186",
+      },
+    ],
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "San Francisco",
+      addressRegion: "CA",
+      addressCountry: "US",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: "37.6879",
+      longitude: "-122.0470",
+    },
+    serviceArea: {
+      "@type": "AdministrativeArea",
+      name: "San Francisco Bay Area",
+      sameAs: "https://www.wikidata.org/wiki/Q109186",
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "AI SEO Services for Industrial Manufacturers",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "AI Search Engine Optimization",
+            url: "https://www.exagic.ai/capabilities",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Answer Engine Optimization",
+            url: "https://www.exagic.ai/capabilities/aeo",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Selection Rate Optimization",
+            url: "https://www.exagic.ai/capabilities/sro",
+          },
+        },
+      ],
+    },
+    sameAs: ["https://www.linkedin.com/company/exagic-ai"],
   };
 
   const websiteJsonLd = {
@@ -71,7 +171,9 @@ export default function HomePage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(professionalServiceJsonLd),
+        }}
       />
       <script
         type="application/ld+json"
