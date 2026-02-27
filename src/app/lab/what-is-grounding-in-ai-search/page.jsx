@@ -69,8 +69,8 @@ export default function GroundingArticle() {
       faqSchema={faqSchema}
       breadcrumbItems={breadcrumbItems}
       previousArticle={{
-        title: "Vallejo Defense and Maritime AI Search",
-        href: "/lab/ai-search-vallejo-defense-maritime-suppliers",
+        title: "The 2026 Bay Area Industrial AI Visibility Report",
+        href: "/lab/2026-bay-area-industrial-ai-visibility-report",
       }}
       nextArticle={{
         title:

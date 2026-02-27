@@ -2,6 +2,7 @@ export default function sitemap() {
   const baseUrl = "https://exagic-ai.vercel.app";
 
   const labArticles = [
+    "2026-bay-area-industrial-ai-visibility-report",
     "aeo-vs-seo-industrial-brands",
     "ai-overviews-industrial-procurement",
     "ai-procurement-aerospace-defense-bay-area",

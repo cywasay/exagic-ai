@@ -7,6 +7,15 @@ export const categories = [
 ];
 
 export const articles = [
+  {
+    title: "The 2026 Bay Area Industrial AI Visibility Report",
+    description:
+      "Original research by Exagic AI assessing the AI retrieval readiness of 50 industrial manufacturers across the I-880 corridor. 18% are completely invisible to AI procurement agents.",
+    href: "/lab/2026-bay-area-industrial-ai-visibility-report",
+    date: "February 25, 2026",
+    category: "Location Specific",
+    badge: "Research Report",
+  },
   // --- NEW ARTICLES ---
   {
     title:
