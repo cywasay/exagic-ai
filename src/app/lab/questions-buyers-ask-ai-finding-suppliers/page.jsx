@@ -26,7 +26,7 @@ export default function QuestionsBuyersAskArticle() {
       "@type": "Organization",
       name: "Exagic AI",
     },
-    datePublished: "2026-02-15",
+    datePublished: "2025-11-15",
   };
 
   const breadcrumbItems = [
@@ -63,7 +63,7 @@ export default function QuestionsBuyersAskArticle() {
       title="The Exact Questions Industrial Buyers Ask AI When Finding Suppliers — And How to Answer Them"
       metaTitle="The Exact Questions Industrial Buyers Ask AI | Exagic AI"
       metaDescription="Industrial procurement teams ask AI highly specific questions when finding suppliers. Here are the most common query patterns and how suppliers can structure content to answer them directly."
-      datePublished="February 15, 2026"
+      datePublished="November 15, 2025"
       category="Q&A"
       tags={[
         "Procurement Queries",

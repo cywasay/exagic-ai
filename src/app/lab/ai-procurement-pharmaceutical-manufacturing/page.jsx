@@ -26,7 +26,7 @@ export default function PharmaArticle() {
       "@type": "Organization",
       name: "Exagic AI",
     },
-    datePublished: "2026-02-15",
+    datePublished: "2025-12-25",
   };
 
   const breadcrumbItems = [
@@ -64,7 +64,7 @@ export default function PharmaArticle() {
       title="AI Procurement in Pharmaceutical Manufacturing: How GMP Suppliers Get Found"
       metaTitle="AI Procurement in Pharmaceutical Manufacturing | Exagic AI"
       metaDescription="GMP-compliant suppliers, contract manufacturers, and life sciences service providers need AI-optimized content to be found by pharmaceutical procurement teams using AI tools."
-      datePublished="February 15, 2026"
+      datePublished="December 25, 2025"
       category="Industry Specific"
       tags={[
         "Pharmaceutical",

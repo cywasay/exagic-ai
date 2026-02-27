@@ -19,7 +19,7 @@ export default function ArticlePage() {
     description:
       "Comparative analysis of AEO and SEO within the industrial manufacturing context.",
     author: { "@type": "Organization", name: "Exagic AI" },
-    datePublished: "2026-02-01",
+    datePublished: "2025-08-25",
     publisher: { "@type": "Organization", name: "Exagic AI" },
   };
 
@@ -56,7 +56,7 @@ export default function ArticlePage() {
       title="AEO vs SEO: What the Difference Means for Industrial Companies"
       metaTitle="AEO vs SEO: What the Difference Means for SF Bay Area Industrial Companies | Exagic AI"
       metaDescription="A clear breakdown of how Answer Engine Optimization differs from traditional SEO — and why SF Bay Area industrial brands need both working together."
-      datePublished="February 1, 2026"
+      datePublished="August 25, 2025"
       category="Strategy"
       tags={["AEO", "SEO", "Industrial Marketing", "AI Search"]}
       breadcrumbItems={breadcrumbItems}

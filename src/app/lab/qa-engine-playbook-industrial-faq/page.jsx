@@ -25,7 +25,7 @@ export default function QAEnginePlaybookPage() {
       "@type": "Organization",
       name: "Exagic AI",
     },
-    datePublished: "2026-02-23",
+    datePublished: "2025-10-28",
   };
 
   const breadcrumbItems = [
@@ -42,7 +42,7 @@ export default function QAEnginePlaybookPage() {
       title="The Q&A Engine Playbook: Why FAQs are the New Lead Generators for Bay Area Manufacturers"
       metaTitle="The Q&A Engine Playbook: Industrial FAQs for AI Visibility"
       metaDescription="Why comprehensive FAQ strategy is critical for AI SEO, AEO, and getting Bay Area industrial brands cited by AI sourcing agents."
-      datePublished="February 23, 2026"
+      datePublished="October 28, 2025"
       category="Q&A"
       tags={["FAQ Strategy", "Procurement", "AEO", "Bay Area"]}
       articleSchema={articleSchema}

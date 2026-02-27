@@ -26,7 +26,7 @@ export default function EastBayArticle() {
       "@type": "Organization",
       name: "Exagic AI",
     },
-    datePublished: "2026-02-15",
+    datePublished: "2025-11-25",
   };
 
   const breadcrumbItems = [
@@ -63,7 +63,7 @@ export default function EastBayArticle() {
       title="The East Bay Industrial Corridor: AI SEO for Manufacturers in Oakland, Hayward, and Union City"
       metaTitle="The East Bay Industrial Corridor AI SEO | Exagic AI"
       metaDescription="Manufacturers and industrial suppliers in Oakland, Hayward, Newark, and Union City face AI procurement gaps. Here is how East Bay industrial companies build AI citation authority."
-      datePublished="February 15, 2026"
+      datePublished="November 25, 2025"
       category="Location Specific"
       tags={[
         "East Bay",

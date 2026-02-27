@@ -20,7 +20,7 @@ export default function ArticlePage() {
     description:
       "Exploration of the shift from traditional search to AI-mediated procurement for SF Bay Area industrial suppliers.",
     author: { "@type": "Organization", name: "Exagic AI" },
-    datePublished: "2026-02-01",
+    datePublished: "2025-09-25",
     publisher: { "@type": "Organization", name: "Exagic AI" },
   };
 
@@ -58,7 +58,7 @@ export default function ArticlePage() {
       title="How AI Search Is Changing How Industrial Buyers Find Suppliers"
       metaTitle="How AI Search Is Changing Industrial Supplier Discovery in the SF Bay Area | Exagic AI"
       metaDescription="Procurement teams in the SF Bay Area are using ChatGPT, Perplexity, and Gemini to find suppliers. Here is what industrial manufacturers need to know to appear in those searches."
-      datePublished="February 1, 2026"
+      datePublished="September 25, 2025"
       category="Location Specific"
       tags={["AI Search", "Procurement", "SF Bay Area", "Industrial"]}
       breadcrumbItems={breadcrumbItems}

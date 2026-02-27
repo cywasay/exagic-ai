@@ -26,7 +26,7 @@ export default function LLMBrandAssociationsArticle() {
       "@type": "Organization",
       name: "Exagic AI",
     },
-    datePublished: "2026-02-15",
+    datePublished: "2026-02-05",
   };
 
   const breadcrumbItems = [
@@ -63,7 +63,7 @@ export default function LLMBrandAssociationsArticle() {
       title="How Large Language Models Build Brand Associations and Why It Matters for Industrial Companies"
       metaTitle="How Large Language Models Build Brand Associations | Exagic AI"
       metaDescription="LLMs build associations between brands and concepts during training. Understanding this process is essential for industrial companies that want AI systems to represent them accurately."
-      datePublished="February 15, 2026"
+      datePublished="February 5, 2026"
       category="AI SEO Education"
       tags={["LLMs", "Brand Associations", "Entity SEO", "AI Perception"]}
       articleSchema={articleSchema}

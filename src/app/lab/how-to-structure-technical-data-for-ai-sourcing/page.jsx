@@ -25,7 +25,7 @@ export default function StructureDataPage() {
       "@type": "Organization",
       name: "Exagic AI",
     },
-    datePublished: "2026-02-23",
+    datePublished: "2025-10-20",
   };
 
   const breadcrumbItems = [
@@ -42,7 +42,7 @@ export default function StructureDataPage() {
       title="Structuring Technical Data: How AI Reads Industrial Catalogs"
       metaTitle="Structuring Technical Data for AI Sourcing | Exagic AI"
       metaDescription="How to use Schema.org, JSON-LD, and clear data architecture to ensure AI sourcing tools read your industrial catalogs."
-      datePublished="February 23, 2026"
+      datePublished="October 20, 2025"
       category="AI SEO Education"
       tags={["Technical Data", "JSON-LD", "Schema.org", "Industrial SEO"]}
       articleSchema={articleSchema}

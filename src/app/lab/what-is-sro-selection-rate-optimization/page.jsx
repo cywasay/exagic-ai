@@ -20,7 +20,7 @@ export default function ArticlePage() {
     description:
       "Definition and strategic importance of SRO for high-stakes industrial manufacturers.",
     author: { "@type": "Organization", name: "Exagic AI" },
-    datePublished: "2026-02-01",
+    datePublished: "2025-09-15",
     publisher: { "@type": "Organization", name: "Exagic AI" },
   };
 
@@ -56,7 +56,7 @@ export default function ArticlePage() {
       title="What Is Selection Rate Optimization (SRO) and Why Industrial Brands Need It"
       metaTitle="What Is Selection Rate Optimization (SRO) Specialists in AI SEO | Exagic AI"
       metaDescription="SRO is the AI SEO discipline that determines whether your content is cited once AI retrieves it. A practical guide for SF Bay Area industrial manufacturers."
-      datePublished="February 1, 2026"
+      datePublished="September 15, 2025"
       category="Strategy"
       tags={["SRO", "AI Citations", "Procurement", "Industrial SEO"]}
       breadcrumbItems={breadcrumbItems}

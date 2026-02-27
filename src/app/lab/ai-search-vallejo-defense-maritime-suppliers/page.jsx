@@ -18,7 +18,7 @@ export default function ArticlePage() {
     headline:
       "AI Search for Vallejo Defense and Maritime Suppliers: Visibility After Mare Island",
     author: { "@type": "Organization", name: "Exagic AI" },
-    datePublished: "2026-02-10",
+    datePublished: "2025-07-10",
     publisher: { "@type": "Organization", name: "Exagic AI" },
     description:
       "Exploring the modern defense and maritime industrial base in Vallejo.",
@@ -59,7 +59,7 @@ export default function ArticlePage() {
       title="Vallejo Defense and Maritime AI Search"
       metaTitle="Vallejo Defense and Maritime AI Search | Exagic AI"
       metaDescription="How defense and maritime suppliers in Vallejo can leverage the Mare Island legacy for AI citation authority."
-      datePublished="February 10, 2026"
+      datePublished="July 10, 2025"
       category="Industry Specific"
       tags={["Defense", "Maritime", "Vallejo", "Mare Island"]}
       breadcrumbItems={breadcrumbItems}

@@ -26,7 +26,7 @@ export default function SiliconValleyVisibilityArticle() {
       "@type": "Organization",
       name: "Exagic AI",
     },
-    datePublished: "2026-02-15",
+    datePublished: "2025-12-05",
   };
 
   const breadcrumbItems = [
@@ -63,7 +63,7 @@ export default function SiliconValleyVisibilityArticle() {
       title="Silicon Valley Supply Chain Visibility: How Vendors Get Found by Tech Sector AI Procurement"
       metaTitle="Silicon Valley Supply Chain Visibility | Exagic AI"
       metaDescription="Suppliers serving Silicon Valley tech manufacturers face AI procurement tools that evaluate vendors on specification-driven criteria. Here is how to build AI citation authority in this ecosystem."
-      datePublished="February 15, 2026"
+      datePublished="December 5, 2025"
       category="Location Specific"
       tags={[
         "Silicon Valley",

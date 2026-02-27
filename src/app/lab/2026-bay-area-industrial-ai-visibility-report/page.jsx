@@ -22,8 +22,8 @@ export default function VisibilityReportPart1() {
     headline: "The 2026 Bay Area Industrial AI Visibility Report",
     description:
       "Original research by Exagic AI assessing the AI retrieval readiness of 50 industrial manufacturers across Oakland, San Leandro, Fremont, and Hayward.",
-    datePublished: "2026-02-26",
-    dateModified: "2026-02-26",
+    datePublished: "2026-02-25",
+    dateModified: "2026-02-25",
     author: {
       "@type": "Organization",
       name: "Exagic AI",
@@ -106,7 +106,7 @@ export default function VisibilityReportPart1() {
       title="The 2026 Bay Area Industrial AI Visibility Report"
       metaTitle="The 2026 Bay Area Industrial AI Visibility Report | Exagic AI"
       metaDescription="Exagic AI analyzed 50 industrial manufacturers across Oakland, San Leandro, Fremont, and Hayward to assess their AI retrieval readiness. 18% are completely invisible to AI procurement agents."
-      datePublished="February 26, 2026"
+      datePublished="February 25, 2026"
       category="Industry Specific"
       tags={["AI Retrieval", "Industrial Manufacturing", "Bay Area", "SRO"]}
       articleSchema={articleSchema}
@@ -139,7 +139,7 @@ export default function VisibilityReportPart1() {
     >
       <div className="mb-8">
         <p className="text-sm font-bold uppercase tracking-widest text-zinc-500 mb-2">
-          Original Research by Exagic AI · Published February 26, 2026
+          Original Research by Exagic AI · Published February 25, 2026
         </p>
         <p className="text-sm text-zinc-400">
           50 companies assessed across Oakland, San Leandro, Fremont, and

@@ -26,7 +26,7 @@ export default function WhatBuyersWantArticle() {
       "@type": "Organization",
       name: "Exagic AI",
     },
-    datePublished: "2026-02-15",
+    datePublished: "2025-11-05",
   };
 
   const breadcrumbItems = [
@@ -63,7 +63,7 @@ export default function WhatBuyersWantArticle() {
       title="What Industrial Buyers Actually Want From AI Answers — And How Suppliers Can Provide It"
       metaTitle="What Industrial Buyers Want From AI Answers | Exagic AI"
       metaDescription="Industrial buyers query AI with specific intent. Understanding what they want from AI-generated answers determines what content suppliers need to build for AI citation."
-      datePublished="February 15, 2026"
+      datePublished="November 5, 2025"
       category="Q&A"
       tags={[
         "Buyer Intent",

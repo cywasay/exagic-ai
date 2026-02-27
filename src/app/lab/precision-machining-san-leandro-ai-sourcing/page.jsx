@@ -26,7 +26,7 @@ export default function SanLeandroMachiningPage() {
       "@type": "Organization",
       name: "Exagic AI",
     },
-    datePublished: "2026-02-23",
+    datePublished: "2025-10-05",
   };
 
   const breadcrumbItems = [
@@ -43,7 +43,7 @@ export default function SanLeandroMachiningPage() {
       title="Precision Machining in San Leandro: Surviving the Shift to AI Sourcing"
       metaTitle="AI Search for Precision Machining in San Leandro | Exagic AI"
       metaDescription="How machine shops and precision fabricators in San Leandro and the East Bay can get cited by AI procurement and Answer Engines."
-      datePublished="February 23, 2026"
+      datePublished="October 5, 2025"
       category="Location Specific"
       tags={["San Leandro", "East Bay", "Manufacturing", "CNC"]}
       articleSchema={articleSchema}

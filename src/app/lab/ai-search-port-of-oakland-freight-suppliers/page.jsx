@@ -20,7 +20,7 @@ export default function ArticlePage() {
     description:
       "How AI procurement tools are changing supplier discovery at the Port of Oakland and what freight companies must do to appear in AI-generated logistics searches.",
     author: { "@type": "Organization", name: "Exagic AI" },
-    datePublished: "2026-02-10",
+    datePublished: "2025-08-15",
     publisher: { "@type": "Organization", name: "Exagic AI" },
   };
 
@@ -59,7 +59,7 @@ export default function ArticlePage() {
       title="AI Search and the Port of Oakland"
       metaTitle="AI Search and the Port of Oakland | Exagic AI"
       metaDescription="How freight forwarders, 3PL operators, and logistics providers serving the Port of Oakland are cited by AI tools."
-      datePublished="February 10, 2026"
+      datePublished="August 15, 2025"
       category="Location Specific"
       tags={["Port of Oakland", "Freight", "Logistics", "AI Search"]}
       breadcrumbItems={breadcrumbItems}

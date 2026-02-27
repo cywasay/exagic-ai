@@ -17,7 +17,7 @@ export default function ArticlePage() {
     headline:
       "AI Procurement in South San Francisco's Biotech Cluster: Visibility for Life Sciences Suppliers",
     author: { "@type": "Organization", name: "Exagic AI" },
-    datePublished: "2026-02-10",
+    datePublished: "2025-07-18",
     publisher: { "@type": "Organization", name: "Exagic AI" },
     description:
       "Analyzing the regulatory-first procurement culture in South San Francisco's biotech corridor.",
@@ -57,7 +57,7 @@ export default function ArticlePage() {
       title="Biotech AI Procurement in South San Francisco"
       metaTitle="AI Procurement in South SF Biotech Cluster | Exagic AI"
       metaDescription="How biotech and life sciences suppliers in South San Francisco get found by AI procurement tools."
-      datePublished="February 10, 2026"
+      datePublished="July 18, 2025"
       category="Location Specific"
       tags={["Biotech", "Life Sciences", "South San Francisco", "Genentech"]}
       breadcrumbItems={breadcrumbItems}

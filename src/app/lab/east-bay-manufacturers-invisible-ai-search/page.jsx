@@ -20,7 +20,7 @@ export default function ArticlePage() {
     description:
       "Analysis of the visibility gap for East Bay industrial brands and a step-by-step fix guide.",
     author: { "@type": "Organization", name: "Exagic AI" },
-    datePublished: "2026-02-01",
+    datePublished: "2025-09-05",
     publisher: { "@type": "Organization", name: "Exagic AI" },
   };
 
@@ -58,7 +58,7 @@ export default function ArticlePage() {
       title="Why East Bay Manufacturers Are Invisible in AI Search"
       metaTitle="Why East Bay Manufacturers Are Invisible in AI Search — And How to Fix It | Exagic AI"
       metaDescription="Most East Bay manufacturers are qualified suppliers being skipped by AI procurement tools. Here is exactly why — and the specific fixes that make industrial brands AI-citable."
-      datePublished="February 1, 2026"
+      datePublished="September 5, 2025"
       category="Location Specific"
       tags={["East Bay", "Manufacturing", "AI Visibility", "AEO"]}
       breadcrumbItems={breadcrumbItems}

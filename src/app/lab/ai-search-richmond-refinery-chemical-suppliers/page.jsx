@@ -18,7 +18,7 @@ export default function ArticlePage() {
     headline:
       "AI Procurement and the Richmond-Benicia Industrial Corridor: Visibility for Refinery and Chemical Suppliers",
     author: { "@type": "Organization", name: "Exagic AI" },
-    datePublished: "2026-02-10",
+    datePublished: "2025-08-05",
     publisher: { "@type": "Organization", name: "Exagic AI" },
     description:
       "How AI procurement tools are changing vendor discovery in the Richmond-Benicia industrial corridor.",
@@ -59,7 +59,7 @@ export default function ArticlePage() {
       title="AI Procurement in the Richmond-Benicia Corridor"
       metaTitle="AI Procurement and the Richmond-Benicia Corridor | Exagic AI"
       metaDescription="How refinery and chemical suppliers in Richmond and Benicia get found by AI procurement tools."
-      datePublished="February 10, 2026"
+      datePublished="August 5, 2025"
       category="Industry Specific"
       tags={["Refinery", "Chemical Suppliers", "Richmond", "Benicia"]}
       breadcrumbItems={breadcrumbItems}

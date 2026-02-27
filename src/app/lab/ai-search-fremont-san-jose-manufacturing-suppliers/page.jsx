@@ -18,7 +18,7 @@ export default function ArticlePage() {
     headline:
       "AI Search for Fremont and San Jose Manufacturers: How Supply Chain Vendors Get Cited",
     author: { "@type": "Organization", name: "Exagic AI" },
-    datePublished: "2026-02-10",
+    datePublished: "2025-07-26",
     publisher: { "@type": "Organization", name: "Exagic AI" },
     description:
       "An analysis of the manufacturing procurement landscape in Fremont and San Jose and how Tier 1 and Tier 2 suppliers can optimize for citation by AI tools.",
@@ -59,7 +59,7 @@ export default function ArticlePage() {
       title="AI Search for Fremont and San Jose Manufacturers"
       metaTitle="AI Search for Fremont and San Jose Manufacturers | Exagic AI"
       metaDescription="Suppliers serving Tesla's Fremont factory, Silicon Valley aerospace, and San Jose defense manufacturers need AI-optimized content to appear in AI procurement searches."
-      datePublished="February 10, 2026"
+      datePublished="July 26, 2025"
       category="Location Specific"
       tags={["Fremont", "San Jose", "Manufacturing", "Tesla Supply Chain"]}
       breadcrumbItems={breadcrumbItems}

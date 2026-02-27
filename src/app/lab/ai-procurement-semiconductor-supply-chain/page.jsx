@@ -26,7 +26,7 @@ export default function SemiconductorArticle() {
       "@type": "Organization",
       name: "Exagic AI",
     },
-    datePublished: "2026-02-15",
+    datePublished: "2026-01-05",
   };
 
   const breadcrumbItems = [
@@ -64,7 +64,7 @@ export default function SemiconductorArticle() {
       title="AI Procurement in the Semiconductor Supply Chain: Visibility for Silicon Valley Vendors"
       metaTitle="AI Procurement in the Semiconductor Supply Chain | Exagic AI"
       metaDescription="Semiconductor equipment suppliers, cleanroom service providers, and specialty chemical vendors serving Silicon Valley fabs need AI-optimized content for procurement visibility."
-      datePublished="February 15, 2026"
+      datePublished="January 5, 2026"
       category="Industry Specific"
       tags={[
         "Semiconductor",

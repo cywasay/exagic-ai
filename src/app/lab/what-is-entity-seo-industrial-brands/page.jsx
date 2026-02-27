@@ -26,7 +26,7 @@ export default function EntitySEOArticle() {
       "@type": "Organization",
       name: "Exagic AI",
     },
-    datePublished: "2026-02-15",
+    datePublished: "2026-01-25",
   };
 
   const breadcrumbItems = [
@@ -61,7 +61,7 @@ export default function EntitySEOArticle() {
       title="What Is Entity SEO and Why Industrial Brands Need It for AI Visibility"
       metaTitle="What Is Entity SEO and Why Industrial Brands Need It | Exagic AI"
       metaDescription="Entity SEO is the practice of defining your brand, products, and services as named, verifiable entities that AI systems can understand and cite. Here is how it works for industrial companies."
-      datePublished="February 15, 2026"
+      datePublished="January 25, 2026"
       category="AI SEO Education"
       tags={["Entity SEO", "Knowledge Graph", "Structured Data", "AI SEO"]}
       articleSchema={articleSchema}

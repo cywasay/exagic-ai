@@ -25,7 +25,7 @@ export default function SiliconValleyHardwarePage() {
       "@type": "Organization",
       name: "Exagic AI",
     },
-    datePublished: "2026-02-23",
+    datePublished: "2025-10-12",
   };
 
   const breadcrumbItems = [
@@ -42,7 +42,7 @@ export default function SiliconValleyHardwarePage() {
       title="AI SEO for Silicon Valley Hardware Startups: Bypassing Legacy Monopolies"
       metaTitle="AI SEO for Silicon Valley Hardware Startups | Exagic AI"
       metaDescription="How hardware startups in Silicon Valley and San Jose can use AI SEO and entity structures to bypass legacy manufacturers and build rapid B2B visibility."
-      datePublished="February 23, 2026"
+      datePublished="October 12, 2025"
       category="AI SEO Education"
       tags={["Startups", "Hardware", "Silicon Valley", "AEO"]}
       articleSchema={articleSchema}

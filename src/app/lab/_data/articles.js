@@ -32,7 +32,7 @@ export const articles = [
     description:
       "LLMs build associations between brands and concepts during training. Understanding this process is essential for industrial companies that want AI systems to represent them accurately.",
     href: "/lab/how-llms-build-brand-associations",
-    date: "February 15, 2026",
+    date: "February 5, 2026",
     category: "AI SEO Education",
   },
   {
@@ -41,7 +41,7 @@ export const articles = [
     description:
       "Entity SEO is the practice of defining your brand, products, and services as named, verifiable entities that AI systems can understand and cite.",
     href: "/lab/what-is-entity-seo-industrial-brands",
-    date: "February 15, 2026",
+    date: "January 25, 2026",
     category: "AI SEO Education",
   },
   {
@@ -50,7 +50,7 @@ export const articles = [
     description:
       "Google's AI Overviews and AI Mode are changing how industrial buyers find suppliers. Here is how they work and what manufacturers must do to appear.",
     href: "/lab/ai-overviews-industrial-procurement",
-    date: "February 15, 2026",
+    date: "January 18, 2026",
     category: "AI SEO Education",
   },
   {
@@ -59,7 +59,7 @@ export const articles = [
     description:
       "Aerospace and defense procurement teams use AI to pre-screen suppliers for AS9100, ITAR, and NADCAP qualifications.",
     href: "/lab/ai-procurement-aerospace-defense-bay-area",
-    date: "February 15, 2026",
+    date: "January 12, 2026",
     category: "Industry Specific",
   },
   {
@@ -68,7 +68,7 @@ export const articles = [
     description:
       "Semiconductor equipment suppliers and specialty chemical vendors serving Silicon Valley fabs need AI-optimized content for procurement visibility.",
     href: "/lab/ai-procurement-semiconductor-supply-chain",
-    date: "February 15, 2026",
+    date: "January 5, 2026",
     category: "Industry Specific",
   },
   {
@@ -77,7 +77,7 @@ export const articles = [
     description:
       "GMP-compliant suppliers and life sciences service providers need AI-optimized content to be found by pharmaceutical procurement teams.",
     href: "/lab/ai-procurement-pharmaceutical-manufacturing",
-    date: "February 15, 2026",
+    date: "December 25, 2025",
     category: "Industry Specific",
   },
   {
@@ -86,7 +86,7 @@ export const articles = [
     description:
       "EHS consultants and safety equipment suppliers serving Bay Area manufacturers need AI-optimized content to be found by safety procurement teams.",
     href: "/lab/ai-search-industrial-safety-compliance-suppliers",
-    date: "February 15, 2026",
+    date: "December 15, 2025",
     category: "Industry Specific",
   },
   {
@@ -95,7 +95,7 @@ export const articles = [
     description:
       "Suppliers serving Silicon Valley tech manufacturers face AI procurement tools that evaluate vendors on specification-driven criteria.",
     href: "/lab/silicon-valley-supply-chain-ai-visibility",
-    date: "February 15, 2026",
+    date: "December 5, 2025",
     category: "Location Specific",
   },
   {
@@ -104,7 +104,7 @@ export const articles = [
     description:
       "Manufacturers and industrial suppliers in Oakland, Hayward, Newark, and Union City face AI procurement gaps.",
     href: "/lab/east-bay-industrial-corridor-ai-seo",
-    date: "February 15, 2026",
+    date: "November 25, 2025",
     category: "Location Specific",
   },
   {
@@ -113,7 +113,7 @@ export const articles = [
     description:
       "Industrial procurement teams ask AI highly specific questions when finding suppliers. Here are the most common query patterns.",
     href: "/lab/questions-buyers-ask-ai-finding-suppliers",
-    date: "February 15, 2026",
+    date: "November 15, 2025",
     category: "Q&A",
   },
   {
@@ -122,7 +122,7 @@ export const articles = [
     description:
       "Industrial buyers query AI with specific intent. Understanding what they want from AI-generated answers determines what content you need.",
     href: "/lab/what-industrial-buyers-want-ai-answers",
-    date: "February 15, 2026",
+    date: "November 5, 2025",
     category: "Q&A",
   },
   // --- PREVIOUS ARTICLES (Assigned Categories) ---
@@ -131,7 +131,7 @@ export const articles = [
     description:
       "Why comprehensive FAQ strategy is critical for AI SEO, AEO, and getting Bay Area industrial brands cited by AI sourcing agents.",
     href: "/lab/qa-engine-playbook-industrial-faq",
-    date: "February 23, 2026",
+    date: "October 28, 2025",
     category: "Q&A",
   },
   {
@@ -139,7 +139,7 @@ export const articles = [
     description:
       "How to use Schema.org, JSON-LD, and clear data architecture to ensure AI sourcing tools read your industrial catalogs.",
     href: "/lab/how-to-structure-technical-data-for-ai-sourcing",
-    date: "February 23, 2026",
+    date: "October 20, 2025",
     category: "AI SEO Education",
   },
   {
@@ -148,7 +148,7 @@ export const articles = [
     description:
       "How hardware startups in Silicon Valley and San Jose can use AI SEO and entity structures to bypass legacy manufacturers.",
     href: "/lab/ai-seo-silicon-valley-hardware-startups",
-    date: "February 23, 2026",
+    date: "October 12, 2025",
     category: "Location Specific",
   },
   {
@@ -157,7 +157,7 @@ export const articles = [
     description:
       "How machine shops and precision fabricators in San Leandro and the East Bay can get cited by AI procurement.",
     href: "/lab/precision-machining-san-leandro-ai-sourcing",
-    date: "February 23, 2026",
+    date: "October 5, 2025",
     category: "Location Specific",
   },
   {
@@ -166,7 +166,7 @@ export const articles = [
     description:
       "Why procurement teams are querying ChatGPT and Perplexity before Google — and what SF Bay Area suppliers must do.",
     href: "/lab/ai-search-industrial-suppliers-sf-bay-area",
-    date: "February 2026",
+    date: "September 25, 2025",
     category: "AI SEO Education",
   },
   {
@@ -175,7 +175,7 @@ export const articles = [
     description:
       "A practical guide to SRO — the AI-native discipline that determines whether your content gets cited or ignored.",
     href: "/lab/what-is-sro-selection-rate-optimization",
-    date: "February 2026",
+    date: "September 15, 2025",
     category: "AI SEO Education",
   },
   {
@@ -184,7 +184,7 @@ export const articles = [
     description:
       "Most East Bay manufacturers have qualified capabilities but structurally broken content. Here is how to fix it.",
     href: "/lab/east-bay-manufacturers-invisible-ai-search",
-    date: "February 2026",
+    date: "September 5, 2025",
     category: "Location Specific",
   },
   {
@@ -193,7 +193,7 @@ export const articles = [
     description:
       "A clear breakdown of how Answer Engine Optimization differs from traditional SEO — and why you need both.",
     href: "/lab/aeo-vs-seo-industrial-brands",
-    date: "February 2026",
+    date: "August 25, 2025",
     category: "AI SEO Education",
   },
   {
@@ -201,7 +201,7 @@ export const articles = [
     description:
       "How freight forwarders, 3PL operators, and logistics providers at the Port of Oakland can become the supplier AI procurement tools cite.",
     href: "/lab/ai-search-port-of-oakland-freight-suppliers",
-    date: "February 10, 2026",
+    date: "August 15, 2025",
     category: "Location Specific",
   },
   {
@@ -209,7 +209,7 @@ export const articles = [
     description:
       "How refinery vendors serving Chevron Richmond and Valero Benicia can build AI citation authority.",
     href: "/lab/ai-search-richmond-refinery-chemical-suppliers",
-    date: "February 10, 2026",
+    date: "August 5, 2025",
     category: "Location Specific",
   },
   {
@@ -217,7 +217,7 @@ export const articles = [
     description:
       "How Tesla supply chain vendors and San Jose aerospace manufacturers can become AI-citable.",
     href: "/lab/ai-search-fremont-san-jose-manufacturing-suppliers",
-    date: "February 10, 2026",
+    date: "July 26, 2025",
     category: "Location Specific",
   },
   {
@@ -225,7 +225,7 @@ export const articles = [
     description:
       "How life sciences suppliers serving the South SF biotech corridor can build AI visibility.",
     href: "/lab/ai-search-south-san-francisco-biotech-suppliers",
-    date: "February 10, 2026",
+    date: "July 18, 2025",
     category: "Location Specific",
   },
   {
@@ -233,7 +233,7 @@ export const articles = [
     description:
       "How Vallejo's post-Mare Island defense industrial base can build AI citation authority.",
     href: "/lab/ai-search-vallejo-defense-maritime-suppliers",
-    date: "February 10, 2026",
+    date: "July 10, 2025",
     category: "Location Specific",
   },
 ];

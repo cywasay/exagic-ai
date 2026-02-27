@@ -26,7 +26,7 @@ export default function AIOverviewsArticle() {
       "@type": "Organization",
       name: "Exagic AI",
     },
-    datePublished: "2026-02-15",
+    datePublished: "2026-01-18",
   };
 
   const breadcrumbItems = [
@@ -63,7 +63,7 @@ export default function AIOverviewsArticle() {
       title="Google AI Overviews and AI Mode: What Industrial Brands Need to Know"
       metaTitle="Google AI Overviews and AI Mode | Exagic AI"
       metaDescription="Google's AI Overviews and AI Mode are changing how industrial buyers find suppliers. Here is how they work and what manufacturers must do to appear in them."
-      datePublished="February 15, 2026"
+      datePublished="January 18, 2026"
       category="AI SEO Education"
       tags={[
         "Google AI Overviews",
