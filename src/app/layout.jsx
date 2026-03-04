@@ -43,7 +43,7 @@ export const metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Exagic AI – AI SEO & SRO Agency San Francisco",
+        alt: "Exagic AI | AI SEO & SRO Agency San Francisco",
       },
     ],
     locale: "en_US",

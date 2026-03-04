@@ -20,7 +20,7 @@ export const metadata = {
 
 export default function HomePage() {
   /* ═══════════════════════════════════════════════
-     PRIMARY ENTITY – Organization
+     PRIMARY ENTITY: Organization
      ═══════════════════════════════════════════════ */
   const professionalServiceJsonLd = {
     "@context": "https://schema.org",
@@ -152,7 +152,7 @@ export default function HomePage() {
   };
 
   /* ═══════════════════════════════════════════════
-     BREADCRUMB – Helps AI models understand site hierarchy
+     BREADCRUMB: Helps AI models understand site hierarchy
      ═══════════════════════════════════════════════ */
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",

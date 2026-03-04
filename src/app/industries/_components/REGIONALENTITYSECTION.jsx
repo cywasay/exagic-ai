@@ -11,7 +11,7 @@ export default function REGIONALENTITYSECTION() {
             </h2>
             <p className="mt-6 text-xl font-medium text-zinc-900 leading-relaxed text-zinc-900">
               Exagic AI serves industrial clients across the full SF Bay Area
-              corridor — from the East Bay manufacturing belt and Fremont
+              corridor, from the East Bay manufacturing belt and Fremont
               logistics hub to Silicon Valley hardware companies and the Port of
               Oakland supply chain network. Regional entity precision is core to
               our AI SEO process for every client.
@@ -63,8 +63,8 @@ export default function REGIONALENTITYSECTION() {
                 San Francisco Industrial Corridor
               </h3>
               <p className="mt-4 text-zinc-600 leading-relaxed">
-                The historic SF industrial waterfront — including Dogpatch,
-                Bayview, and the Potrero district — housing design-build firms,
+                The historic SF industrial waterfront, including Dogpatch,
+                Bayview, and the Potrero district, housing design-build firms,
                 specialty manufacturers, and technical services companies.
               </p>
             </div>
