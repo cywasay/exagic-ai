@@ -12,7 +12,7 @@ export default function LabHero() {
             don&apos;t.
           </p>
           <p className="mt-4 text-sm sm:text-base text-zinc-500 leading-relaxed max-w-2xl">
-            This is our lab—where we document the math of visibility and the
+            This is our lab, where we document the math of visibility and the
             reality of Answer Engine Optimization. No jargon. Only numbers.
           </p>
         </div>

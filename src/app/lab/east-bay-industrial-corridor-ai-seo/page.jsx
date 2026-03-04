@@ -82,7 +82,7 @@ export default function EastBayArticle() {
       }}
       nextArticle={{
         title:
-          "The Exact Questions Industrial Buyers Ask AI When Finding Suppliers — And How to Answer Them",
+          "The Exact Questions Industrial Buyers Ask AI When Finding Suppliers and How to Answer Them",
         href: "/lab/questions-buyers-ask-ai-finding-suppliers",
       }}
     >

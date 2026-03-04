@@ -72,12 +72,12 @@ export default function VisibilityReportPart1() {
     {
       number: "90%",
       label:
-        "Fremont companies in Tier 1 or Tier 2 — the highest visibility index of any surveyed city",
+        "Fremont companies in Tier 1 or Tier 2, the highest visibility index of any surveyed city",
     },
     {
       number: "18%",
       label:
-        "Total sample classified as Tier 4 (Invisible) — non-existent to AI procurement agents",
+        "Total sample classified as Tier 4 (Invisible), non-existent to AI procurement agents",
     },
     {
       number: "34%",
@@ -116,21 +116,25 @@ export default function VisibilityReportPart1() {
           question:
             "What percentage of Bay Area industrial manufacturers are invisible in AI procurement searches?",
           answer:
-            "According to Exagic AI's 2026 Bay Area Industrial AI Visibility Report, 18% of the 50 industrial manufacturers assessed across Oakland, San Leandro, Fremont, and Hayward are classified as Tier 4 — completely invisible to AI procurement agents including ChatGPT, Gemini, and Perplexity. An additional 65% of Tier 3 companies maintain websites indexed in traditional search but bypassed by RAG-based AI systems due to insufficient narrative depth and missing structured data.",
+            "According to Exagic AI's 2026 Bay Area Industrial AI Visibility Report, 18% of the 50 industrial manufacturers assessed across Oakland, San Leandro, Fremont, and Hayward are classified as Tier 4, completely invisible to AI procurement agents including ChatGPT, Gemini, and Perplexity. An additional 65% of Tier 3 companies maintain websites indexed in traditional search but bypassed by RAG-based AI systems due to insufficient narrative depth and missing structured data.",
         },
         {
           question:
             "Why do Fremont manufacturers have better AI visibility than Oakland and San Leandro manufacturers?",
           answer:
-            "Fremont manufacturers achieve significantly higher AI visibility because the semiconductor and EV industries require detailed technical documentation — scientific papers, patent filings, product specification pages, and technical glossaries — that serve as high-quality AI training and retrieval data. San Leandro and Oakland manufacturers have historically relied on local networks and legacy directories rather than digital documentation, producing minimal AI-retrievable content despite equivalent or superior manufacturing capabilities.",
+            "Fremont manufacturers achieve significantly higher AI visibility because the semiconductor and EV industries require detailed technical documentation, including scientific papers, patent filings, product specification pages, and technical glossaries, that serve as high-quality AI training and retrieval data. San Leandro and Oakland manufacturers have historically relied on local networks and legacy directories rather than digital documentation, producing minimal AI-retrievable content despite equivalent or superior manufacturing capabilities.",
         },
         {
           question:
             "What is the most common reason Bay Area industrial companies are invisible in AI search?",
           answer:
-            "The most common cause — affecting 42% of invisible companies in the Exagic AI 2026 report — is the Brochureware Trap: websites built in the mid-2010s with heavy imagery and minimal descriptive text. RAG-based AI systems require narrative evidence of capability to cite a company. The second most common cause, affecting 28% of cases, is PDF archiving — technical capability data locked in downloadable documents that AI retrieval systems deprioritize when generating comparative procurement answers.",
+            "The most common cause, affecting 42% of invisible companies in the Exagic AI 2026 report, is the Brochureware Trap: websites built in the mid-2010s with heavy imagery and minimal descriptive text. RAG-based AI systems require narrative evidence of capability to cite a company. The second most common cause, affecting 28% of cases, is PDF archiving: technical capability data locked in downloadable documents that AI retrieval systems deprioritize when generating comparative procurement answers.",
         },
       ]}
+      previousArticle={{
+        title: "How AI Agents Will Transform Procurement by 2027",
+        href: "/lab/ai-agents-procurement-2027-manufacturing",
+      }}
       nextArticle={{
         title:
           "What Is Grounding in AI Search and Why It Determines Who Gets Cited",
@@ -154,12 +158,12 @@ export default function VisibilityReportPart1() {
         to determine which companies AI procurement agents can find, which they
         describe incorrectly, and which are completely invisible. The findings
         are stark: 18% of the industrial companies we assessed do not exist to
-        AI. They have physical operations, decades of tenure, and real clients —
+        AI. They have physical operations, decades of tenure, and real clients,
         but procurement teams using ChatGPT, Gemini, or Perplexity will never
         find them.
       </p>
 
-      <h2>Executive Summary — Six Key Findings</h2>
+      <h2>Executive Summary: Six Key Findings</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-12">
         {stats.map((stat, index) => (
@@ -181,16 +185,17 @@ export default function VisibilityReportPart1() {
         These numbers reflect a structural visibility gap that has nothing to do
         with the quality of the manufacturing operations themselves. The
         companies in Tier 4 are not inferior suppliers. They are suppliers whose
-        capabilities exist in formats — PDFs, legacy directories, brochure
-        websites — that AI retrieval systems cannot parse. The procurement teams
-        that would hire them are now querying AI first. And AI cannot find them.
+        capabilities exist in formats, including PDFs, legacy directories, and
+        brochure websites, that AI retrieval systems cannot parse. The
+        procurement teams that would hire them are now querying AI first. And AI
+        cannot find them.
       </p>
 
       <p>
         The contrast is sharpest between Fremont and San Leandro. Two cities
         separated by 15 miles on the I-880 corridor. One with 90% AI visibility.
         One with the highest concentration of Tier 4 companies in the study. The
-        difference is not manufacturing capability — it is the digital
+        difference is not manufacturing capability: it is the digital
         documentation standards forced on Fremont's semiconductor and EV
         industries versus the tribal knowledge networks that San Leandro's
         precision machining sector has relied on for decades.
@@ -203,7 +208,7 @@ export default function VisibilityReportPart1() {
         operating in Oakland, San Leandro, Fremont, and Hayward across three AI
         platforms: OpenAI ChatGPT-4o, Google Gemini Pro, and Perplexity Sonar
         Large. These platforms were selected for their distinct retrieval
-        architectures — ChatGPT&apos;s broad training data, Gemini&apos;s native
+        architectures: ChatGPT&apos;s broad training data, Gemini&apos;s native
         integration with Google&apos;s live index, and Perplexity&apos;s
         real-time citation-heavy RAG engine. A company&apos;s final visibility
         tier was assigned based on consensus across all three platforms.
@@ -264,7 +269,7 @@ export default function VisibilityReportPart1() {
             <td className="font-bold text-teal-600">Tier 4</td>
             <td className="font-bold">Invisible</td>
             <td>
-              Complete retrieval failure across all three AI platforms — no
+              Complete retrieval failure across all three AI platforms, with no
               citation in either name or category searches
             </td>
           </tr>
@@ -283,19 +288,19 @@ export default function VisibilityReportPart1() {
       <div className="flex flex-wrap gap-x-6 gap-y-2 mb-6 text-sm font-semibold">
         <div className="flex items-center gap-2">
           <span className="w-3 h-3 rounded-full bg-zinc-300"></span>
-          <span className="text-zinc-600">Tier 1 — Fully Visible</span>
+          <span className="text-zinc-600">Tier 1: Fully Visible</span>
         </div>
         <div className="flex items-center gap-2">
           <span className="w-3 h-3 rounded-full bg-amber-400"></span>
-          <span className="text-zinc-600">Tier 2 — Partially Visible</span>
+          <span className="text-zinc-600">Tier 2: Partially Visible</span>
         </div>
         <div className="flex items-center gap-2">
           <span className="w-3 h-3 rounded-full bg-orange-400"></span>
-          <span className="text-zinc-600">Tier 3 — Indexed, Not Retrieved</span>
+          <span className="text-zinc-600">Tier 3: Indexed, Not Retrieved</span>
         </div>
         <div className="flex items-center gap-2">
           <span className="w-3 h-3 rounded-full bg-red-500"></span>
-          <span className="text-zinc-600">Tier 4 — Invisible</span>
+          <span className="text-zinc-600">Tier 4: Invisible</span>
         </div>
       </div>
 
@@ -804,20 +809,20 @@ export default function VisibilityReportPart1() {
         San Leandro presents the sharpest paradox in this study: world-class
         precision manufacturing paired with the lowest AI visibility index among
         the four cities. Firms like WessDel and M.A.R.&apos;s Engineering
-        operate at genuinely elite levels — AlBeMet machining for aerospace,
-        40-year histories of supplying defense and semiconductor clients. These
-        capabilities would command premium pricing in any global supply chain.
-        But for decades, business came through local networks, personal
-        relationships, and industry word-of-mouth. Digital presence was never
-        the point.
+        operate at genuinely elite levels, including AlBeMet machining for
+        aerospace, 40-year histories of supplying defense and semiconductor
+        clients. These capabilities would command premium pricing in any global
+        supply chain. But for decades, business came through local networks,
+        personal relationships, and industry word-of-mouth. Digital presence was
+        never the point.
       </p>
 
       <p>
         That calculus has reversed. M.A.R.&apos;s Engineering achieves Tier 1
-        status — but only because its 40-year history and I-880 proximity have
-        been documented enough online for AI to contextualize its role.
+        status, although only because its 40-year history and I-880 proximity
+        have been documented enough online for AI to contextualize its role.
         WessDel&apos;s Tier 1 status comes from a single powerful
-        differentiator: AlBeMet — aluminum beryllium machining. That specific
+        differentiator: AlBeMet, aluminum beryllium machining. That specific
         material name is rare enough to serve as a unique semantic anchor. When
         a buyer queries AI for AlBeMet machining capability in the Bay Area,
         there is essentially one answer. That is what entity precision looks
@@ -827,9 +832,6 @@ export default function VisibilityReportPart1() {
       <p>
         Ashlock Company sits at the other extreme. More than half a century of
         food processing machinery manufacturing. Cherry and olive pitting
-        technology that has no equivalent in the region. And zero AI visibility
-        — not because the company is failing, but because its digital footprint
-        is inaccessible, its capabilities are undocumented in any AI-readable
         format, and its last meaningful digital signal predates the current
         generation of AI retrieval systems. When AI is queried for food
         equipment manufacturers in San Leandro, Ashlock does not appear.
@@ -841,9 +843,9 @@ export default function VisibilityReportPart1() {
 
       <p>
         Oakland&apos;s visibility profile is dominated by what this research
-        terms the Global Brand Effect. The city&apos;s food manufacturing sector
-        — featuring Nestlé, PepsiCo, Tyson Foods, Kraft Heinz, and
-        Anheuser-Busch — automatically achieves Tier 1 visibility because of the
+        terms the Global Brand Effect. The city&apos;s food manufacturing
+        sector, featuring Nestlé, PepsiCo, Tyson Foods, Kraft Heinz, and
+        Anheuser-Busch, automatically achieves Tier 1 visibility because of the
         massive global training data associated with these corporations. Every
         AI platform knows what Nestlé makes. The problem is specificity: when
         queried about Tyson Foods in Oakland, AI returns a general meat
@@ -853,37 +855,31 @@ export default function VisibilityReportPart1() {
       </p>
 
       <p>
-        The genuine Oakland visibility leaders are not the global brands — they
-        are the companies tied to the Port of Oakland&apos;s logistics
-        infrastructure. Matson Logistics, as the exclusive operator of the
-        Oakland Foreign Trade Zone, has built what this research identifies as a
-        data moat. By publishing extensive, structured guides on customs bonded
-        warehouse space, FTZ light manufacturing capabilities, and container
-        drayage logistics, Matson has become the default AI citation for
-        international trade and port logistics queries. Dreisbach&apos;s Cool
-        Port facility achieves the same through detailed cold-chain and
-        transload documentation. The result: 3x higher citation frequency
-        compared to Oakland logistics providers with generic service
-        descriptions.
+        The genuine Oakland visibility leaders are not the global brands, they
+        are the companies tied to the Port of Oakland logistics infrastructure.
+        Matson Logistics, as the exclusive operator of the Oakland Foreign Trade
+        Zone, has built what this research identifies as a data moat. By
+        publishing extensive, structured guides on customs bonded warehouse
+        space, FTZ light manufacturing capabilities, and container drayage
+        logistics, Matson has become the default AI citation for international
+        trade and port logistics queries. Dreisbach&apos;s Cool Port facility
+        achieves the same through detailed cold-chain and transload
+        documentation. The result: 3x higher citation frequency compared to
+        Oakland logistics providers with generic service descriptions.
       </p>
 
       <p>
-        The gap is clearest in metal fabrication. Industrial Metal Supply and
-        Emerald Steel both sit below Tier 1. The reason is content specificity —
-        or its absence. &apos;We do welding&apos; has zero AI citation
-        authority. &apos;AWS D1.1 certified structural steel welding with 10-ton
-        crane capacity and 48-hour turnaround for Bay Area construction
-        projects&apos; is citable. The manufacturing capability may be
-        identical. The AI retrieval outcome is not.
+        The gap is clearest in metal fabrication, including Industrial Metal
+        Supply and Emerald Steel both sit below Tier 1. The reason is content
+        specificity
       </p>
 
       <h3>Hayward and Newark: Biotech and Specialization</h3>
 
       <p>
-        The Hayward and Newark sub-region demonstrates that regulatory
         requirements are the most reliable driver of AI visibility.
-        Newark&apos;s biotech cluster — anchored by Thermo Fisher Scientific,
-        Cepheid, and Bio-Techne — achieves near-universal Tier 1 status because
+        Newark&apos;s biotech cluster, anchored by Thermo Fisher Scientific,
+        Cepheid, and Bio-Techne, achieves near-universal Tier 1 status because
         FDA registration, GMP compliance, cleanroom certification, and ISO
         requirements force these companies to maintain detailed, publicly
         accessible technical documentation. That documentation becomes
@@ -898,12 +894,10 @@ export default function VisibilityReportPart1() {
         9001:2015 certification, and its specific toll blending and packaging
         capabilities. By providing exact counts of tanks and square footage,
         Royal Chemical enables AI to give grounded, specific answers about its
-        production capacity — not estimates, not generic chemical manufacturing
-        summaries. GILLIG achieves comparable Tier 1 status through the volume
-        of government procurement records and transit agency documentation that
-        references its transit buses — an external citation strategy that most
-        manufacturers cannot replicate but that illustrates the authority value
-        of third-party documentation.
+        production capacity, not estimates or generic chemical manufacturing
+        summaries. GILLIG achieves comparable Tier 1 status, an external
+        citation strategy that most manufacturers cannot replicate but that
+        illustrates the authority value of third-party documentation.
       </p>
 
       <h3>Industry Category Visibility Analysis</h3>
@@ -912,11 +906,11 @@ export default function VisibilityReportPart1() {
         AI visibility is not evenly distributed across industrial sectors. The
         data reveals a direct correlation between regulatory documentation
         requirements and AI retrieval readiness. Industries forced to maintain
-        detailed public technical records — semiconductor, biotech, logistics —
-        achieve the highest visibility scores. Industries that historically
-        communicated capability through personal relationships and local
-        reputation — precision machining, metal fabrication — show the largest
-        visibility gaps.
+        detailed public technical records, including semiconductor, biotech, and
+        logistics, achieve the highest visibility scores. Industries that
+        historically communicated capability through personal relationships and
+        local reputation, such as precision machining and metal fabrication,
+        show the largest visibility gaps.
       </p>
 
       <div className="relative left-1/2 -translate-x-1/2 w-[calc(100vw-3rem)] max-w-5xl px-4 my-12">
@@ -1085,11 +1079,11 @@ export default function VisibilityReportPart1() {
                 <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-brand/10 text-brand flex items-center justify-center text-sm font-bold">
                   1
                 </span>
-                The Brochureware Trap — 42% of Invisible Cases
+                The Brochureware Trap, affecting 42% of Invisible Cases
               </h3>
               <p>
                 The most common cause of AI invisibility in this study is not a
-                technical failure — it is a content failure. 42% of companies
+                technical failure, it is a content failure. 42% of companies
                 classified as Tier 3 or Tier 4 maintain websites that were built
                 for human eyes in the mid-2010s: heavy imagery, minimal
                 descriptive text, capability communicated through visual design
@@ -1104,8 +1098,8 @@ export default function VisibilityReportPart1() {
                 system needs to find a page that describes cherry and olive
                 pitting machinery in readable text. If that description exists
                 only as an image caption or a decorative headline, the AI has
-                nothing to retrieve. Ashlock Company — with over 50 years of
-                genuine expertise in food processing machinery — is the clearest
+                nothing to retrieve. Ashlock Company, with over 50 years of
+                genuine expertise in food processing machinery, is the clearest
                 example of this failure in the study. The expertise exists. The
                 text does not.
               </p>
@@ -1116,7 +1110,7 @@ export default function VisibilityReportPart1() {
                 <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-brand/10 text-brand flex items-center justify-center text-sm font-bold">
                   2
                 </span>
-                PDF Archiving and the Citation Gap — 28% of Cases
+                PDF Archiving and the Citation Gap, affecting 28% of Cases
               </h3>
               <p>
                 The second most common cause of AI invisibility is the
@@ -1129,15 +1123,15 @@ export default function VisibilityReportPart1() {
               </p>
               <p>
                 PCC Structurals illustrates this pattern. The company maintains
-                thorough quality documentation — supplier requirements, material
-                specifications, process certifications — but much of this
-                information lives in structured PDF documents rather than
+                thorough quality documentation, including supplier requirements,
+                material specifications, and process certifications, but much of
+                this information lives in structured PDF documents rather than
                 indexed HTML content. The information is technically accessible.
                 But when an AI system is generating a real-time answer about
                 investment casting suppliers in San Leandro, it will weave
                 HTML-based capability content into its response before it
                 attempts to parse a PDF attachment. The fix is not to eliminate
-                PDF documentation — it is to mirror the key data points as
+                PDF documentation, it is to mirror the key data points as
                 structured web content.
               </p>
             </section>
@@ -1147,12 +1141,12 @@ export default function VisibilityReportPart1() {
                 <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-brand/10 text-brand flex items-center justify-center text-sm font-bold">
                   3
                 </span>
-                Brand Collision and Semantic Ambiguity — 10% of Cases
+                Brand Collision and Semantic Ambiguity, affecting 10% of Cases
               </h3>
               <p>
                 Brand collision affects a smaller but highly consequential
                 subset of companies. When an industrial manufacturer shares a
-                name — or a close variation — with a more digitally prominent
+                name, or a close variation, with a more digitally prominent
                 non-industrial entity, AI platforms default to the entity with
                 stronger semantic signals. One San Leandro industrial company in
                 this study has such a light digital footprint that AI platforms
@@ -1161,17 +1155,17 @@ export default function VisibilityReportPart1() {
                 operation for decades. The AI has never heard of it.
               </p>
               <p>
-                The fix for brand collision is not a name change — it is
-                semantic anchoring. Unique industrial keywords that appear
-                nowhere outside the manufacturer&apos;s specific context create
+                The fix for brand collision is not a name change, it is semantic
+                anchoring. Unique industrial keywords that appear nowhere
+                outside the manufacturer&apos;s specific context create
                 disambiguation signals that AI systems can use to distinguish
                 the correct entity. A chemical blending operation that
                 consistently uses its specific process terminology, facility
                 certifications, and geographic identifiers in its web content
                 gives AI the context it needs to route queries correctly.
-                Generic language — &apos;industrial services,&apos;
-                &apos;manufacturing solutions,&apos; &apos;Bay Area
-                supplier&apos; — provides no disambiguation at all.
+                Generic language, such as &apos;industrial services,&apos;
+                &apos;manufacturing solutions,&apos; or &apos;Bay Area
+                supplier,&apos; provides no disambiguation at all.
               </p>
             </section>
 
@@ -1180,13 +1174,13 @@ export default function VisibilityReportPart1() {
                 <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-brand/10 text-brand flex items-center justify-center text-sm font-bold">
                   4
                 </span>
-                Absence of Structured Schema — Affects 60% of Tier 3 Companies
+                Absence of Structured Schema, affecting 60% of Tier 3 Companies
               </h3>
               <p>
                 A critical differentiator between Tier 1 and Tier 3 companies in
                 this study is the use of structured data. 60% of Tier 1 and Tier
                 2 companies in Fremont and Newark use clear facility-level
-                identifiers in their schema markup — Organization schema,
+                identifiers in their schema markup: Organization schema,
                 Manufacturer schema, LocalBusiness schema with specific service
                 areas and certifications. In contrast, the majority of Tier 3
                 companies in Oakland and San Leandro have no structured data at
@@ -1196,8 +1190,8 @@ export default function VisibilityReportPart1() {
                 The practical impact: without schema, AI systems treat a
                 manufacturer&apos;s website as a general information source
                 rather than a verified service provider at a specific location
-                with specific capabilities. Royal Chemical in Hayward — a Tier 1
-                company — provides its exact facility address, square footage,
+                with specific capabilities. Royal Chemical in Hayward, a Tier 1
+                company, provides its exact facility address, square footage,
                 tank count, and ISO certification in structured, indexed
                 content. An AI asked about chemical blending capacity in Hayward
                 can retrieve and cite those specific numbers. A competitor with
@@ -1211,19 +1205,19 @@ export default function VisibilityReportPart1() {
                 <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-brand/10 text-brand flex items-center justify-center text-sm font-bold">
                   5
                 </span>
-                Buried or Missing Certification Data — Affects 85% of Tier 4
+                Buried or Missing Certification Data, affecting 85% of Tier 4
                 Companies
               </h3>
               <p>
                 In industrial procurement, certifications are qualification
-                gates — not marketing assets. Buyers do not search for
-                &apos;good machining shops in Fremont.&apos; They search for
-                &apos;AS9100D certified CNC machining in Fremont with ITAR
-                registration.&apos; AI systems are trained to prioritize
-                companies with verifiable certifications because certifications
-                are the industrial equivalent of authority signals. 85% of Tier
-                1 companies in this study list their certifications prominently
-                in plain HTML text on their primary capability pages.
+                gates, not marketing assets. Buyers do not search for &apos;good
+                machining shops in Fremont.&apos; They search for &apos;AS9100D
+                certified CNC machining in Fremont with ITAR registration.&apos;
+                AI systems are trained to prioritize companies with verifiable
+                certifications because certifications are the industrial
+                equivalent of authority signals. 85% of Tier 1 companies in this
+                study list their certifications prominently in plain HTML text
+                on their primary capability pages.
               </p>
               <p>
                 The 85% of Tier 4 companies that lack visible certification data
@@ -1307,7 +1301,7 @@ export default function VisibilityReportPart1() {
 
         <div className="border-y border-zinc-100 py-24">
           <h2 className="text-3xl font-bold text-zinc-900 mb-8">
-            Case Study — Tier 1 Excellence: Mr. Plastics, San Leandro
+            Case Study: Tier 1 Excellence, Mr. Plastics, San Leandro
           </h2>
           <p className="lead text-lg text-zinc-700 mb-12">
             Mr. Plastics — founded 1985, located on Doolittle Drive in San
@@ -1369,7 +1363,7 @@ export default function VisibilityReportPart1() {
 
         <div className="py-24">
           <h2 className="text-3xl font-bold text-zinc-900 mb-8">
-            Case Study — Tier 4 Invisibility: Ashlock Company, San Leandro
+            Case Study: Tier 4 Invisibility, Ashlock Company, San Leandro
           </h2>
           <p className="lead text-lg text-zinc-700 mb-12">
             Ashlock Company has manufactured food processing machinery in San
