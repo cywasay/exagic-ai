@@ -2,9 +2,9 @@ import LabArticleLayout from "@/components/LabArticleLayout";
 
 export const metadata = {
   title:
-    "Why East Bay Manufacturers Are Invisible in AI Search — And How to Fix It | Exagic AI",
+    "Why East Bay Manufacturers Are Invisible in AI Search and How to Fix It | Exagic AI",
   description:
-    "Most East Bay manufacturers are qualified suppliers being skipped by AI procurement tools. Here is exactly why — and the specific fixes that make industrial brands AI-citable.",
+    "Most East Bay manufacturers are qualified suppliers being skipped by AI procurement tools. Here is exactly why and the specific fixes that make industrial brands AI-citable.",
   alternates: {
     canonical:
       "https://exagic-ai.vercel.app/lab/east-bay-manufacturers-invisible-ai-search",
@@ -16,7 +16,7 @@ export default function ArticlePage() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "Why East Bay Manufacturers Are Invisible in AI Search — And How to Fix It",
+      "Why East Bay Manufacturers Are Invisible in AI Search and How to Fix It",
     description:
       "Analysis of the visibility gap for East Bay industrial brands and a step-by-step fix guide.",
     author: { "@type": "Organization", name: "Exagic AI" },
@@ -28,19 +28,19 @@ export default function ArticlePage() {
     {
       question: "Why are East Bay manufacturers invisible in AI search?",
       answer:
-        "Most East Bay manufacturers have content built for traditional search — keyword-optimized but structurally inaccessible to AI retrieval. Technical specifications in PDFs, generic service descriptions without entity precision, and missing schema markup are the three primary causes of AI invisibility for industrial manufacturers in the East Bay.",
+        "Most East Bay manufacturers have content built for traditional search, keyword-optimized but structurally inaccessible to AI retrieval. Technical specifications in PDFs, generic service descriptions without entity precision, and missing schema markup are the three primary causes of AI invisibility for industrial manufacturers in the East Bay.",
     },
     {
       question:
         "What is the fastest fix for an East Bay manufacturer to improve AI visibility?",
       answer:
-        "The fastest improvement comes from rewriting the homepage and primary service pages using entity-precise language — specific materials, certifications, tolerances, application categories, and geographic identifiers. This single change makes content significantly more extractable by AI retrieval systems and can produce citation improvements within 4–8 weeks.",
+        "The fastest improvement comes from rewriting the homepage and primary service pages using entity-precise language, specifically materials, certifications, tolerances, application categories, and geographic identifiers. This single change makes content significantly more extractable by AI retrieval systems and can produce citation improvements within 4 to 8 weeks.",
     },
     {
       question:
         "Do East Bay manufacturers need to rebuild their entire website to become AI-visible?",
       answer:
-        "No. AI visibility improvements are applied at the content and schema level — restructuring existing pages rather than rebuilding the site. The most impactful changes (entity-precise descriptions, structured capabilities pages, core schema markup) can be implemented on an existing site without a full rebuild.",
+        "No. AI visibility improvements are applied at the content and schema level, restructuring existing pages rather than rebuilding the site. The most impactful changes (entity-precise descriptions, structured capabilities pages, core schema markup) can be implemented on an existing site without a full rebuild.",
     },
   ];
 
@@ -56,8 +56,8 @@ export default function ArticlePage() {
   return (
     <LabArticleLayout
       title="Why East Bay Manufacturers Are Invisible in AI Search"
-      metaTitle="Why East Bay Manufacturers Are Invisible in AI Search — And How to Fix It | Exagic AI"
-      metaDescription="Most East Bay manufacturers are qualified suppliers being skipped by AI procurement tools. Here is exactly why — and the specific fixes that make industrial brands AI-citable."
+      metaTitle="Why East Bay Manufacturers Are Invisible in AI Search and How to Fix It | Exagic AI"
+      metaDescription="Most East Bay manufacturers are qualified suppliers being skipped by AI procurement tools. Here is exactly why and the specific fixes that make industrial brands AI-citable."
       datePublished="September 5, 2025"
       category="Location Specific"
       tags={["East Bay", "Manufacturing", "AI Visibility", "AEO"]}
@@ -87,7 +87,7 @@ export default function ArticlePage() {
       <p>
         We queried Perplexity for "Fremont machine shops" last week. Only two
         names appeared with citations. There are over 50 shops in that cluster.
-        The other 48 did not lack skill—they lacked extractable data.
+        The other 48 did not lack skill, they lacked extractable data.
       </p>
       <p>
         AI systems are looking for verifiable technical entities. If your
@@ -145,7 +145,7 @@ export default function ArticlePage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-10 not-prose">
         <div className="p-8 rounded-2xl bg-zinc-50 border border-zinc-200 shadow-sm">
           <h4 className="text-sm font-bold text-zinc-400 uppercase tracking-widest mb-4">
-            Version A — Invisible
+            Version A: Invisible
           </h4>
           <p className="text-zinc-900 italic font-medium">
             "Bay Area Precision is a leading manufacturer of custom precision
@@ -155,7 +155,7 @@ export default function ArticlePage() {
         </div>
         <div className="p-8 rounded-2xl bg-brand/5 border border-brand/20 shadow-sm">
           <h4 className="text-sm font-bold text-brand uppercase tracking-widest mb-4">
-            Version B — Citable
+            Version B: Citable
           </h4>
           <p className="text-zinc-900 italic font-medium">
             "Bay Area Precision is a Fremont manufacturer of CNC-machined

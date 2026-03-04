@@ -8,6 +8,16 @@ export const categories = [
 
 export const articles = [
   {
+    title:
+      "How AI Agents Will Transform Procurement by 2027: Is Your Manufacturing Brand Visible?",
+    description:
+      "By 2027, autonomous AI agents will handle supplier discovery, qualification, and shortlisting for manufacturing, production, and wholesale buyers. Most industrial brands are not ready.",
+    href: "/lab/ai-agents-procurement-2027-manufacturing",
+    date: "March 4, 2026",
+    category: "Industry Specific",
+    badge: "New",
+  },
+  {
     title: "The 2026 Bay Area Industrial AI Visibility Report",
     description:
       "Original research by Exagic AI assessing the AI retrieval readiness of 50 industrial manufacturers across the I-880 corridor. 18% are completely invisible to AI procurement agents.",
@@ -109,7 +119,7 @@ export const articles = [
   },
   {
     title:
-      "The Exact Questions Industrial Buyers Ask AI When Finding Suppliers — And How to Answer Them",
+      "The Exact Questions Industrial Buyers Ask AI When Finding Suppliers and How to Answer Them",
     description:
       "Industrial procurement teams ask AI highly specific questions when finding suppliers. Here are the most common query patterns.",
     href: "/lab/questions-buyers-ask-ai-finding-suppliers",
@@ -118,7 +128,7 @@ export const articles = [
   },
   {
     title:
-      "What Industrial Buyers Actually Want From AI Answers — And How Suppliers Can Provide It",
+      "What Industrial Buyers Actually Want From AI Answers and How Suppliers Can Provide It",
     description:
       "Industrial buyers query AI with specific intent. Understanding what they want from AI-generated answers determines what content you need.",
     href: "/lab/what-industrial-buyers-want-ai-answers",
@@ -164,7 +174,7 @@ export const articles = [
     title:
       "How AI Search Is Changing How Industrial Buyers Find Suppliers in the SF Bay Area",
     description:
-      "Why procurement teams are querying ChatGPT and Perplexity before Google — and what SF Bay Area suppliers must do.",
+      "Why procurement teams are querying ChatGPT and Perplexity before Google and what SF Bay Area suppliers must do.",
     href: "/lab/ai-search-industrial-suppliers-sf-bay-area",
     date: "September 25, 2025",
     category: "AI SEO Education",
@@ -173,14 +183,14 @@ export const articles = [
     title:
       "What Is Selection Rate Optimization (SRO) and Why Industrial Brands Need It",
     description:
-      "A practical guide to SRO — the AI-native discipline that determines whether your content gets cited or ignored.",
+      "A practical guide to SRO, the AI-native discipline that determines whether your content gets cited or ignored.",
     href: "/lab/what-is-sro-selection-rate-optimization",
     date: "September 15, 2025",
     category: "AI SEO Education",
   },
   {
     title:
-      "Why East Bay Manufacturers Are Invisible in AI Search — And How to Fix It",
+      "Why East Bay Manufacturers Are Invisible in AI Search and How to Fix It",
     description:
       "Most East Bay manufacturers have qualified capabilities but structurally broken content. Here is how to fix it.",
     href: "/lab/east-bay-manufacturers-invisible-ai-search",
@@ -191,7 +201,7 @@ export const articles = [
     title:
       "AEO vs SEO: What the Difference Means for SF Bay Area Industrial Companies",
     description:
-      "A clear breakdown of how Answer Engine Optimization differs from traditional SEO — and why you need both.",
+      "A clear breakdown of how Answer Engine Optimization differs from traditional SEO and why you need both.",
     href: "/lab/aeo-vs-seo-industrial-brands",
     date: "August 25, 2025",
     category: "AI SEO Education",

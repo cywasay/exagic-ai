@@ -15,7 +15,7 @@ export default function WhatBuyersWantArticle() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "What Industrial Buyers Actually Want From AI Answers — And How Suppliers Can Provide It",
+      "What Industrial Buyers Actually Want From AI Answers and How Suppliers Can Provide It",
     description:
       "Industrial buyers query AI with specific intent. Understanding what they want from AI-generated answers determines what content suppliers need to build for AI citation.",
     author: {
@@ -42,7 +42,7 @@ export default function WhatBuyersWantArticle() {
     {
       question: "How do industrial buyers use AI for procurement?",
       answer:
-        "Industrial buyers query AI platforms with a specific intent: get a qualified, specific answer faster than traditional search allows. They are not browsing — they are deciding. They use AI for qualification confirmation, capability matching, geographic filtering, experience validation, and direct vendor comparisons.",
+        "Industrial buyers query AI platforms with a specific intent: get a qualified, specific answer faster than traditional search allows. They are not browsing, they are deciding. They use AI for qualification confirmation, capability matching, geographic filtering, experience validation, and direct vendor comparisons.",
     },
     {
       question:
@@ -54,13 +54,13 @@ export default function WhatBuyersWantArticle() {
       question:
         "Why is geographic qualification intent important in AI search?",
       answer:
-        "Buyers utilize AI to find suppliers within a specific geographic area or strict proximity to a facility. Suppliers satisfy this intent by encoding precise geographic entity signals — specific cities, industrial districts, distances from named anchors — in page content and LocalBusiness or Organization schema.",
+        "Buyers utilize AI to find suppliers within a specific geographic area or strict proximity to a facility. Suppliers satisfy this intent by encoding precise geographic entity signals, including specific cities, industrial districts, and distances from named anchors, in page content and LocalBusiness or Organization schema.",
     },
   ];
 
   return (
     <LabArticleLayout
-      title="What Industrial Buyers Actually Want From AI Answers — And How Suppliers Can Provide It"
+      title="What Industrial Buyers Actually Want From AI Answers and How Suppliers Can Provide It"
       metaTitle="What Industrial Buyers Want From AI Answers | Exagic AI"
       metaDescription="Industrial buyers query AI with specific intent. Understanding what they want from AI-generated answers determines what content suppliers need to build for AI citation."
       datePublished="November 5, 2025"
@@ -76,7 +76,7 @@ export default function WhatBuyersWantArticle() {
       breadcrumbItems={breadcrumbItems}
       previousArticle={{
         title:
-          "The Exact Questions Industrial Buyers Ask AI When Finding Suppliers — And How to Answer Them",
+          "The Exact Questions Industrial Buyers Ask AI When Finding Suppliers and How to Answer Them",
         href: "/lab/questions-buyers-ask-ai-finding-suppliers",
       }}
     >
@@ -88,7 +88,7 @@ export default function WhatBuyersWantArticle() {
         someone who does.
       </p>
 
-      <h2>Intent 1 — Qualification Confirmation</h2>
+      <h2>Intent 1: Qualification Confirmation</h2>
       <p>
         The first task for any AI is filtering. A buyer asks: &quot;Is this shop
         ITAR registered?&quot; If the AI can't find that text in your HTML, you
@@ -102,20 +102,20 @@ export default function WhatBuyersWantArticle() {
         your status, the human never will.
       </p>
 
-      <h2>Intent 2 — Capability Matching</h2>
+      <h2>Intent 2: Capability Matching</h2>
       <p>
         Once you pass the filter, the buyer asks: &quot;Can they handle my
         material?&quot; This is where the math starts. The AI extracts your
         tolerances and volume limits to match them against a blueprint.
       </p>
       <p>
-        We've found that companies that list exact material grades—like 6061-T6
-        aluminum—get 30% more citations than those who just say
+        We've found that companies that list exact material grades, like 6061-T6
+        aluminum, get 30% more citations than those who just say
         &quot;metals.&quot; AI loves technical metrics. It doesn't care about
         your &quot;passion for quality.&quot; It wants your machine bed size.
       </p>
 
-      <h2>Intent 3 — Geographic Qualification</h2>
+      <h2>Intent 3: Geographic Qualification</h2>
       <p>
         Proximity is a search entity. Buyers use AI to find suppliers within a
         specific 50-mile radius to cut down on transit risks.
@@ -127,7 +127,7 @@ export default function WhatBuyersWantArticle() {
         will be too.
       </p>
 
-      <h2>Intent 4 — Experience Validation</h2>
+      <h2>Intent 4: Experience Validation</h2>
       <p>
         Buyers want to know you've done this before. They ask AI for shops with
         niche program experience, like the F-35 or a specific medical device.
@@ -138,15 +138,15 @@ export default function WhatBuyersWantArticle() {
         components. That specific string is what the AI is hunting for.
       </p>
 
-      <h2>Intent 5 — Comparison and Selection</h2>
+      <h2>Intent 5: Comparison and Selection</h2>
       <p>
         At the end of the search, the AI compares three options. It looks for
         the tiebreaker. This might be your lead time or a specialized secondary
         process.
       </p>
       <p>
-        We've seen that one unique, indexable data point—like a proprietary
-        coating—can move you to the number one spot. The AI is looking for a
+        We've seen that one unique, indexable data point, like a proprietary
+        coating, can move you to the number one spot. The AI is looking for a
         logical reason to pick you. Give it the data it needs to justify the
         choice.
       </p>

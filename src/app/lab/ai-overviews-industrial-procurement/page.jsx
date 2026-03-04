@@ -42,19 +42,19 @@ export default function AIOverviewsArticle() {
     {
       question: "What are Google AI Overviews?",
       answer:
-        "Google AI Overviews are AI-generated synthesized answers that appear at the top of Google search results, drawing from retrieved and selected web sources to answer user queries directly. They cite sources inline and appear above traditional ranked results. For industrial procurement queries, AI Overviews increasingly provide supplier recommendations and technical comparisons — making inclusion in AI Overviews a high-priority visibility goal for industrial manufacturers.",
+        "Google AI Overviews are AI-generated synthesized answers that appear at the top of Google search results, drawing from retrieved and selected web sources to answer user queries directly. They cite sources inline and appear above traditional ranked results. For industrial procurement queries, AI Overviews increasingly provide supplier recommendations and technical comparisons, making inclusion in AI Overviews a high-priority visibility goal for industrial manufacturers.",
     },
     {
       question:
         "How does Google decide which sources to include in AI Overviews?",
       answer:
-        "Google's AI Overview system retrieves content through its standard search index and extracts shallow snippets — typically the first 150–300 characters of retrieved pages — to determine relevance and inclusion. Pages with direct-answer opening content, entity-precise descriptions, and FAQPage schema markup are significantly more likely to be retrieved and selected for AI Overview inclusion than pages with generic introductory content or specification data in non-indexed formats.",
+        "Google's AI Overview system retrieves content through its standard search index and extracts shallow snippets, typically the first 150 to 300 characters of retrieved pages, to determine relevance and inclusion. Pages with direct-answer opening content, entity-precise descriptions, and FAQPage schema markup are significantly more likely to be retrieved and selected for AI Overview inclusion than pages with generic introductory content or specification data in non-indexed formats.",
     },
     {
       question:
         "Do traditional SEO rankings affect Google AI Overview inclusion?",
       answer:
-        "Yes. Google AI Overviews draw from Google's existing search index, meaning pages that are well-indexed, authoritative, and performing in traditional search are more likely to be retrieved for AI Overview consideration. However, ranking highly in traditional search does not guarantee AI Overview inclusion — content must also meet the direct-answer structure and entity precision requirements that the AI Overview extraction system prioritizes.",
+        "Yes. Google AI Overviews draw from Google's existing search index, meaning pages that are well-indexed, authoritative, and performing in traditional search are more likely to be retrieved for AI Overview consideration. However, ranking highly in traditional search does not guarantee AI Overview inclusion, as content must also meet the direct-answer structure and entity precision requirements that the AI Overview extraction system prioritizes.",
     },
   ];
 
@@ -88,7 +88,7 @@ export default function AIOverviewsArticle() {
       <p className="lead text-xl font-medium text-zinc-900 mb-10">
         Google is moving the goalposts. Its new AI Overviews now sit at the top
         of 80% of technical searches. If you are an industrial supplier, you are
-        likely noticing a drop in clicks. This is not because your rank fell—it
+        likely noticing a drop in clicks. This is not because your rank fell, it
         is because the AI is answering the user before they ever reach your
         site. Appearing here requires a complete shift in how you write for the
         machine.
@@ -134,8 +134,8 @@ export default function AIOverviewsArticle() {
       <p>
         Once the system finds a page, it looks for specific snippets. It
         extracts the first 200 characters to check for relevance. It is
-        searching for "entity matches"—specific terms like material grades or
-        certifications.
+        searching for &quot;entity matches,&quot; specific terms like material
+        grades or certifications.
       </p>
       <p>
         The machine does not read your whole page. It scans the opening. If you

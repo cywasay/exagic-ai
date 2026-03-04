@@ -15,7 +15,7 @@ export default function QuestionsBuyersAskArticle() {
     "@context": "https://schema.org",
     "@type": "Article",
     headline:
-      "The Exact Questions Industrial Buyers Ask AI When Finding Suppliers — And How to Answer Them",
+      "The Exact Questions Industrial Buyers Ask AI When Finding Suppliers and How to Answer Them",
     description:
       "Industrial procurement teams ask AI highly specific questions when finding suppliers. Here are the most common query patterns and how suppliers can structure content to answer them directly.",
     author: {
@@ -42,7 +42,7 @@ export default function QuestionsBuyersAskArticle() {
     {
       question: "What types of questions do industrial buyers ask AI?",
       answer:
-        "Industrial buyers ask AI tools questions — not keyword searches. Understanding the exact structure and content of these questions is the foundation of effective AEO for industrial suppliers. This article documents the most common industrial procurement query patterns across five categories and provides specific content recommendations for how suppliers can structure their web content to directly answer each query type.",
+        "Industrial buyers ask AI tools questions, not keyword searches. Understanding the exact structure and content of these questions is the foundation of effective AEO for industrial suppliers. This article documents the most common industrial procurement query patterns across five categories and provides specific content recommendations for how suppliers can structure their web content to directly answer each query type.",
     },
     {
       question:
@@ -60,7 +60,7 @@ export default function QuestionsBuyersAskArticle() {
 
   return (
     <LabArticleLayout
-      title="The Exact Questions Industrial Buyers Ask AI When Finding Suppliers — And How to Answer Them"
+      title="The Exact Questions Industrial Buyers Ask AI When Finding Suppliers and How to Answer Them"
       metaTitle="The Exact Questions Industrial Buyers Ask AI | Exagic AI"
       metaDescription="Industrial procurement teams ask AI highly specific questions when finding suppliers. Here are the most common query patterns and how suppliers can structure content to answer them directly."
       datePublished="November 15, 2025"
@@ -81,7 +81,7 @@ export default function QuestionsBuyersAskArticle() {
       }}
       nextArticle={{
         title:
-          "What Industrial Buyers Actually Want From AI Answers — And How Suppliers Can Provide It",
+          "What Industrial Buyers Actually Want From AI Answers and How Suppliers Can Provide It",
         href: "/lab/what-industrial-buyers-want-ai-answers",
       }}
     >
@@ -94,7 +94,7 @@ export default function QuestionsBuyersAskArticle() {
         answer them.
       </p>
 
-      <h2>Category 1 — Certification and Qualification Queries</h2>
+      <h2>Category 1: Certification and Qualification Queries</h2>
       <p>
         The first thing a modern buyer does is use AI as a filter. They aren't
         looking for a &quot;good partner.&quot; They are looking for a binary
@@ -130,7 +130,7 @@ export default function QuestionsBuyersAskArticle() {
         </li>
       </ul>
 
-      <h2>Category 2 — Technical Specification Queries</h2>
+      <h2>Category 2: Technical Specification Queries</h2>
       <p>
         Once the certifications are verified, the engineering teams take over.
         They ask the AI for multi-variable technical matches. These prompts
@@ -165,7 +165,7 @@ export default function QuestionsBuyersAskArticle() {
         </li>
       </ul>
 
-      <h2>Category 3 — Geographic and Proximity Queries</h2>
+      <h2>Category 3: Geographic and Proximity Queries</h2>
       <p>
         Supply chain stability is now about proximity. We see major buyers using
         AI to find the closest possible supplier to reduce shipping risks. They
@@ -199,7 +199,7 @@ export default function QuestionsBuyersAskArticle() {
         </li>
       </ul>
 
-      <h2>Category 4 — Experience and Track Record Queries</h2>
+      <h2>Category 4: Experience and Track Record Queries</h2>
       <p>
         Procurement leaders want to see that you've done this before. They ask
         the AI to find shops with specific program experience.
@@ -233,7 +233,7 @@ export default function QuestionsBuyersAskArticle() {
         </li>
       </ul>
 
-      <h2>Category 5 — Comparison and Evaluation Queries</h2>
+      <h2>Category 5: Comparison and Evaluation Queries</h2>
       <p>
         At the end of the funnel, the buyer asks the AI to compare you to your
         neighbors. This is the hardest test to pass.
@@ -250,19 +250,19 @@ export default function QuestionsBuyersAskArticle() {
           titanium components&quot;
         </li>
         <li>
-          &quot;Best Bay Area 3PL providers for electronics supply chain —
+          &quot;Best Bay Area 3PL providers for electronics supply chain
           comparison&quot;
         </li>
         <li>
-          &quot;AS9100 certified metal fabricators in San Jose vs. Fremont —
-          capabilities comparison&quot;
+          &quot;AS9100 certified metal fabricators in San Jose vs. Fremont
+          comparison&quot;
         </li>
         <li>
           &quot;GMP pharmaceutical packaging suppliers near South San Francisco
-          — vendor options&quot;
+          vendor options&quot;
         </li>
         <li>
-          &quot;Industrial safety consulting firms serving East Bay refineries —
+          &quot;Industrial safety consulting firms serving East Bay refineries
           which are OSHA PSM qualified?&quot;
         </li>
       </ul>
