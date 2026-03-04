@@ -48,13 +48,13 @@ export default function LLMBrandAssociationsArticle() {
       question:
         "Can a company change its LLM brand associations after the model is trained?",
       answer:
-        "Yes, through two mechanisms. First, grounding — AI systems that retrieve current web content during response generation can represent brands based on current content rather than training data alone. Second, model retraining — as LLMs are periodically retrained on updated web content, brands that have improved their content precision and external mentions will see association improvements reflected in newer model versions. Both mechanisms take time but are directly influenced by content strategy.",
+        "Yes, through two mechanisms. First, grounding, including AI systems that retrieve current web content during response generation can represent brands based on current content rather than training data alone. Second, model retraining, as LLMs are periodically retrained on updated web content, brands that have improved their content precision and external mentions will see association improvements reflected in newer model versions. Both mechanisms take time but are directly influenced by content strategy.",
     },
     {
       question:
         "Why do industrial brands have weaker AI brand associations than consumer brands?",
       answer:
-        "Industrial brands appear far less frequently across the web than consumer brands — which benefit from news coverage, social media, reviews, and general consumer content. The lower frequency of industrial brand mentions in training data produces weaker statistical associations in language models. This frequency gap means industrial brands must compensate with higher content precision and stronger external mention strategies to establish reliable AI associations.",
+        "Industrial brands appear far less frequently across the web than consumer brands, which benefit from news coverage, social media, reviews, and general consumer content. The lower frequency of industrial brand mentions in training data produces weaker statistical associations in language models. This frequency gap means industrial brands must compensate with higher content precision and stronger external mention strategies to establish reliable AI associations.",
     },
   ];
 

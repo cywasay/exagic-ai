@@ -12,9 +12,9 @@ import AISEOClosingCTA from "./_components/AISEOClosingCTA";
 import ContactCTA from "../_components/ContactCTA/ContactCTA";
 
 export const metadata = {
-  title: "AI SEO for Industrial Manufacturers | Exagic AI — San Francisco",
+  title: "AI SEO for Industrial Manufacturers | Exagic AI | San Francisco",
   description:
-    "World-class AI SEO services for SF Bay Area industrial manufacturers. From visibility analysis to practical model steering strategies — Exagic AI ensures your brand dominates AI retrieval.",
+    "World-class AI SEO services for SF Bay Area industrial manufacturers. From visibility analysis to practical model steering strategies, Exagic AI ensures your brand dominates AI retrieval.",
   alternates: {
     canonical: "https://exagic-ai.vercel.app/ai-seo",
   },
@@ -32,7 +32,7 @@ export default function AISEOPage() {
     },
     areaServed: "San Francisco Bay Area",
     description:
-      "World-class AI SEO services for SF Bay Area industrial manufacturers. From visibility analysis to practical model steering strategies — Exagic AI ensures your brand dominates AI retrieval.",
+      "World-class AI SEO services for SF Bay Area industrial manufacturers. From visibility analysis to practical model steering strategies, Exagic AI ensures your brand dominates AI retrieval.",
   };
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -77,7 +77,7 @@ export default function AISEOPage() {
     {
       question: "What is AI SEO and how is it different from traditional SEO?",
       answer:
-        "AI SEO optimizes your brand for citation inside AI-generated answers — not just ranking in a list of blue links. Traditional SEO targets Google's ranking algorithm. AI SEO targets how language models like ChatGPT, Gemini, and Perplexity retrieve, evaluate, and cite sources when generating answers for users and procurement agents.",
+        "AI SEO optimizes your brand for citation inside AI-generated answers, not just ranking in a list of blue links. Traditional SEO targets Google's ranking algorithm. AI SEO targets how language models like ChatGPT, Gemini, and Perplexity retrieve, evaluate, and cite sources when generating answers for users and procurement agents.",
     },
     {
       question: "How does Exagic AI measure AI SEO results?",
@@ -88,7 +88,7 @@ export default function AISEOPage() {
       question:
         "How long does AI SEO take to show results for industrial manufacturers?",
       answer:
-        "Initial improvements in entity clarity and content extractability can appear within 30–60 days. Meaningful changes in citation frequency and brand association strength typically develop over 3–6 months as AI platforms update their retrieval behavior and grounding sources.",
+        "Initial improvements in entity clarity and content extractability can appear within 30 to 60 days. Meaningful changes in citation frequency and brand association strength typically develop over 3 to 6 months as AI platforms update their retrieval behavior and grounding sources.",
     },
     {
       question: "Does Exagic AI work with companies outside the SF Bay Area?",

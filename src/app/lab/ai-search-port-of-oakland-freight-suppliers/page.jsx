@@ -97,8 +97,8 @@ export default function ArticlePage() {
       <h2>Specification Over Keywords</h2>
       <p>
         AI users ask multi-constraint questions. They do not search for
-        "freight." They ask for "reefer capacity within 5 miles of the Berths
-        20–26."
+        "freight." They ask for "reefer capacity within 5 miles of the Berths 20
+        to 26."
       </p>
       <p>
         If you do not list those numbers, the AI will default to the most

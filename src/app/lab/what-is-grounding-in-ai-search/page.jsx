@@ -53,7 +53,7 @@ export default function GroundingArticle() {
       question:
         "How can businesses influence AI grounding to favor their content?",
       answer:
-        "Businesses influence AI grounding by ensuring their content is indexed, entity-precise, and structured for shallow retrieval. The opening 150–300 characters of every target page should contain a complete, entity-rich answer to the most likely query that page will be retrieved for. Schema markup, geographic entity signals, and certification identifiers all increase the probability that a page is retrieved and selected during the grounding process.",
+        "Businesses influence AI grounding by ensuring their content is indexed, entity-precise, and structured for shallow retrieval. The opening 150 to 300 characters of every target page should contain a complete, entity-rich answer to the most likely query that page will be retrieved for. Schema markup, geographic entity signals, and certification identifiers all increase the probability that a page is retrieved and selected during the grounding process.",
     },
   ];
 
@@ -111,8 +111,8 @@ export default function GroundingArticle() {
           yes.
         </li>
         <li>
-          The model runs a search query against its index—Google, Bing, or a
-          private database.
+          The model runs a search query against its index, including Google,
+          Bing, or a private database.
         </li>
         <li>
           It reads the first 200-300 characters of the top results. This is the
@@ -124,7 +124,7 @@ export default function GroundingArticle() {
         </li>
       </ol>
 
-      <h2>Not Every Query Triggers Grounding — Why This Matters for AI SEO</h2>
+      <h2>Not Every Query Triggers Grounding: Why This Matters for AI SEO</h2>
       <p>
         AI is expensive to run. Models only search the web when they have to. If
         you ask for a math formula, it won't trigger grounding. But if you ask
