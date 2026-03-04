@@ -42,12 +42,12 @@ export default function EntitySEOArticle() {
     {
       question: "What is entity SEO?",
       answer:
-        "Entity SEO is the practice of defining your brand, products, services, locations, and people as named, verifiable entities that search engines and AI systems can recognize and cite. Instead of targeting keyword phrases, entity SEO targets the concepts and relationships that AI language models use to understand the world — making your brand a recognized, citable entity in AI-generated answers.",
+        "Entity SEO is the practice of defining your brand, products, services, locations, and people as named, verifiable entities that search engines and AI systems can recognize and cite. Instead of targeting keyword phrases, entity SEO targets the concepts and relationships that AI language models use to understand the world, making your brand a recognized, citable entity in AI-generated answers.",
     },
     {
       question: "Why is entity SEO important for industrial manufacturers?",
       answer:
-        "Industrial manufacturers sell to sophisticated buyers who query AI systems with highly specific technical criteria — certifications, material capabilities, geographic proximity, compliance standards. AI systems can only match a manufacturer to these specific queries if they recognize the manufacturer as a defined entity with those precise attributes. Generic content without entity precision produces zero matches in AI procurement searches.",
+        "Industrial manufacturers sell to sophisticated buyers who query AI systems with highly specific technical criteria, including certifications, material capabilities, geographic proximity, and compliance standards. AI systems can only match a manufacturer to these specific queries if they recognize the manufacturer as a defined entity with those precise attributes. Generic content without entity precision produces zero matches in AI procurement searches.",
     },
     {
       question: "How do you implement entity SEO for an industrial brand?",

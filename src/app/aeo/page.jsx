@@ -30,7 +30,7 @@ export default function AEOPage() {
     },
     areaServed: "San Francisco Bay Area",
     description:
-      "Answer Engine Optimization services for SF Bay Area industrial manufacturers, hardware suppliers, and B2B companies — ensuring brand citation in ChatGPT, Gemini, and Perplexity.",
+      "Answer Engine Optimization services for SF Bay Area industrial manufacturers, hardware suppliers, and B2B companies, ensuring brand citation in ChatGPT, Gemini, and Perplexity.",
   };
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -60,17 +60,17 @@ export default function AEOPage() {
     {
       question: "What is Answer Engine Optimization (AEO)?",
       answer:
-        "AEO is the practice of structuring your brand's content and data so that AI platforms — including ChatGPT, Google Gemini, and Perplexity — can extract, trust, and cite it as a direct answer to buyer queries. It focuses on citation in AI-generated answers rather than ranking in traditional search results.",
+        "AEO is the practice of structuring your brand's content and data so that AI platforms, including ChatGPT, Google Gemini, and Perplexity, can extract, trust, and cite it as a direct answer to buyer queries. It focuses on citation in AI-generated answers rather than ranking in traditional search results.",
     },
     {
       question: "How is AEO different from traditional SEO?",
       answer:
-        "Traditional SEO optimizes for ranking position in a list of search results. AEO optimizes for citation inside AI-generated answers, where there may be no list of links at all. Both share the same technical foundation — crawlable content, structured data, authoritative signals — but AEO adds a layer of AI-specific content structuring and entity optimization on top.",
+        "Traditional SEO optimizes for ranking position in a list of search results. AEO optimizes for citation inside AI-generated answers, where there may be no list of links at all. Both share the same technical foundation, crawlable content, structured data, and authoritative signals, but AEO adds a layer of AI-specific content structuring and entity optimization on top.",
     },
     {
       question: "Why do industrial manufacturers need AEO specifically?",
       answer:
-        "Industrial procurement has shifted. Enterprise buyers increasingly query AI tools — ChatGPT, Gemini, Perplexity — before they use traditional search engines to identify and shortlist suppliers. Industrial brands whose content is not structured for AI citation are absent from AI-generated procurement answers, regardless of their actual capabilities or traditional search performance.",
+        "Industrial procurement has shifted. Enterprise buyers increasingly query AI tools like ChatGPT, Gemini, and Perplexity before they use traditional search engines to identify and shortlist suppliers. Industrial brands whose content is not structured for AI citation are absent from AI-generated procurement answers, regardless of their actual capabilities or traditional search performance.",
     },
     {
       question:
@@ -81,7 +81,7 @@ export default function AEOPage() {
     {
       question: "Which AI platforms does Exagic AI optimize for?",
       answer:
-        "We optimize for Google Gemini and AI Overviews, ChatGPT and GPT-based models, and Perplexity AI — the three platforms most commonly used by industrial buyers and procurement teams for supplier discovery and product research.",
+        "We optimize for Google Gemini and AI Overviews, ChatGPT and GPT-based models, and Perplexity AI, built",
     },
     {
       question: "How does Exagic AI measure AEO success?",

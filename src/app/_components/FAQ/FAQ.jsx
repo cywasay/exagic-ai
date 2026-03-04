@@ -49,17 +49,17 @@ export default function FAQ() {
     {
       question: "How long does it take to see results from AEO?",
       answer:
-        "Initial visibility improvements typically appear within 60–90 days. Full citation dominance in your niche depends on content depth, competitive landscape, and the starting state of your brand's data structure.",
+        "Initial visibility improvements typically appear within 60 to 90 days. Full citation dominance in your niche depends on content depth, competitive landscape, and the starting state of your brand's data structure.",
     },
     {
       question: "What industries do you specialize in?",
       answer:
-        "We specialize in industrial manufacturing, hardware supply chains, logistics, and B2B suppliers operating in the San Francisco Bay Area corridor — including the East Bay, Fremont, San Leandro, and Silicon Valley.",
+        "We specialize in industrial manufacturing, hardware supply chains, logistics, and B2B suppliers operating in the San Francisco Bay Area corridor, including the East Bay, Fremont, San Leandro, and Silicon Valley.",
     },
     {
       question: "What does a Technical Entity Audit include?",
       answer:
-        "A full-day audit covering your brand's current AI visibility status, entity associations, knowledge graph presence, schema markup quality, content extractability, and citation share across major AI platforms — with a prioritized action plan.",
+        "A full-day audit covering your brand's current AI visibility status, entity associations, knowledge graph presence, schema markup quality, content extractability, and citation share across major AI platforms, with a prioritized action plan.",
     },
     {
       question: "Do I need to change my existing website to work with you?",

@@ -2,10 +2,26 @@ import Link from "next/link";
 
 export default function Team() {
   const team = [
-    { name: "Arthur Sterling", title: "Director of Strategy" },
-    { name: "Elena Vance", title: "AI SEO Specialist" },
-    { name: "Marcus Thorne", title: "Technical SEO" },
-    { name: "Sarah Chen", title: "Entity Strategist" },
+    {
+      name: "Saif K",
+      title: "Director of Strategy",
+      image: "/team/arthur.jpeg",
+    },
+    {
+      name: "Elena Vance",
+      title: "AI SEO Specialist",
+      image: "/team/elena.jpeg",
+    },
+    {
+      name: "Marcus Thorne",
+      title: "Technical SEO",
+      image: "/team/marcus.jpeg",
+    },
+    {
+      name: "Julian Reed",
+      title: "Entity Strategist",
+      image: "/team/julian.jpg",
+    },
   ];
 
   return (
@@ -24,10 +40,12 @@ export default function Team() {
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
           {team.map((member, index) => (
             <div key={index} className="text-center">
-              <div className="aspect-square w-full bg-zinc-50 rounded-[1.5rem] mb-6 relative overflow-hidden border border-zinc-100 flex items-center justify-center">
-                <span className="text-5xl font-black text-zinc-200">
-                  {member.name.charAt(0)}
-                </span>
+              <div className="aspect-square w-full bg-zinc-50 rounded-[1.5rem] mb-6 relative overflow-hidden border border-zinc-100 flex items-center justify-center group">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
               </div>
               <h3 className="text-xl font-bold text-zinc-900 tracking-tight">
                 {member.name}
