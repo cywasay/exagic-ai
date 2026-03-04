@@ -13,17 +13,16 @@ export default function Hero() {
         <div className="max-w-3xl pt-8">
           <h1
             id="hero-heading"
-            className="text-xl sm:text-4xl md:text-5xl font-semibold text-zinc-900 tracking-tight"
+            className="text-xl sm:text-4xl md:text-4xl font-semibold text-zinc-900"
           >
-            San Francisco AI SEO Agency for Industrial Manufacturers and Global
-            Suppliers.
+            San Francisco AI SEO Agency specialising in brand visibility
+            optimisation for global brands and e-commerce websites.
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-zinc-700">
-            Our AI SEO process is driven by advanced machine learning
-            techniques,{" "}
-            <span itemProp="knowsAbout">mechanistic interpretability</span>, and
-            practical <span itemProp="knowsAbout">model steering</span> methods.
+            We help brands dominate search results through advanced AI-driven
+            SEO strategies, including mechanistic interpretability and model
+            steering.
           </p>
 
           <p className="mt-4 text-sm sm:text-base text-zinc-500 font-medium">

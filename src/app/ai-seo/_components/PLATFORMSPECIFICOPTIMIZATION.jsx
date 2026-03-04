@@ -22,7 +22,7 @@ export default function PLATFORMSPECIFICOPTIMIZATION() {
                   Google Gemini and AI Overviews
                 </h3>
                 <p className="mt-4 text-lg text-zinc-600 leading-relaxed">
-                  Gemini retrieves shallow context—typically just the query
+                  Gemini retrieves shallow context, typically just the query
                   string, the URL, the title, and a short snippet of
                   approximately 150–300 characters. This means the first 150
                   words of any industrial capabilities page carry
@@ -40,9 +40,9 @@ export default function PLATFORMSPECIFICOPTIMIZATION() {
                 </h3>
                 <p className="mt-4 text-lg text-zinc-600 leading-relaxed">
                   ChatGPT's grounding architecture relies heavily on web
-                  retrieval (Search), making traditional SEO fundamentals—like
+                  retrieval (Search), making traditional SEO fundamentals like
                   crawlability, semantic content structure, and authoritative
-                  signals—directly relevant to AI visibility. Content must be
+                  signals, directly relevant to AI visibility. Content must be
                   highly discoverable and formatted for clear information
                   extraction. Since ChatGPT's search functionality uses the Bing
                   index, Bing SEO optimization is a strategic requirement
@@ -61,7 +61,7 @@ export default function PLATFORMSPECIFICOPTIMIZATION() {
                   Optimization requires becoming a cited authoritative source
                   through comprehensive, well-researched content that includes
                   clear attribution signals. Perplexity prioritizes fresh,
-                  real-time information—making content recency and regular
+                  real-time information which makes content recency and regular
                   technical updates particularly important for industrial
                   suppliers who want to be cited in market intelligence and
                   supplier comparison queries.

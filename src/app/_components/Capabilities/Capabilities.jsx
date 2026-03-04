@@ -65,8 +65,7 @@ export default function Capabilities() {
           id="capabilities-heading"
           className="max-w-4xl text-3xl sm:text-4xl font-bold text-zinc-900 tracking-tight leading-tight"
         >
-          We are an industry leader in machine learning driven search retrieval
-          optimization.
+          We are an industry leader in machine learning driven digital marketing.
         </h2>
 
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-10">

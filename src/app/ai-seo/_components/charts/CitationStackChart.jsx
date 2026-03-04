@@ -48,22 +48,27 @@ export default function CitationStackChart() {
             key={layer.label}
             initial={{ opacity: 0, y: 10, scale: 0.95 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="group relative"
+            className="group relative transition-all duration-300 hover:-translate-y-1"
           >
             <div
-              className={`h-12 ${layer.color} rounded-xl border border-white/20 shadow-sm flex items-center px-4 md:px-6 transition-all group-hover:-translate-y-1 group-hover:shadow-sm cursor-help`}
+              className={`h-12 ${layer.color} rounded-xl border ${
+                i === layers.length - 1 ? "border-zinc-200" : "border-white/20"
+              } shadow-sm group-hover:shadow-md flex items-center px-4 md:px-6 transition-all cursor-help`}
             >
               <span
-                className={`text-[10px] md:text-xs font-bold ${i === layers.length - 1 ? "text-zinc-500" : "text-white"} uppercase tracking-[0.2em]`}
+                className={`text-[10px] md:text-xs font-bold ${
+                  i >= 3 ? "text-zinc-600" : "text-white"
+                } uppercase tracking-[0.2em]`}
               >
                 {layer.label}
               </span>
             </div>
 
             {/* Tooltip detail - Popping out to the LEFT to avoid edge cutoff */}
-            <div className="absolute right-[105%] top-1/2 -translate-y-1/2 w-48 hidden lg:block pointer-events-none opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0">
-              <div className="bg-zinc-900 p-3 rounded-xl shadow-md border border-zinc-800">
+            <div className="absolute right-[105%] top-1/2 -translate-y-1/2 w-48 hidden lg:block pointer-events-none opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-x-2 group-hover:translate-x-0">
+              <div className="bg-zinc-900 p-3 rounded-xl shadow-xl border border-zinc-800">
                 <p className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest leading-relaxed">
                   {layer.text}
                 </p>
@@ -71,11 +76,6 @@ export default function CitationStackChart() {
             </div>
           </motion.div>
         ))}
-      </div>
-
-      <div className="mt-10 pt-6 border-t border-zinc-100 italic text-[11px] text-zinc-400 font-medium leading-relaxed">
-        * Every layer must be optimized to achieve a {">"}85% citation
-        probability in procurement queries.
       </div>
     </div>
   );

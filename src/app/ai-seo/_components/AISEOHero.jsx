@@ -14,10 +14,10 @@ export default function AISEOHero() {
               specializing in brand visibility optimization for industrial
               manufacturers, global suppliers, and hardware companies.
             </p>
-            <p className="mt-4 text-sm sm:text-base text-zinc-500 leading-relaxed">
+            <p className="mt-4 text-sm sm:text-base text-zinc-500 leading-relaxed"> 
               Our AI SEO process is driven by advanced machine learning
               techniques, mechanistic interpretability, and practical model
-              steering methods — purpose-built for the industrial corridor.
+              steering methods, built for the industrial corridor.
             </p>
             <div className="mt-10">
               <Link

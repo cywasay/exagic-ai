@@ -1,7 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "./_components/Header/Header";
-import Footer from "./_components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -71,18 +69,16 @@ export const metadata = {
   },
 };
 
+import ConditionalLayout from "../components/ConditionalLayout";
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <head>
         <link rel="canonical" href="https://exagic-ai.vercel.app" />
       </head>
-      <body className={`${inter.className} min-h-screen flex flex-col`}>
-        <Header />
-
-        <main className="flex-grow">{children}</main>
-
-        <Footer />
+      <body className={`${inter.className} flex flex-col min-h-screen`}>
+        <ConditionalLayout>{children}</ConditionalLayout>
       </body>
     </html>
   );

@@ -28,7 +28,7 @@ export default function ProjectTypes() {
     {
       title: "AI Visibility Tracking",
       description:
-        "Monthly tracking of how ChatGPT, Gemini, and Perplexity perceive your brand",
+        "Tracking how ChatGPT, Gemini, and Perplexity perceive your brand",
     },
     {
       title: "Team Training",

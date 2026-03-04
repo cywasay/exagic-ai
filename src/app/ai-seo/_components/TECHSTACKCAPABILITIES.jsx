@@ -13,8 +13,8 @@ export default function TECHSTACKCAPABILITIES() {
               </h2>
               <p className="mt-6 text-xl font-medium text-zinc-900 leading-relaxed">
                 Our process combines structured data engineering, semantic
-                entity optimization, and AI retrieval analysis — purpose-built
-                for industrial brands operating in the SF Bay Area corridor.
+                entity optimization, and AI retrieval analysis, built for
+                industrial brands operating in the SF Bay Area corridor.
               </p>
 
               <div className="mt-12 overflow-hidden rounded-2xl border border-zinc-200 shadow-sm">

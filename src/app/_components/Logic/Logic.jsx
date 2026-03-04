@@ -1,3 +1,35 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { Search, Sparkles, Target, Zap } from "lucide-react";
+
+const frameworkSteps = [
+  {
+    icon: <Search className="w-5 h-5" />,
+    title: "Data. Discovery. Probing.",
+    description:
+      "We design and deploy high-precision digital strategies grounded in mechanistic interpretability. Every decision is driven by probabilistic testing and deep semantic analysis of model behavior.",
+  },
+  {
+    icon: <Sparkles className="w-5 h-5" />,
+    title: "Innovation.",
+    description:
+      "Our clients gain access to proprietary tools and methodologies designed to convert technical specifications into machine-readable entities — ensuring dominance in AI sourcing.",
+  },
+  {
+    icon: <Target className="w-5 h-5" />,
+    title: "Focused Campaigns.",
+    description:
+      "We deliver sharp, prioritised AI SEO strategies designed to meet your business objectives in the SF Bay Area industrial corridor and beyond.",
+  },
+  {
+    icon: <Zap className="w-5 h-5" />,
+    title: "Next Level Support.",
+    description:
+      "Proactive, technical oversight designed to lift your visibility ceiling, mitigate algorithmic risk, and maximize the efficiency of your model-steering efforts.",
+  },
+];
+
 export default function Logic() {
   return (
     <section
@@ -6,94 +38,56 @@ export default function Logic() {
       className="rag-section bg-white py-20 md:py-24"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
-        <h2
-          id="logic-heading"
-          className="text-3xl sm:text-4xl font-bold text-zinc-900 tracking-tight"
-        >
-          Entity. Authority. Retrieval.
-        </h2>
-
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-          <article
-            className="rounded-3xl border border-zinc-200 bg-zinc-50/50 p-8 relative overflow-hidden"
-            itemScope
-            itemType="https://schema.org/Thing"
+        <div className="max-w-3xl mb-16">
+          <motion.h2
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            id="logic-heading"
+            className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900"
           >
-            <div
-              className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white shadow-sm border border-zinc-100 text-brand text-lg font-black font-mono"
-              aria-hidden="true"
-            >
-              01
-            </div>
-            <h3
-              className="text-xl font-bold text-zinc-900 tracking-tight"
-              itemProp="name"
-            >
-              Entity. Authority. Retrieval.
-            </h3>
-            <p
-              className="mt-4 text-zinc-600 text-base leading-relaxed"
-              itemProp="description"
-            >
-              We design and deploy high-fidelity data structures for industrial
-              brands. All decision-making is based on semantic analysis, model
-              testing, and real retrieval data.
-            </p>
-          </article>
+            Our Strategic Framework
+          </motion.h2>
+        </div>
 
-          <article
-            className="rounded-3xl border border-zinc-200 bg-zinc-50/50 p-10 relative overflow-hidden"
-            itemScope
-            itemType="https://schema.org/Thing"
-          >
-            <div
-              className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white shadow-sm border border-zinc-100 text-brand text-lg font-black font-mono"
-              aria-hidden="true"
+        <div className="max-w-4xl space-y-12">
+          {frameworkSteps.map((step, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className="group"
+              itemScope
+              itemType="https://schema.org/HowToStep"
             >
-              02
-            </div>
-            <h3
-              className="text-xl font-bold text-zinc-900 tracking-tight"
-              itemProp="name"
-            >
-              Innovation.
-            </h3>
-            <p
-              className="mt-4 text-zinc-600 text-base leading-relaxed"
-              itemProp="description"
-            >
-              Our clients gain access to proprietary tools and methodologies
-              designed to convert technical specifications into machine-readable
-              entities — ensuring dominance in AI sourcing.
-            </p>
-          </article>
+              <div className="flex items-center gap-4 mb-4">
+                <div
+                  className="flex h-1.5 w-1.5 rounded-full bg-brand shrink-0"
+                  aria-hidden="true"
+                />
+                <div className="text-brand shrink-0" aria-hidden="true">
+                  {step.icon}
+                </div>
+                <h3
+                  className="text-xl font-bold text-zinc-900 tracking-tight"
+                  itemProp="name"
+                >
+                  {step.title}
+                </h3>
+              </div>
 
-          <article
-            className="rounded-3xl border border-zinc-200 bg-zinc-50/50 p-10 relative overflow-hidden"
-            itemScope
-            itemType="https://schema.org/Thing"
-          >
-            <div
-              className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white shadow-sm border border-zinc-100 text-brand text-lg font-black font-mono"
-              aria-hidden="true"
-            >
-              03
-            </div>
-            <h3
-              className="text-xl font-bold text-zinc-900 tracking-tight"
-              itemProp="name"
-            >
-              Focused Campaigns.
-            </h3>
-            <p
-              className="mt-4 text-zinc-600 text-base leading-relaxed"
-              itemProp="description"
-            >
-              We deliver sharp, prioritised AI SEO strategies designed to meet
-              your business objectives in the SF Bay Area industrial corridor
-              and beyond.
-            </p>
-          </article>
+              <div className="pl-10">
+                <p
+                  className="text-zinc-600 text-base leading-relaxed max-w-3xl"
+                  itemProp="description"
+                >
+                  {step.description}
+                </p>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

@@ -88,9 +88,10 @@ export default function WHYTRADITIONALSEOISNOLONGERENOUGH() {
                 might be misrepresented by models drawing on outdated forum
                 posts or competitor-sourced data because their own technical
                 specifications weren't formatted for AI retrieval. For
-                industrial suppliers in the SF Bay Area corridor—where technical
-                precision is the primary selling point—the risk of being
-                misrepresented or omitted by AI is a critical business threat.
+                industrial suppliers in the SF Bay Area corridor, where
+                technical precision is the primary selling point and the risk of
+                being misrepresented or omitted by AI is a critical business
+                threat.
               </p>
               <p>
                 Traditional SEO measures success via click-through rate (CTR).

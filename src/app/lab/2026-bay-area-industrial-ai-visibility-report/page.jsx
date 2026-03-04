@@ -299,23 +299,23 @@ export default function VisibilityReportPart1() {
         </div>
       </div>
 
-      <div className="relative left-1/2 -translate-x-1/2 w-[calc(100vw-3rem)] max-w-6xl px-4">
-        <table className="w-full border-collapse text-[13px] [&_td]:whitespace-nowrap [&_td]:py-2.5 [&_td]:px-4 [&_th]:py-2.5 [&_th]:px-4 [&_td:nth-child(5)]:text-right [&_td:nth-child(6)]:text-center">
+      <div className="my-12 overflow-hidden rounded-2xl border border-zinc-100 bg-white shadow-sm overflow-x-auto">
+        <table className="w-full border-collapse text-[13px] [&_td]:py-3 [&_td]:px-6 [&_td:nth-child(1)]:whitespace-nowrap [&_td:nth-child(2)]:whitespace-nowrap [&_td:nth-child(5)]:whitespace-nowrap [&_td:nth-child(5)]:text-right [&_td:nth-child(6)]:whitespace-nowrap [&_td:nth-child(6)]:text-center">
           <thead>
-            <tr>
-              <th className="whitespace-nowrap w-[22%]">Company Name</th>
-              <th className="whitespace-nowrap w-[12%]">City</th>
-              <th className="whitespace-nowrap w-[18%]">Industry</th>
-              <th className="whitespace-nowrap w-[26%]">
-                Primary Product/Service
+            <tr className="bg-zinc-50/50 border-b border-zinc-100 font-bold text-zinc-900 uppercase tracking-wider">
+              <th className="py-4 px-6 text-left whitespace-nowrap">
+                Company Name
               </th>
-              <th className="whitespace-nowrap w-[12%] text-right">
+              <th className="py-4 px-6 text-left whitespace-nowrap">City</th>
+              <th className="py-4 px-6 text-left">Industry</th>
+              <th className="py-4 px-6 text-left">Primary Product/Service</th>
+              <th className="py-4 px-6 text-right whitespace-nowrap">
                 Est. Size
               </th>
-              <th className="whitespace-nowrap w-[10%] text-center">Tier</th>
+              <th className="py-4 px-6 text-center whitespace-nowrap">Tier</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="divide-y divide-zinc-50 text-zinc-700">
             <tr className="bg-zinc-100/50">
               <td
                 colSpan="6"

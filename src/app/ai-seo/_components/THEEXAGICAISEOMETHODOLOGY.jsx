@@ -41,10 +41,10 @@ export default function THEEXAGICAISEOMETHODOLOGY() {
                 <p className="mt-4 text-lg text-zinc-600 leading-relaxed">
                   Language models understand the world through entities and
                   their interrelationships. In this phase, we map your core
-                  entities—your brand name, specific product lines, and key
-                  technical capabilities. We then build associations between
-                  your brand and high-authority industry categories and critical
-                  technical specifications.
+                  entities including your brand name, specific product lines,
+                  and key technical capabilities. We then build associations
+                  between your brand and high-authority industry categories and
+                  critical technical specifications.
                 </p>
               </div>
 
