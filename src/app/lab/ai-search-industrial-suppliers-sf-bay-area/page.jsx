@@ -28,19 +28,19 @@ export default function ArticlePage() {
     {
       question: "How do industrial buyers use AI to find suppliers?",
       answer:
-        "Industrial buyers query AI platforms like ChatGPT, Perplexity, and Gemini with specific technical requirements — certifications, material capabilities, geographic proximity, and lead time expectations. AI synthesizes a shortlist from retrieved sources. Suppliers whose content matches the specific entity language of those queries are cited. Suppliers with generic or unstructured content are not.",
+        "Industrial buyers query AI platforms like ChatGPT, Perplexity, and Gemini with specific technical requirements including certifications, material capabilities, geographic proximity, and lead time expectations. AI synthesizes a shortlist from retrieved sources. Suppliers whose content matches the specific entity language of those queries are cited. Suppliers with generic or unstructured content are not.",
     },
     {
       question:
         "Why are SF Bay Area industrial suppliers invisible in AI search?",
       answer:
-        "Most industrial suppliers have content built for traditional search — keyword-optimized but structurally inaccessible to AI extraction. Technical specifications buried in PDFs, generic service descriptions without entity precision, and missing schema markup all cause AI systems to skip otherwise qualified suppliers in favor of better-structured content from competitors.",
+        "Most industrial suppliers have content built for traditional search, keyword-optimized but structurally inaccessible to AI extraction. Technical specifications buried in PDFs, generic service descriptions without entity precision, and missing schema markup all cause AI systems to skip otherwise qualified suppliers in favor of better-structured content from competitors.",
     },
     {
       question:
         "What is the first step for an industrial supplier to improve AI visibility?",
       answer:
-        "The first step is an AI visibility audit — querying ChatGPT, Perplexity, and Gemini with the exact questions your buyers ask, and documenting what sources appear and how your brand is described (or whether it appears at all). This baseline establishes what needs to be fixed and in what order.",
+        "The first step is an AI visibility audit: querying ChatGPT, Perplexity, and Gemini with the exact questions your buyers ask, and documenting what sources appear and how your brand is described (or whether it appears at all). This baseline establishes what needs to be fixed and in what order.",
     },
   ];
 
@@ -85,8 +85,8 @@ export default function ArticlePage() {
         We ran a test with a buyer looking for AS9100-certified shops.
         Perplexity gave them three qualified names in 15 seconds. Google took 20
         minutes of manual filtering to find the same data. Buyers value that
-        speed. They are not looking for a "partner"—they are looking for a match
-        for their spec.
+        speed. They are not looking for a &quot;partner,&quot; they are looking
+        for a match for their spec.
       </p>
 
       <h2>What Does an AI Procurement Query Actually Look Like?</h2>

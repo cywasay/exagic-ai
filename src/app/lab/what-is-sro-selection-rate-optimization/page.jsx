@@ -28,7 +28,7 @@ export default function ArticlePage() {
     {
       question: "What is Selection Rate Optimization?",
       answer:
-        "SRO is the AI SEO discipline that improves the probability of your content being cited by AI models once retrieved. It addresses the gap between being retrieved and being selected — optimizing content clarity, entity precision, and structural accessibility to increase citation rate.",
+        "SRO is the AI SEO discipline that improves the probability of your content being cited by AI models once retrieved. It addresses the gap between being retrieved and being selected, optimizing content clarity, entity precision, and structural accessibility to increase citation rate.",
     },
     {
       question: "How is SRO different from AEO?",
@@ -38,7 +38,7 @@ export default function ArticlePage() {
     {
       question: "How long does SRO take to show results for industrial brands?",
       answer:
-        "Initial selection rate improvements typically appear within 30–60 days of content and snippet optimization. Sustained improvement across a competitive query set develops over 3–6 months as optimization cycles compound and AI retrieval behavior updates to reflect content changes.",
+        "Initial selection rate improvements typically appear within 30 to 60 days of content and snippet optimization. Sustained improvement across a competitive query set develops over 3 to 6 months as optimization cycles compound and AI retrieval behavior updates to reflect content changes.",
     },
   ];
 

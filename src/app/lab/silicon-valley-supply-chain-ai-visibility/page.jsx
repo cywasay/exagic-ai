@@ -138,7 +138,7 @@ export default function SiliconValleyVisibilityArticle() {
       <p>
         Being &quot;near Cupertino&quot; is better than being a &quot;Bay Area
         supplier.&quot; The AI calculates travel time. I always recommend naming
-        your specific district—like the San Jose Innovation District or the
+        your specific district, like the San Jose Innovation District or the
         Fremont hardware cluster.
       </p>
       <p>
