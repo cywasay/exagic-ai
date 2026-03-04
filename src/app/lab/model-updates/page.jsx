@@ -38,7 +38,7 @@ export default function ModelUpdatesPage() {
   const modelUpdates = [
     {
       date: "Feb 2026",
-      title: "Gemini 2.5 Pro — Impact on Industrial Entity Retrieval",
+      title: "Gemini 2.5 Pro: Impact on Industrial Entity Retrieval",
       summary:
         "Analysis of how Gemini 2.5 Pro changes citation weighting for manufacturing entities in the SF Bay Area knowledge cluster.",
       tag: "Model Analysis",

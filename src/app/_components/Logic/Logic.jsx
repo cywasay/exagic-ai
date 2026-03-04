@@ -14,7 +14,7 @@ const frameworkSteps = [
     icon: <Sparkles className="w-5 h-5" />,
     title: "Innovation.",
     description:
-      "Our clients gain access to proprietary tools and methodologies designed to convert technical specifications into machine-readable entities — ensuring dominance in AI sourcing.",
+      "Our clients gain access to proprietary tools and methodologies designed to convert technical specifications into machine-readable entities, ensuring dominance in AI sourcing.",
   },
   {
     icon: <Target className="w-5 h-5" />,
